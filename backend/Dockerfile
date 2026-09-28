@@ -6,5 +6,5 @@ COPY backend /app/backend
 COPY frontend/src/preparation.json /app/frontend/src/preparation.json
 RUN mkdir -p /app/data && chown -R appuser:appuser /app
 USER appuser
-EXPOSE 8000
-CMD ["python", "-m", "uvicorn", "backend.app.main:app", "--host", "0.0.0.0", "--port", "8000", "--workers", "1"]
+EXPOSE 10000
+CMD ["python", "-m", "uvicorn", "backend.app.main:app", "--host", "0.0.0.0", "--port", "10000", "--workers", "1"]
