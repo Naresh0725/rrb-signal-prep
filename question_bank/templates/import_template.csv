@@ -1,0 +1,2 @@
+question_text,option_a,option_b,option_c,option_d,correct_option,explanation,subject,topic,subtopic,difficulty,source_type,source_reference,exam,exam_year,shift,parent_question_id
+A 10 Ω resistor is connected across a 30 V DC supply. What is the power dissipated?,120 W,30 W,60 W,90 W,D,Using P = V²/R: 30²/10 = 90 W. The current is 30/10 = 3 A.,Science & Engineering,Network Theory,Resistive power,Easy,ORIGINAL,SignalPrep original educational seed; not a previous-year question.,,,,

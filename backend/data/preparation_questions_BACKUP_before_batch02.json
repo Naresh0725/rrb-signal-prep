@@ -1,0 +1,1489 @@
+[
+  {
+    "id": "prep-pattern-001",
+    "question_text": "The roots of x² − px + q = 0 are positive and differ by 3. The sum of their reciprocals is 5/4. What is p?",
+    "option_a": "8",
+    "option_b": "4",
+    "option_c": "5",
+    "option_d": "6",
+    "correct_option": "C",
+    "explanation": "Let the smaller root be a. (2a+3)/(a(a+3))=5/4 gives 5a²+7a−12=0. Positive a=1; roots are 1 and 4, so p=5.",
+    "subject": "Mathematics",
+    "topic": "Quadratic equations",
+    "subtopic": "Quadratic equations",
+    "difficulty": "Hard",
+    "source_type": "ORIGINAL",
+    "source_reference": "Original SignalPrep challenge; CEN 02/2025 §13.1(A)(vi). Broad format informed by supplementary Grade-I paper copies, not a reproduced PYQ.",
+    "verification_status": "SOLUTION_CHECKED",
+    "generation_method": "syllabus-authored-v1",
+    "status": "ACTIVE",
+    "generation_metadata": {
+      "bank_track": "ORIGINAL_CHALLENGE",
+      "source_status": "ORIGINAL_CHALLENGE",
+      "syllabus_units": [
+        "mathematics-quadratic"
+      ],
+      "pattern_basis": "Grade-I multiple-choice conceptual/numerical format; official syllabus. No claim of official-paper provenance.",
+      "difficulty_status": "EDITORIAL_PROVISIONAL",
+      "difficulty_rationale": "Requires translating root constraints into a second quadratic.",
+      "solution_check": "Worked solution checked during authoring; not independent human certification.",
+      "numeric_check": null
+    }
+  },
+  {
+    "id": "prep-pattern-002",
+    "question_text": "A dataset has mean 8 and population variance 9. Every value x is replaced by 3x−4. What is the new mean plus the new standard deviation?",
+    "option_a": "47",
+    "option_b": "101",
+    "option_c": "29",
+    "option_d": "23",
+    "correct_option": "C",
+    "explanation": "The new mean is 3×8−4=20. Standard deviation scales by |3|: 3×√9=9. Sum=29.",
+    "subject": "Mathematics",
+    "topic": "Range, mean deviation, variance and standard deviation: grouped/ungrouped data",
+    "subtopic": "Range, mean deviation, variance and standard deviation: grouped/ungrouped data",
+    "difficulty": "Hard",
+    "source_type": "ORIGINAL",
+    "source_reference": "Original SignalPrep challenge; CEN 02/2025 §13.1(A)(vi). Broad format informed by supplementary Grade-I paper copies, not a reproduced PYQ.",
+    "verification_status": "SOLUTION_CHECKED",
+    "generation_method": "syllabus-authored-v1",
+    "status": "ACTIVE",
+    "generation_metadata": {
+      "bank_track": "ORIGINAL_CHALLENGE",
+      "source_status": "ORIGINAL_CHALLENGE",
+      "syllabus_units": [
+        "mathematics-dispersion"
+      ],
+      "pattern_basis": "Grade-I multiple-choice conceptual/numerical format; official syllabus. No claim of official-paper provenance.",
+      "difficulty_status": "EDITORIAL_PROVISIONAL",
+      "difficulty_rationale": "Distinguishes variance scaling from standard deviation scaling.",
+      "solution_check": "Worked solution checked during authoring; not independent human certification.",
+      "numeric_check": {
+        "expression": "3*8-4+3*3",
+        "option_values": {
+          "A": 47,
+          "B": 101,
+          "C": 29,
+          "D": 23
+        }
+      }
+    }
+  },
+  {
+    "id": "prep-pattern-003",
+    "question_text": "A bag contains 4 red and 3 blue balls. Two balls are drawn without replacement. Given that at least one is red, what is the probability that both are red?",
+    "option_a": "1/3",
+    "option_b": "1/2",
+    "option_c": "4/7",
+    "option_d": "2/7",
+    "correct_option": "A",
+    "explanation": "There are C(7,2)=21 unordered pairs. At least one red excludes C(3,2)=3 pairs, leaving 18. Both red occurs in C(4,2)=6; conditional probability=6/18=1/3.",
+    "subject": "Mathematics",
+    "topic": "Probability: occurrence, exhaustive and mutually exclusive events",
+    "subtopic": "Probability: occurrence, exhaustive and mutually exclusive events",
+    "difficulty": "Hard",
+    "source_type": "ORIGINAL",
+    "source_reference": "Original SignalPrep challenge; CEN 02/2025 §13.1(A)(vi). Broad format informed by supplementary Grade-I paper copies, not a reproduced PYQ.",
+    "verification_status": "SOLUTION_CHECKED",
+    "generation_method": "syllabus-authored-v1",
+    "status": "ACTIVE",
+    "generation_metadata": {
+      "bank_track": "ORIGINAL_CHALLENGE",
+      "source_status": "ORIGINAL_CHALLENGE",
+      "syllabus_units": [
+        "mathematics-probability"
+      ],
+      "pattern_basis": "Grade-I multiple-choice conceptual/numerical format; official syllabus. No claim of official-paper provenance.",
+      "difficulty_status": "EDITORIAL_PROVISIONAL",
+      "difficulty_rationale": "Requires conditional counting without replacement.",
+      "solution_check": "Worked solution checked during authoring; not independent human certification.",
+      "numeric_check": null
+    }
+  },
+  {
+    "id": "prep-pattern-004",
+    "question_text": "In a group of 80, 45 use app A, 38 use B and 30 use C. Pairwise intersections AB, BC and CA contain 20, 15 and 18 people respectively; 8 use all three. How many use exactly one app?",
+    "option_a": "31",
+    "option_b": "45",
+    "option_c": "25",
+    "option_d": "39",
+    "correct_option": "A",
+    "explanation": "A only=45−20−18+8=15; B only=38−20−15+8=11; C only=30−18−15+8=5. Exactly one=31. Pairwise intersections include the triple intersection.",
+    "subject": "Mathematics",
+    "topic": "Universal sets, Venn diagrams, union, intersection, difference and complements",
+    "subtopic": "Universal sets, Venn diagrams, union, intersection, difference and complements",
+    "difficulty": "Hard",
+    "source_type": "ORIGINAL",
+    "source_reference": "Original SignalPrep challenge; CEN 02/2025 §13.1(A)(vi). Broad format informed by supplementary Grade-I paper copies, not a reproduced PYQ.",
+    "verification_status": "SOLUTION_CHECKED",
+    "generation_method": "syllabus-authored-v1",
+    "status": "ACTIVE",
+    "generation_metadata": {
+      "bank_track": "ORIGINAL_CHALLENGE",
+      "source_status": "ORIGINAL_CHALLENGE",
+      "syllabus_units": [
+        "mathematics-set-operations"
+      ],
+      "pattern_basis": "Grade-I multiple-choice conceptual/numerical format; official syllabus. No claim of official-paper provenance.",
+      "difficulty_status": "EDITORIAL_PROVISIONAL",
+      "difficulty_rationale": "Requires correct treatment of inclusive intersections.",
+      "solution_check": "Worked solution checked during authoring; not independent human certification.",
+      "numeric_check": {
+        "expression": "45+38+30-2*(20+15+18)+3*8",
+        "option_values": {
+          "A": 31,
+          "B": 45,
+          "C": 25,
+          "D": 39
+        }
+      }
+    }
+  },
+  {
+    "id": "prep-pattern-005",
+    "question_text": "From a point on level ground the elevation of a tower top is 30°. Moving 40 m towards its base changes it to 60°. What is the tower height?",
+    "option_a": "60 m",
+    "option_b": "10√3 m",
+    "option_c": "40√3 m",
+    "option_d": "20√3 m",
+    "correct_option": "D",
+    "explanation": "If the near distance is d, h=√3d and h=(d+40)/√3. Thus 3d=d+40, d=20 and h=20√3 m.",
+    "subject": "Mathematics",
+    "topic": "Heights and distances",
+    "subtopic": "Heights and distances",
+    "difficulty": "Hard",
+    "source_type": "ORIGINAL",
+    "source_reference": "Original SignalPrep challenge; CEN 02/2025 §13.1(A)(vi). Broad format informed by supplementary Grade-I paper copies, not a reproduced PYQ.",
+    "verification_status": "SOLUTION_CHECKED",
+    "generation_method": "syllabus-authored-v1",
+    "status": "ACTIVE",
+    "generation_metadata": {
+      "bank_track": "ORIGINAL_CHALLENGE",
+      "source_status": "ORIGINAL_CHALLENGE",
+      "syllabus_units": [
+        "mathematics-heights"
+      ],
+      "pattern_basis": "Grade-I multiple-choice conceptual/numerical format; official syllabus. No claim of official-paper provenance.",
+      "difficulty_status": "EDITORIAL_PROVISIONAL",
+      "difficulty_rationale": "Requires two linked trigonometric observations.",
+      "solution_check": "Worked solution checked during authoring; not independent human certification.",
+      "numeric_check": null
+    }
+  },
+  {
+    "id": "prep-pattern-006",
+    "question_text": "An 8-bit two’s-complement processor adds 01110110 and 00101101. Which result and signed-overflow status are correct?",
+    "option_a": "10100011; no overflow",
+    "option_b": "11000011; no overflow",
+    "option_c": "01000011; overflow",
+    "option_d": "10100011; overflow",
+    "correct_option": "D",
+    "explanation": "118+45=163, giving 10100011 in eight bits. Two positive signed operands produce a negative signed result (−93), so signed overflow occurs.",
+    "subject": "Computers",
+    "topic": "Data representation",
+    "subtopic": "Data representation",
+    "difficulty": "Hard",
+    "source_type": "ORIGINAL",
+    "source_reference": "Original SignalPrep challenge; CEN 02/2025 §13.1(A)(vi). Broad format informed by supplementary Grade-I paper copies, not a reproduced PYQ.",
+    "verification_status": "SOLUTION_CHECKED",
+    "generation_method": "syllabus-authored-v1",
+    "status": "ACTIVE",
+    "generation_metadata": {
+      "bank_track": "ORIGINAL_CHALLENGE",
+      "source_status": "ORIGINAL_CHALLENGE",
+      "syllabus_units": [
+        "computers-representation"
+      ],
+      "pattern_basis": "Grade-I multiple-choice conceptual/numerical format; official syllabus. No claim of official-paper provenance.",
+      "difficulty_status": "EDITORIAL_PROVISIONAL",
+      "difficulty_rationale": "Separates the stored bit pattern from signed arithmetic overflow.",
+      "solution_check": "Worked solution checked during authoring; not independent human certification.",
+      "numeric_check": null
+    }
+  },
+  {
+    "id": "prep-pattern-007",
+    "question_text": "A byte-addressable memory has 18 address lines and a 16-bit data bus. What is its addressable capacity, assuming every address selects exactly one byte?",
+    "option_a": "256 KiB",
+    "option_b": "512 KiB",
+    "option_c": "128 KiB",
+    "option_d": "1 MiB",
+    "correct_option": "A",
+    "explanation": "There are 2^18 byte addresses, giving 262144 bytes=256 KiB. The data bus width does not double a capacity explicitly specified as byte-addressable.",
+    "subject": "Computers",
+    "topic": "Storage devices",
+    "subtopic": "Storage devices",
+    "difficulty": "Hard",
+    "source_type": "ORIGINAL",
+    "source_reference": "Original SignalPrep challenge; CEN 02/2025 §13.1(A)(vi). Broad format informed by supplementary Grade-I paper copies, not a reproduced PYQ.",
+    "verification_status": "SOLUTION_CHECKED",
+    "generation_method": "syllabus-authored-v1",
+    "status": "ACTIVE",
+    "generation_metadata": {
+      "bank_track": "ORIGINAL_CHALLENGE",
+      "source_status": "ORIGINAL_CHALLENGE",
+      "syllabus_units": [
+        "computers-storage"
+      ],
+      "pattern_basis": "Grade-I multiple-choice conceptual/numerical format; official syllabus. No claim of official-paper provenance.",
+      "difficulty_status": "EDITORIAL_PROVISIONAL",
+      "difficulty_rationale": "Tests address units versus bus width.",
+      "solution_check": "Worked solution checked during authoring; not independent human certification.",
+      "numeric_check": null
+    }
+  },
+  {
+    "id": "prep-pattern-008",
+    "question_text": "In Excel, cell C3 contains =$A3*B$1. The formula is copied to E5. What formula appears there?",
+    "option_a": "=$C5*D$3",
+    "option_b": "=$A3*B$1",
+    "option_c": "=$A5*D$1",
+    "option_d": "=$A5*B$1",
+    "correct_option": "C",
+    "explanation": "The copy moves two columns and two rows. $A fixes column A but row 3 becomes 5. B is relative and becomes D; $1 fixes the row.",
+    "subject": "Computers",
+    "topic": "MS Office",
+    "subtopic": "MS Office",
+    "difficulty": "Hard",
+    "source_type": "ORIGINAL",
+    "source_reference": "Original SignalPrep challenge; CEN 02/2025 §13.1(A)(vi). Broad format informed by supplementary Grade-I paper copies, not a reproduced PYQ.",
+    "verification_status": "SOLUTION_CHECKED",
+    "generation_method": "syllabus-authored-v1",
+    "status": "ACTIVE",
+    "generation_metadata": {
+      "bank_track": "ORIGINAL_CHALLENGE",
+      "source_status": "ORIGINAL_CHALLENGE",
+      "syllabus_units": [
+        "computers-office"
+      ],
+      "pattern_basis": "Grade-I multiple-choice conceptual/numerical format; official syllabus. No claim of official-paper provenance.",
+      "difficulty_status": "EDITORIAL_PROVISIONAL",
+      "difficulty_rationale": "Tracks two independent mixed references.",
+      "solution_check": "Worked solution checked during authoring; not independent human certification.",
+      "numeric_check": null
+    }
+  },
+  {
+    "id": "prep-pattern-009",
+    "question_text": "A host has address 192.168.20.77 with mask 255.255.255.224. Which pair gives its subnet network and broadcast addresses?",
+    "option_a": "192.168.20.64 and 192.168.20.95",
+    "option_b": "192.168.20.0 and 192.168.20.255",
+    "option_c": "192.168.20.64 and 192.168.20.127",
+    "option_d": "192.168.20.76 and 192.168.20.79",
+    "correct_option": "A",
+    "explanation": "The /27 mask gives blocks of 32 addresses. 77 belongs to 64–95. The network is .64 and broadcast .95.",
+    "subject": "Computers",
+    "topic": "Networking",
+    "subtopic": "Networking",
+    "difficulty": "Hard",
+    "source_type": "ORIGINAL",
+    "source_reference": "Original SignalPrep challenge; CEN 02/2025 §13.1(A)(vi). Broad format informed by supplementary Grade-I paper copies, not a reproduced PYQ.",
+    "verification_status": "SOLUTION_CHECKED",
+    "generation_method": "syllabus-authored-v1",
+    "status": "ACTIVE",
+    "generation_metadata": {
+      "bank_track": "ORIGINAL_CHALLENGE",
+      "source_status": "ORIGINAL_CHALLENGE",
+      "syllabus_units": [
+        "computers-networking"
+      ],
+      "pattern_basis": "Grade-I multiple-choice conceptual/numerical format; official syllabus. No claim of official-paper provenance.",
+      "difficulty_status": "EDITORIAL_PROVISIONAL",
+      "difficulty_rationale": "Applies a subnet mask to a non-boundary address.",
+      "solution_check": "Worked solution checked during authoring; not independent human certification.",
+      "numeric_check": null
+    }
+  },
+  {
+    "id": "prep-pattern-010",
+    "question_text": "All relays are switches. No switch is a sensor. Some instruments are relays. Which conclusion must follow?",
+    "option_a": "No instrument is a sensor",
+    "option_b": "Some instruments are not sensors",
+    "option_c": "Some sensors are relays",
+    "option_d": "All instruments are switches",
+    "correct_option": "B",
+    "explanation": "The instruments that are relays must be switches and therefore cannot be sensors. The statements do not classify every instrument.",
+    "subject": "Reasoning",
+    "topic": "Syllogism",
+    "subtopic": "Syllogism",
+    "difficulty": "Hard",
+    "source_type": "ORIGINAL",
+    "source_reference": "Original SignalPrep challenge; CEN 02/2025 §13.1(A)(vi). Broad format informed by supplementary Grade-I paper copies, not a reproduced PYQ.",
+    "verification_status": "SOLUTION_CHECKED",
+    "generation_method": "syllabus-authored-v1",
+    "status": "ACTIVE",
+    "generation_metadata": {
+      "bank_track": "ORIGINAL_CHALLENGE",
+      "source_status": "ORIGINAL_CHALLENGE",
+      "syllabus_units": [
+        "reasoning-syllogism"
+      ],
+      "pattern_basis": "Grade-I multiple-choice conceptual/numerical format; official syllabus. No claim of official-paper provenance.",
+      "difficulty_status": "EDITORIAL_PROVISIONAL",
+      "difficulty_rationale": "Combines universal exclusion with a limited existential claim.",
+      "solution_check": "Worked solution checked during authoring; not independent human certification.",
+      "numeric_check": null
+    }
+  },
+  {
+    "id": "prep-pattern-011",
+    "question_text": "Three machines A, B and C each run for an integer number of hours. Is A’s running time greater than B’s? Statement I: A+B=12 hours. Statement II: A−C=3 hours and B−C=1 hour. Which is sufficient?",
+    "option_a": "II alone",
+    "option_b": "I alone",
+    "option_c": "Even both insufficient",
+    "option_d": "Both needed",
+    "correct_option": "A",
+    "explanation": "Statement I allows A greater than, equal to or less than B. Subtracting the equations in II gives A−B=2, so II alone establishes A>B.",
+    "subject": "Reasoning",
+    "topic": "Data interpretation and sufficiency",
+    "subtopic": "Data interpretation and sufficiency",
+    "difficulty": "Hard",
+    "source_type": "ORIGINAL",
+    "source_reference": "Original SignalPrep challenge; CEN 02/2025 §13.1(A)(vi). Broad format informed by supplementary Grade-I paper copies, not a reproduced PYQ.",
+    "verification_status": "SOLUTION_CHECKED",
+    "generation_method": "syllabus-authored-v1",
+    "status": "ACTIVE",
+    "generation_metadata": {
+      "bank_track": "ORIGINAL_CHALLENGE",
+      "source_status": "ORIGINAL_CHALLENGE",
+      "syllabus_units": [
+        "reasoning-data"
+      ],
+      "pattern_basis": "Grade-I multiple-choice conceptual/numerical format; official syllabus. No claim of official-paper provenance.",
+      "difficulty_status": "EDITORIAL_PROVISIONAL",
+      "difficulty_rationale": "Requires sufficiency rather than solving for all unknowns.",
+      "solution_check": "Worked solution checked during authoring; not independent human certification.",
+      "numeric_check": null
+    }
+  },
+  {
+    "id": "prep-pattern-012",
+    "question_text": "Five distinct jobs P,Q,R,S,T occupy slots 1–5, one per slot. P is immediately before Q; R is in slot 1; S is after Q; T is not in slot 5. Which job must occupy slot 5?",
+    "option_a": "S",
+    "option_b": "Q",
+    "option_c": "T",
+    "option_d": "P",
+    "correct_option": "A",
+    "explanation": "R cannot be last; T is excluded. P cannot be last because Q immediately follows it. Q cannot be last because S follows it. Hence S is last. Valid arrangements exist, such as R,P,Q,T,S.",
+    "subject": "Reasoning",
+    "topic": "Analytical reasoning",
+    "subtopic": "Analytical reasoning",
+    "difficulty": "Hard",
+    "source_type": "ORIGINAL",
+    "source_reference": "Original SignalPrep challenge; CEN 02/2025 §13.1(A)(vi). Broad format informed by supplementary Grade-I paper copies, not a reproduced PYQ.",
+    "verification_status": "SOLUTION_CHECKED",
+    "generation_method": "syllabus-authored-v1",
+    "status": "ACTIVE",
+    "generation_metadata": {
+      "bank_track": "ORIGINAL_CHALLENGE",
+      "source_status": "ORIGINAL_CHALLENGE",
+      "syllabus_units": [
+        "reasoning-analytical"
+      ],
+      "pattern_basis": "Grade-I multiple-choice conceptual/numerical format; official syllabus. No claim of official-paper provenance.",
+      "difficulty_status": "EDITORIAL_PROVISIONAL",
+      "difficulty_rationale": "Uses constraints to eliminate possibilities without assuming a unique full ordering.",
+      "solution_check": "Worked solution checked during authoring; not independent human certification.",
+      "numeric_check": null
+    }
+  },
+  {
+    "id": "prep-pattern-013",
+    "question_text": "A 12 V ideal source feeds a 2 Ω resistor in series with parallel branches of 6 Ω and 3 Ω. A voltmeter of resistance 6 Ω is connected across the parallel combination. What does it read?",
+    "option_a": "36/7 V",
+    "option_b": "8 V",
+    "option_c": "6 V",
+    "option_d": "24/7 V",
+    "correct_option": "A",
+    "explanation": "The loaded parallel conductance is 1/6+1/3+1/6=2/3 S, so its resistance is 1.5 Ω. Divider output=12×1.5/(2+1.5)=36/7 V.",
+    "subject": "Science & Engineering",
+    "topic": "Series/parallel resistance and resistivity",
+    "subtopic": "Series/parallel resistance and resistivity",
+    "difficulty": "Hard",
+    "source_type": "ORIGINAL",
+    "source_reference": "Original SignalPrep challenge; CEN 02/2025 §13.1(A)(vi). Broad format informed by supplementary Grade-I paper copies, not a reproduced PYQ.",
+    "verification_status": "SOLUTION_CHECKED",
+    "generation_method": "syllabus-authored-v1",
+    "status": "ACTIVE",
+    "generation_metadata": {
+      "bank_track": "ORIGINAL_CHALLENGE",
+      "source_status": "ORIGINAL_CHALLENGE",
+      "syllabus_units": [
+        "science-resistance"
+      ],
+      "pattern_basis": "Grade-I multiple-choice conceptual/numerical format; official syllabus. No claim of official-paper provenance.",
+      "difficulty_status": "EDITORIAL_PROVISIONAL",
+      "difficulty_rationale": "Includes instrument loading in a series-parallel network.",
+      "solution_check": "Worked solution checked during authoring; not independent human certification.",
+      "numeric_check": null
+    }
+  },
+  {
+    "id": "prep-pattern-014",
+    "question_text": "A moving-coil meter has resistance 100 Ω and full-scale current 1 mA. Which shunt resistance extends its range to 1 A?",
+    "option_a": "100/999 Ω",
+    "option_b": "100 Ω",
+    "option_c": "100/99 Ω",
+    "option_d": "99.9 Ω",
+    "correct_option": "A",
+    "explanation": "At full scale the meter voltage is 0.001×100=0.1 V. The shunt carries 0.999 A, so Rs=0.1/0.999=100/999 Ω.",
+    "subject": "Science & Engineering",
+    "topic": "Range extension methods",
+    "subtopic": "Range extension methods",
+    "difficulty": "Hard",
+    "source_type": "ORIGINAL",
+    "source_reference": "Original SignalPrep challenge; CEN 02/2025 §13.1(A)(vi). Broad format informed by supplementary Grade-I paper copies, not a reproduced PYQ.",
+    "verification_status": "SOLUTION_CHECKED",
+    "generation_method": "syllabus-authored-v1",
+    "status": "ACTIVE",
+    "generation_metadata": {
+      "bank_track": "ORIGINAL_CHALLENGE",
+      "source_status": "ORIGINAL_CHALLENGE",
+      "syllabus_units": [
+        "science-range"
+      ],
+      "pattern_basis": "Grade-I multiple-choice conceptual/numerical format; official syllabus. No claim of official-paper provenance.",
+      "difficulty_status": "EDITORIAL_PROVISIONAL",
+      "difficulty_rationale": "Requires subtracting meter current from total current.",
+      "solution_check": "Worked solution checked during authoring; not independent human certification.",
+      "numeric_check": null
+    }
+  },
+  {
+    "id": "prep-pattern-015",
+    "question_text": "A 200-turn coil of area 0.01 m² is in a uniform field normal to its plane. Field strength falls uniformly from 0.5 T to 0.1 T in 0.02 s. What is the magnitude of average induced EMF?",
+    "option_a": "4 V",
+    "option_b": "20 V",
+    "option_c": "80 V",
+    "option_d": "40 V",
+    "correct_option": "D",
+    "explanation": "Faraday law gives |EMF|=NA|ΔB|/Δt=200×0.01×0.4/0.02=40 V.",
+    "subject": "Science & Engineering",
+    "topic": "Electromagnetic induction and Faraday law",
+    "subtopic": "Electromagnetic induction and Faraday law",
+    "difficulty": "Hard",
+    "source_type": "ORIGINAL",
+    "source_reference": "Original SignalPrep challenge; CEN 02/2025 §13.1(A)(vi). Broad format informed by supplementary Grade-I paper copies, not a reproduced PYQ.",
+    "verification_status": "SOLUTION_CHECKED",
+    "generation_method": "syllabus-authored-v1",
+    "status": "ACTIVE",
+    "generation_metadata": {
+      "bank_track": "ORIGINAL_CHALLENGE",
+      "source_status": "ORIGINAL_CHALLENGE",
+      "syllabus_units": [
+        "science-induction"
+      ],
+      "pattern_basis": "Grade-I multiple-choice conceptual/numerical format; official syllabus. No claim of official-paper provenance.",
+      "difficulty_status": "EDITORIAL_PROVISIONAL",
+      "difficulty_rationale": "Combines flux per turn with total linkage and rate of change.",
+      "solution_check": "Worked solution checked during authoring; not independent human certification.",
+      "numeric_check": {
+        "expression": "200*0.01*(0.5-0.1)/0.02",
+        "option_values": {
+          "A": 4,
+          "B": 20,
+          "C": 80,
+          "D": 40
+        }
+      }
+    }
+  },
+  {
+    "id": "prep-pattern-016",
+    "question_text": "A sine wave on a CRO spans 6 vertical divisions peak-to-peak and 4 horizontal divisions per cycle. Settings are 2 V/div and 0.5 ms/div. What are RMS voltage and frequency?",
+    "option_a": "6 V; 2000 Hz",
+    "option_b": "6√2 V; 500 Hz",
+    "option_c": "3√2 V; 500 Hz",
+    "option_d": "3√2 V; 250 Hz",
+    "correct_option": "C",
+    "explanation": "Vpp=12 V, so peak=6 V and RMS=6/√2=3√2 V. Period=4×0.5 ms=2 ms, so f=500 Hz.",
+    "subject": "Science & Engineering",
+    "topic": "Cathode ray oscilloscope",
+    "subtopic": "Cathode ray oscilloscope",
+    "difficulty": "Hard",
+    "source_type": "ORIGINAL",
+    "source_reference": "Original SignalPrep challenge; CEN 02/2025 §13.1(A)(vi). Broad format informed by supplementary Grade-I paper copies, not a reproduced PYQ.",
+    "verification_status": "SOLUTION_CHECKED",
+    "generation_method": "syllabus-authored-v1",
+    "status": "ACTIVE",
+    "generation_metadata": {
+      "bank_track": "ORIGINAL_CHALLENGE",
+      "source_status": "ORIGINAL_CHALLENGE",
+      "syllabus_units": [
+        "science-cro"
+      ],
+      "pattern_basis": "Grade-I multiple-choice conceptual/numerical format; official syllabus. No claim of official-paper provenance.",
+      "difficulty_status": "EDITORIAL_PROVISIONAL",
+      "difficulty_rationale": "Requires both vertical amplitude conversion and horizontal time interpretation.",
+      "solution_check": "Worked solution checked during authoring; not independent human certification.",
+      "numeric_check": null
+    }
+  },
+  {
+    "id": "prep-pattern-017",
+    "question_text": "An ideal sensor outputs 2 mV/°C with zero output at 0°C. Its amplifier has gain 50 and adds a 0.2 V output offset. If the measured output is 3.2 V, what is the temperature?",
+    "option_a": "30°C",
+    "option_b": "32°C",
+    "option_c": "60°C",
+    "option_d": "64°C",
+    "correct_option": "A",
+    "explanation": "Subtract the offset: 3.0 V. Divide by gain: sensor output=0.06 V=60 mV. Temperature=60/2=30°C.",
+    "subject": "Science & Engineering",
+    "topic": "Transducers",
+    "subtopic": "Transducers",
+    "difficulty": "Hard",
+    "source_type": "ORIGINAL",
+    "source_reference": "Original SignalPrep challenge; CEN 02/2025 §13.1(A)(vi). Broad format informed by supplementary Grade-I paper copies, not a reproduced PYQ.",
+    "verification_status": "SOLUTION_CHECKED",
+    "generation_method": "syllabus-authored-v1",
+    "status": "ACTIVE",
+    "generation_metadata": {
+      "bank_track": "ORIGINAL_CHALLENGE",
+      "source_status": "ORIGINAL_CHALLENGE",
+      "syllabus_units": [
+        "science-transducers"
+      ],
+      "pattern_basis": "Grade-I multiple-choice conceptual/numerical format; official syllabus. No claim of official-paper provenance.",
+      "difficulty_status": "EDITORIAL_PROVISIONAL",
+      "difficulty_rationale": "Requires reversing offset and gain in the correct order.",
+      "solution_check": "Worked solution checked during authoring; not independent human certification.",
+      "numeric_check": {
+        "expression": "(3.2-0.2)/50/0.002",
+        "option_values": {
+          "A": 30,
+          "B": 32,
+          "C": 60,
+          "D": 64
+        }
+      }
+    }
+  },
+  {
+    "id": "prep-pattern-018",
+    "question_text": "A logic function is F=AB+AC+BC. If A is stuck at logic 1, for which input pair (B,C) does the faulty output differ from the correct output when the intended A is 0?",
+    "option_a": "Only (1,1)",
+    "option_b": "Every input pair",
+    "option_c": "(0,1) and (1,0)",
+    "option_d": "Only (0,0)",
+    "correct_option": "C",
+    "explanation": "With intended A=0, F=BC. With stuck A=1, F=B+C. OR differs from AND exactly when B and C differ.",
+    "subject": "Science & Engineering",
+    "topic": "Digital electronics",
+    "subtopic": "Digital electronics",
+    "difficulty": "Hard",
+    "source_type": "ORIGINAL",
+    "source_reference": "Original SignalPrep challenge; CEN 02/2025 §13.1(A)(vi). Broad format informed by supplementary Grade-I paper copies, not a reproduced PYQ.",
+    "verification_status": "SOLUTION_CHECKED",
+    "generation_method": "syllabus-authored-v1",
+    "status": "ACTIVE",
+    "generation_metadata": {
+      "bank_track": "ORIGINAL_CHALLENGE",
+      "source_status": "ORIGINAL_CHALLENGE",
+      "syllabus_units": [
+        "science-digital"
+      ],
+      "pattern_basis": "Grade-I multiple-choice conceptual/numerical format; official syllabus. No claim of official-paper provenance.",
+      "difficulty_status": "EDITORIAL_PROVISIONAL",
+      "difficulty_rationale": "Combines Boolean simplification with fault detection.",
+      "solution_check": "Worked solution checked during authoring; not independent human certification.",
+      "numeric_check": null
+    }
+  },
+  {
+    "id": "prep-pattern-019",
+    "question_text": "A 2 kg block starts from rest on a horizontal surface. A 10 N horizontal force moves it 5 m against constant 2 N friction. What is its final speed?",
+    "option_a": "10 m/s",
+    "option_b": "5√2 m/s",
+    "option_c": "2√10 m/s",
+    "option_d": "√10 m/s",
+    "correct_option": "C",
+    "explanation": "Net work=(10−2)×5=40 J. From ½×2×v²=40, v=√40=2√10 m/s.",
+    "subject": "Science & Engineering",
+    "topic": "Work, power and energy",
+    "subtopic": "Work, power and energy",
+    "difficulty": "Hard",
+    "source_type": "ORIGINAL",
+    "source_reference": "Original SignalPrep challenge; CEN 02/2025 §13.1(A)(vi). Broad format informed by supplementary Grade-I paper copies, not a reproduced PYQ.",
+    "verification_status": "SOLUTION_CHECKED",
+    "generation_method": "syllabus-authored-v1",
+    "status": "ACTIVE",
+    "generation_metadata": {
+      "bank_track": "ORIGINAL_CHALLENGE",
+      "source_status": "ORIGINAL_CHALLENGE",
+      "syllabus_units": [
+        "science-work"
+      ],
+      "pattern_basis": "Grade-I multiple-choice conceptual/numerical format; official syllabus. No claim of official-paper provenance.",
+      "difficulty_status": "EDITORIAL_PROVISIONAL",
+      "difficulty_rationale": "Requires net work rather than work by the applied force alone.",
+      "solution_check": "Worked solution checked during authoring; not independent human certification.",
+      "numeric_check": null
+    }
+  },
+  {
+    "id": "prep-pattern-020",
+    "question_text": "A 100 g metal block at 100°C is placed in 200 g water at 20°C. Equilibrium is 25°C. Ignore heat loss and container heat capacity; take water specific heat as 4.2 J/(g·°C). What is the metal specific heat?",
+    "option_a": "4.20 J/(g·°C)",
+    "option_b": "1.12 J/(g·°C)",
+    "option_c": "0.28 J/(g·°C)",
+    "option_d": "0.56 J/(g·°C)",
+    "correct_option": "D",
+    "explanation": "Water gains 200×4.2×5=4200 J. Metal loses 100×c×75. Equating gives c=4200/7500=0.56 J/(g·°C).",
+    "subject": "Science & Engineering",
+    "topic": "Heat and temperature",
+    "subtopic": "Heat and temperature",
+    "difficulty": "Hard",
+    "source_type": "ORIGINAL",
+    "source_reference": "Original SignalPrep challenge; CEN 02/2025 §13.1(A)(vi). Broad format informed by supplementary Grade-I paper copies, not a reproduced PYQ.",
+    "verification_status": "SOLUTION_CHECKED",
+    "generation_method": "syllabus-authored-v1",
+    "status": "ACTIVE",
+    "generation_metadata": {
+      "bank_track": "ORIGINAL_CHALLENGE",
+      "source_status": "ORIGINAL_CHALLENGE",
+      "syllabus_units": [
+        "science-heat"
+      ],
+      "pattern_basis": "Grade-I multiple-choice conceptual/numerical format; official syllabus. No claim of official-paper provenance.",
+      "difficulty_status": "EDITORIAL_PROVISIONAL",
+      "difficulty_rationale": "Balances two different temperature changes.",
+      "solution_check": "Worked solution checked during authoring; not independent human certification.",
+      "numeric_check": {
+        "expression": "200*4.2*5/(100*75)",
+        "option_values": {
+          "A": 4.2,
+          "B": 1.12,
+          "C": 0.28,
+          "D": 0.56
+        }
+      }
+    }
+  },
+  {
+    "id": "supp-2024-s1-054",
+    "question_text": "Convert binary number 1101.1101 into decimal equivalent.",
+    "option_a": "12.8125",
+    "option_b": "13.8125",
+    "option_c": "12.625",
+    "option_d": "13.625",
+    "correct_option": "B",
+    "explanation": "Integer part: 8+4+1=13. Fraction: 1/2+1/4+1/16=0.8125. Total=13.8125.",
+    "subject": "Computers",
+    "topic": "Data representation",
+    "subtopic": "Data representation",
+    "difficulty": "Medium",
+    "source_type": "SUPPLEMENTARY",
+    "source_reference": "https://www.careerpower.in/blog/wp-content/uploads/2024/12/26134116/RRB-Technician-Grade-1-19-December-2024-shift-1.pdf#question-54",
+    "exam_year": 2024,
+    "shift": "1",
+    "verification_status": "UNVERIFIED_SOURCE",
+    "generation_method": "supplementary-excerpt",
+    "status": "ACTIVE",
+    "generation_metadata": {
+      "bank_track": "SUPPLEMENTARY",
+      "source_status": "RECONSTRUCTED_UNVERIFIED",
+      "source_id": "cp2024",
+      "question_number": 54,
+      "syllabus_units": [
+        "computers-representation"
+      ],
+      "answer_status": "INDEPENDENTLY_SOLVED_NOT_OFFICIAL_KEY",
+      "note": "Third-party paper copy; official provenance not confirmed. Treated as reconstructed supplementary content, not a verified PYQ."
+    }
+  },
+  {
+    "id": "supp-2026-s1-092",
+    "question_text": "Which device converts mechanical energy into electrical energy through electromagnetic induction?",
+    "option_a": "Battery",
+    "option_b": "Electric motor",
+    "option_c": "Electric generator",
+    "option_d": "Capacitor",
+    "correct_option": "C",
+    "explanation": "A generator changes magnetic flux through a circuit to induce EMF while mechanical work supplies electrical energy. A motor performs the reverse conversion.",
+    "subject": "Science & Engineering",
+    "topic": "Electromagnetic induction and Faraday law",
+    "subtopic": "Electromagnetic induction and Faraday law",
+    "difficulty": "Medium",
+    "source_type": "SUPPLEMENTARY",
+    "source_reference": "https://www.careerpower.in/blog/wp-content/uploads/2026/03/28105843/RRB_Technician_Grade_01_Questions-Paper-13-03-2026-S1-English.pdf#question-92",
+    "exam_year": 2026,
+    "shift": "1",
+    "verification_status": "KEY_CONFLICT",
+    "generation_method": "supplementary-excerpt",
+    "status": "PENDING_REVIEW",
+    "generation_metadata": {
+      "bank_track": "SUPPLEMENTARY",
+      "source_status": "RECONSTRUCTED_UNVERIFIED",
+      "source_id": "cp2026",
+      "question_number": 92,
+      "syllabus_units": [
+        "science-induction"
+      ],
+      "answer_status": "KEY_CONFLICT",
+      "note": "Third-party paper copy; official provenance not confirmed. Treated as reconstructed supplementary content, not a verified PYQ.",
+      "published_marked_option": "B",
+      "independently_solved_option": "C",
+      "key_review_note": "Visual PDF p.16 marks Electric motor. Independent solution is Electric generator. The source marking is not accepted as an official key. Human review required."
+    }
+  },
+  {
+    "id": "signalprep-original-b01-001",
+    "question_text": "Let x = 0.272727..., where the block 27 repeats forever. What is x + 1/11 in lowest terms?",
+    "option_a": "3/11",
+    "option_b": "4/11",
+    "option_c": "28/99",
+    "option_d": "2/11",
+    "correct_option": "B",
+    "explanation": "100x = 27.272727...; subtract x to get 99x = 27. Thus x = 27/99 = 3/11. Then 3/11 + 1/11 = 4/11. 4/11 is the required sum and is already in lowest terms.",
+    "subject": "Mathematics",
+    "topic": "Number System",
+    "subtopic": "Rational numbers and recurring decimals",
+    "difficulty": "Medium",
+    "source_type": "ORIGINAL",
+    "source_reference": "Original SignalPrep question aligned to CEN 02/2025 using the project syllabus registry; NOT a reproduced PYQ.",
+    "verification_status": "SOLUTION_CHECKED",
+    "generation_method": "original-syllabus-authoring-batch01; independently recomputed by Python checks; editorial solution review",
+    "status": "ACTIVE",
+    "concept": "A recurring decimal can be written as a fraction.",
+    "formula": "100x - x = 27; add fractions with a common denominator.",
+    "given": "x = 0.272727...; add 1/11.",
+    "calculation": "100x = 27.272727...; subtract x to get 99x = 27. Thus x = 27/99 = 3/11. Then 3/11 + 1/11 = 4/11.",
+    "final_answer": "4/11",
+    "why_correct": "4/11 is the required sum and is already in lowest terms.",
+    "why_wrong": {
+      "A": "3/11 is x before adding 1/11.",
+      "B": "This is the correct option; it gives the sum 4/11.",
+      "C": "1/11 is 9/99, not 1/99; the numerator must be 36, not 28.",
+      "D": "2/11 results from subtracting 1/11 instead of adding it."
+    },
+    "generation_metadata": {
+      "bank_track": "ORIGINAL",
+      "syllabus_units": [
+        "mathematics-numbers"
+      ],
+      "difficulty_status": "EDITORIAL_PROVISIONAL"
+    }
+  },
+  {
+    "id": "signalprep-original-b01-002",
+    "question_text": "Evaluate 48 ÷ 6 × 2 - (7 - 3)².",
+    "option_a": "0",
+    "option_b": "12",
+    "option_c": "-12",
+    "option_d": "16",
+    "correct_option": "A",
+    "explanation": "(7 - 3)² = 4² = 16. Also 48 ÷ 6 × 2 = 8 × 2 = 16. Therefore 16 - 16 = 0. Following the operation order gives exactly 0.",
+    "subject": "Mathematics",
+    "topic": "BODMAS",
+    "subtopic": "Equal-precedence operations",
+    "difficulty": "Easy",
+    "source_type": "ORIGINAL",
+    "source_reference": "Original SignalPrep question aligned to CEN 02/2025 using the project syllabus registry; NOT a reproduced PYQ.",
+    "verification_status": "SOLUTION_CHECKED",
+    "generation_method": "original-syllabus-authoring-batch01; independently recomputed by Python checks; editorial solution review",
+    "status": "ACTIVE",
+    "concept": "Division and multiplication have equal priority and run left to right.",
+    "formula": "Brackets, powers, multiplication/division left to right, then subtraction.",
+    "given": "48 ÷ 6 × 2 - (7 - 3)².",
+    "calculation": "(7 - 3)² = 4² = 16. Also 48 ÷ 6 × 2 = 8 × 2 = 16. Therefore 16 - 16 = 0.",
+    "final_answer": "0",
+    "why_correct": "Following the operation order gives exactly 0.",
+    "why_wrong": {
+      "A": "This is correct: both parts equal 16.",
+      "B": "12 results from subtracting 4 without squaring it.",
+      "C": "-12 comes from incorrectly dividing 48 by (6 × 2).",
+      "D": "16 is the first part only; the squared bracket must be subtracted."
+    },
+    "generation_metadata": {
+      "bank_track": "ORIGINAL",
+      "syllabus_units": [
+        "mathematics-bodmas"
+      ],
+      "difficulty_status": "EDITORIAL_PROVISIONAL"
+    }
+  },
+  {
+    "id": "signalprep-original-b01-003",
+    "question_text": "In an arithmetic progression, the 4th term is 14 and the 9th term is 34. What is the sum of its first 10 terms?",
+    "option_a": "180",
+    "option_b": "220",
+    "option_c": "200",
+    "option_d": "240",
+    "correct_option": "C",
+    "explanation": "Five differences give 34 - 14 = 20, so d = 4. The first term is a = 14 - 3 × 4 = 2. S_10 = 10[2 × 2 + 9 × 4]/2 = 5 × 40 = 200. The terms run from 2 to 38; their average is 20 and their sum is 200.",
+    "subject": "Mathematics",
+    "topic": "Arithmetic Progression",
+    "subtopic": "Sum from two known terms",
+    "difficulty": "Medium",
+    "source_type": "ORIGINAL",
+    "source_reference": "Original SignalPrep question aligned to CEN 02/2025 using the project syllabus registry; NOT a reproduced PYQ.",
+    "verification_status": "SOLUTION_CHECKED",
+    "generation_method": "original-syllabus-authoring-batch01; independently recomputed by Python checks; editorial solution review",
+    "status": "ACTIVE",
+    "concept": "Terms increase by one constant difference.",
+    "formula": "a_n = a + (n-1)d; S_n = n[2a + (n-1)d]/2.",
+    "given": "a_4 = 14; a_9 = 34; n = 10.",
+    "calculation": "Five differences give 34 - 14 = 20, so d = 4. The first term is a = 14 - 3 × 4 = 2. S_10 = 10[2 × 2 + 9 × 4]/2 = 5 × 40 = 200.",
+    "final_answer": "200",
+    "why_correct": "The terms run from 2 to 38; their average is 20 and their sum is 200.",
+    "why_wrong": {
+      "A": "180 omits the first-term contribution of 20 in the sum formula.",
+      "B": "220 uses a first term of 4 instead of 2.",
+      "C": "This is correct: 10 terms with average 20 total 200.",
+      "D": "240 uses 10d instead of 9d inside the sum formula."
+    },
+    "generation_metadata": {
+      "bank_track": "ORIGINAL",
+      "syllabus_units": [
+        "mathematics-ap"
+      ],
+      "difficulty_status": "EDITORIAL_PROVISIONAL"
+    }
+  },
+  {
+    "id": "signalprep-original-b01-004",
+    "question_text": "A rectangular board has a diagonal of 25 cm and one side of 7 cm. What is its perimeter?",
+    "option_a": "48 cm",
+    "option_b": "50 cm",
+    "option_c": "56 cm",
+    "option_d": "62 cm",
+    "correct_option": "D",
+    "explanation": "Other side = √(25² - 7²) = √(625 - 49) = √576 = 24 cm. Perimeter = 2(24 + 7) = 62 cm. Both pairs of sides are included, giving a perimeter in cm.",
+    "subject": "Mathematics",
+    "topic": "Pythagoras Theorem",
+    "subtopic": "Length of a rectangle side",
+    "difficulty": "Easy",
+    "source_type": "ORIGINAL",
+    "source_reference": "Original SignalPrep question aligned to CEN 02/2025 using the project syllabus registry; NOT a reproduced PYQ.",
+    "verification_status": "SOLUTION_CHECKED",
+    "generation_method": "original-syllabus-authoring-batch01; independently recomputed by Python checks; editorial solution review",
+    "status": "ACTIVE",
+    "concept": "A diagonal divides a rectangle into right triangles.",
+    "formula": "Other side = √(diagonal² - known side²); perimeter = 2(length + width).",
+    "given": "Diagonal 25 cm; side 7 cm.",
+    "calculation": "Other side = √(25² - 7²) = √(625 - 49) = √576 = 24 cm. Perimeter = 2(24 + 7) = 62 cm.",
+    "final_answer": "62 cm",
+    "why_correct": "Both pairs of sides are included, giving a perimeter in cm.",
+    "why_wrong": {
+      "A": "48 cm counts only the two longer sides.",
+      "B": "50 cm doubles the diagonal, not the sum of adjacent sides.",
+      "C": "56 cm is not 2(24 + 7).",
+      "D": "This is correct: 24 + 7 + 24 + 7 = 62 cm."
+    },
+    "generation_metadata": {
+      "bank_track": "ORIGINAL",
+      "syllabus_units": [
+        "mathematics-pythagoras"
+      ],
+      "difficulty_status": "EDITORIAL_PROVISIONAL"
+    }
+  },
+  {
+    "id": "signalprep-original-b01-005",
+    "question_text": "The midpoint of A(-4, 7) and B(k, -3) lies on the y-axis. What is k?",
+    "option_a": "-4",
+    "option_b": "4",
+    "option_c": "2",
+    "option_d": "0",
+    "correct_option": "B",
+    "explanation": "The midpoint is ((-4 + k)/2, (7 - 3)/2) = ((k - 4)/2, 2). Set its x-coordinate to 0: (k - 4)/2 = 0. Therefore k = 4. With k = 4 the midpoint is (0, 2), on the y-axis.",
+    "subject": "Mathematics",
+    "topic": "Coordinate Geometry",
+    "subtopic": "Midpoint on an axis",
+    "difficulty": "Medium",
+    "source_type": "ORIGINAL",
+    "source_reference": "Original SignalPrep question aligned to CEN 02/2025 using the project syllabus registry; NOT a reproduced PYQ.",
+    "verification_status": "SOLUTION_CHECKED",
+    "generation_method": "original-syllabus-authoring-batch01; independently recomputed by Python checks; editorial solution review",
+    "status": "ACTIVE",
+    "concept": "Every point on the y-axis has x-coordinate zero.",
+    "formula": "Midpoint x-coordinate = (x_1 + x_2)/2.",
+    "given": "A(-4, 7); B(k, -3); midpoint on y-axis.",
+    "calculation": "The midpoint is ((-4 + k)/2, (7 - 3)/2) = ((k - 4)/2, 2). Set its x-coordinate to 0: (k - 4)/2 = 0. Therefore k = 4.",
+    "final_answer": "4",
+    "why_correct": "With k = 4 the midpoint is (0, 2), on the y-axis.",
+    "why_wrong": {
+      "A": "k = -4 gives midpoint x = -4.",
+      "B": "This is correct: k = 4 gives midpoint x = 0.",
+      "C": "k = 2 gives midpoint x = -1.",
+      "D": "k = 0 gives midpoint x = -2."
+    },
+    "generation_metadata": {
+      "bank_track": "ORIGINAL",
+      "syllabus_units": [
+        "mathematics-coordinates"
+      ],
+      "difficulty_status": "EDITORIAL_PROVISIONAL"
+    }
+  },
+  {
+    "id": "signalprep-original-b01-006",
+    "question_text": "For an acute angle θ in a right triangle, tan θ = 5/12. What is sin θ + cos θ?",
+    "option_a": "17/12",
+    "option_b": "1",
+    "option_c": "7/13",
+    "option_d": "17/13",
+    "correct_option": "D",
+    "explanation": "Take opposite = 5u and adjacent = 12u for u > 0. Hypotenuse = √(25u² + 144u²) = 13u. Then sin θ + cos θ = 5/13 + 12/13 = 17/13. The common denominator for sine and cosine is the hypotenuse, 13u.",
+    "subject": "Mathematics",
+    "topic": "Trigonometric Ratios",
+    "subtopic": "Using a ratio to find another ratio",
+    "difficulty": "Medium",
+    "source_type": "ORIGINAL",
+    "source_reference": "Original SignalPrep question aligned to CEN 02/2025 using the project syllabus registry; NOT a reproduced PYQ.",
+    "verification_status": "SOLUTION_CHECKED",
+    "generation_method": "original-syllabus-authoring-batch01; independently recomputed by Python checks; editorial solution review",
+    "status": "ACTIVE",
+    "concept": "Tangent gives the ratio of opposite to adjacent sides.",
+    "formula": "tan θ = opposite/adjacent; sin θ = opposite/hypotenuse; cos θ = adjacent/hypotenuse.",
+    "given": "θ is acute; tan θ = 5/12.",
+    "calculation": "Take opposite = 5u and adjacent = 12u for u > 0. Hypotenuse = √(25u² + 144u²) = 13u. Then sin θ + cos θ = 5/13 + 12/13 = 17/13.",
+    "final_answer": "17/13",
+    "why_correct": "The common denominator for sine and cosine is the hypotenuse, 13u.",
+    "why_wrong": {
+      "A": "17/12 uses the adjacent side as the denominator for both ratios.",
+      "B": "sin² θ + cos² θ equals 1, but the question asks for sin θ + cos θ.",
+      "C": "7/13 is cos θ - sin θ.",
+      "D": "This is correct: (5 + 12)/13 = 17/13."
+    },
+    "generation_metadata": {
+      "bank_track": "ORIGINAL",
+      "syllabus_units": [
+        "mathematics-trigonometry"
+      ],
+      "difficulty_status": "EDITORIAL_PROVISIONAL"
+    }
+  },
+  {
+    "id": "signalprep-original-b01-007",
+    "question_text": "A solid metal cylinder of radius 3 cm and height 8 cm is melted into solid spheres of radius 1 cm each. With no metal lost, how many complete spheres are formed?",
+    "option_a": "54",
+    "option_b": "18",
+    "option_c": "72",
+    "option_d": "216",
+    "correct_option": "A",
+    "explanation": "Cylinder volume = π × 3² × 8 = 72π cm³. One sphere has volume 4π × 1³/3 = 4π/3 cm³. Count = 72π ÷ (4π/3) = 72 × 3/4 = 54. The volume ratio is the whole number 54; cm³ and π cancel.",
+    "subject": "Mathematics",
+    "topic": "Surface Area and Volume",
+    "subtopic": "Volume conservation",
+    "difficulty": "Medium",
+    "source_type": "ORIGINAL",
+    "source_reference": "Original SignalPrep question aligned to CEN 02/2025 using the project syllabus registry; NOT a reproduced PYQ.",
+    "verification_status": "SOLUTION_CHECKED",
+    "generation_method": "original-syllabus-authoring-batch01; independently recomputed by Python checks; editorial solution review",
+    "status": "ACTIVE",
+    "concept": "Total metal volume stays the same.",
+    "formula": "Cylinder V = πr²h; sphere V = 4πr³/3; count = cylinder volume/sphere volume.",
+    "given": "Cylinder r = 3 cm, h = 8 cm; sphere r = 1 cm; no loss.",
+    "calculation": "Cylinder volume = π × 3² × 8 = 72π cm³. One sphere has volume 4π × 1³/3 = 4π/3 cm³. Count = 72π ÷ (4π/3) = 72 × 3/4 = 54.",
+    "final_answer": "54",
+    "why_correct": "The volume ratio is the whole number 54; cm³ and π cancel.",
+    "why_wrong": {
+      "A": "This is correct: 54 spheres use 54 × 4π/3 = 72π cm³.",
+      "B": "18 omits the division by 3 in the sphere volume.",
+      "C": "72 treats each sphere as having volume π cm³.",
+      "D": "216 omits the factor 4 in the sphere volume."
+    },
+    "generation_metadata": {
+      "bank_track": "ORIGINAL",
+      "syllabus_units": [
+        "mathematics-mensuration"
+      ],
+      "difficulty_status": "EDITORIAL_PROVISIONAL"
+    }
+  },
+  {
+    "id": "signalprep-original-b01-008",
+    "question_text": "The five readings are 2, 4, 4, 5 and 10. What is their mean absolute deviation about the arithmetic mean?",
+    "option_a": "2",
+    "option_b": "6",
+    "option_c": "2.4",
+    "option_d": "3",
+    "correct_option": "A",
+    "explanation": "Mean = (2 + 4 + 4 + 5 + 10)/5 = 25/5 = 5. Absolute deviations are 3, 1, 1, 0 and 5. Their sum is 10, so mean absolute deviation = 10/5 = 2. Absolute deviations are averaged, rather than squared deviations.",
+    "subject": "Mathematics",
+    "topic": "Statistics",
+    "subtopic": "Mean absolute deviation",
+    "difficulty": "Medium",
+    "source_type": "ORIGINAL",
+    "source_reference": "Original SignalPrep question aligned to CEN 02/2025 using the project syllabus registry; NOT a reproduced PYQ.",
+    "verification_status": "SOLUTION_CHECKED",
+    "generation_method": "original-syllabus-authoring-batch01; independently recomputed by Python checks; editorial solution review",
+    "status": "ACTIVE",
+    "concept": "Average the absolute distances from the mean.",
+    "formula": "Mean = Σx/n; mean absolute deviation = Σ|x - mean|/n.",
+    "given": "Readings 2, 4, 4, 5, 10; n = 5.",
+    "calculation": "Mean = (2 + 4 + 4 + 5 + 10)/5 = 25/5 = 5. Absolute deviations are 3, 1, 1, 0 and 5. Their sum is 10, so mean absolute deviation = 10/5 = 2.",
+    "final_answer": "2",
+    "why_correct": "Absolute deviations are averaged, rather than squared deviations.",
+    "why_wrong": {
+      "A": "This is correct: 10/5 = 2.",
+      "B": "6 does not equal the average of the five absolute deviations.",
+      "C": "2.4 is not 10/5.",
+      "D": "3 is the first reading’s absolute deviation, not the average."
+    },
+    "generation_metadata": {
+      "bank_track": "ORIGINAL",
+      "syllabus_units": [
+        "mathematics-dispersion"
+      ],
+      "difficulty_status": "EDITORIAL_PROVISIONAL"
+    }
+  },
+  {
+    "id": "signalprep-original-b01-009",
+    "question_text": "One card is selected uniformly at random from 12 cards numbered 1 to 12. What is the probability that its number is divisible by 2 or by 3, including numbers divisible by both?",
+    "option_a": "5/6",
+    "option_b": "1/2",
+    "option_c": "1/3",
+    "option_d": "2/3",
+    "correct_option": "D",
+    "explanation": "There are 6 multiples of 2 and 4 multiples of 3. The 2 multiples of 6 belong to both lists. Favourable count = 6 + 4 - 2 = 8. Probability = 8/12 = 2/3. The favourable cards are 2, 3, 4, 6, 8, 9, 10 and 12.",
+    "subject": "Mathematics",
+    "topic": "Probability",
+    "subtopic": "Union of overlapping events",
+    "difficulty": "Medium",
+    "source_type": "ORIGINAL",
+    "source_reference": "Original SignalPrep question aligned to CEN 02/2025 using the project syllabus registry; NOT a reproduced PYQ.",
+    "verification_status": "SOLUTION_CHECKED",
+    "generation_method": "original-syllabus-authoring-batch01; independently recomputed by Python checks; editorial solution review",
+    "status": "ACTIVE",
+    "concept": "Count the overlap once when joining events.",
+    "formula": "P(A or B) = [count(A) + count(B) - count(A and B)]/total.",
+    "given": "12 equally likely cards; divisible by 2 or 3.",
+    "calculation": "There are 6 multiples of 2 and 4 multiples of 3. The 2 multiples of 6 belong to both lists. Favourable count = 6 + 4 - 2 = 8. Probability = 8/12 = 2/3.",
+    "final_answer": "2/3",
+    "why_correct": "The favourable cards are 2, 3, 4, 6, 8, 9, 10 and 12.",
+    "why_wrong": {
+      "A": "5/6 counts 6 and 12 twice.",
+      "B": "1/2 counts only multiples of 2.",
+      "C": "1/3 counts only multiples of 3.",
+      "D": "This is correct: 8 of the 12 cards qualify."
+    },
+    "generation_metadata": {
+      "bank_track": "ORIGINAL",
+      "syllabus_units": [
+        "mathematics-probability"
+      ],
+      "difficulty_status": "EDITORIAL_PROVISIONAL"
+    }
+  },
+  {
+    "id": "signalprep-original-b01-010",
+    "question_text": "Two similar triangles have areas 49 cm² and 81 cm². A side of the smaller triangle is 14 cm. How long is the corresponding side of the larger triangle?",
+    "option_a": "18 cm",
+    "option_b": "162/7 cm",
+    "option_c": "126 cm",
+    "option_d": "14 cm",
+    "correct_option": "A",
+    "explanation": "Length scale factor = √(81/49) = 9/7. Larger side = 14 × 9/7 = 18 cm. The side length scales by 9/7, while area scales by 81/49.",
+    "subject": "Mathematics",
+    "topic": "Similar Triangles",
+    "subtopic": "Area and corresponding-side ratios",
+    "difficulty": "Medium",
+    "source_type": "ORIGINAL",
+    "source_reference": "Original SignalPrep question aligned to CEN 02/2025 using the project syllabus registry; NOT a reproduced PYQ.",
+    "verification_status": "SOLUTION_CHECKED",
+    "generation_method": "original-syllabus-authoring-batch01; independently recomputed by Python checks; editorial solution review",
+    "status": "ACTIVE",
+    "concept": "Areas scale as the square of corresponding side lengths.",
+    "formula": "Larger side/smaller side = √(larger area/smaller area).",
+    "given": "Areas 49 and 81 cm²; smaller corresponding side 14 cm.",
+    "calculation": "Length scale factor = √(81/49) = 9/7. Larger side = 14 × 9/7 = 18 cm.",
+    "final_answer": "18 cm",
+    "why_correct": "The side length scales by 9/7, while area scales by 81/49.",
+    "why_wrong": {
+      "A": "This is correct: 14 × 9/7 = 18 cm.",
+      "B": "162/7 cm uses the area ratio directly as a length ratio.",
+      "C": "126 cm multiplies by 9 without dividing by 7.",
+      "D": "14 cm would mean a scale factor of 1 and equal areas."
+    },
+    "generation_metadata": {
+      "bank_track": "ORIGINAL",
+      "syllabus_units": [
+        "mathematics-triangles"
+      ],
+      "difficulty_status": "EDITORIAL_PROVISIONAL"
+    }
+  },
+  {
+    "id": "signalprep-original-b01-011",
+    "question_text": "A sequence starts at 5 and repeatedly applies ×2, then +3, then ×2, then +3, and so on. Its terms begin 5, 10, 13, 26, 29. What is the next term?",
+    "option_a": "32",
+    "option_b": "58",
+    "option_c": "55",
+    "option_d": "87",
+    "correct_option": "B",
+    "explanation": "5 × 2 = 10; 10 + 3 = 13; 13 × 2 = 26; 26 + 3 = 29. Next, 29 × 2 = 58. The last step was +3, so the next step must be ×2.",
+    "subject": "Reasoning",
+    "topic": "Number Series",
+    "subtopic": "Alternating operations",
+    "difficulty": "Easy",
+    "source_type": "ORIGINAL",
+    "source_reference": "Original SignalPrep question aligned to CEN 02/2025 using the project syllabus registry; NOT a reproduced PYQ.",
+    "verification_status": "SOLUTION_CHECKED",
+    "generation_method": "original-syllabus-authoring-batch01; independently recomputed by Python checks; editorial solution review",
+    "status": "ACTIVE",
+    "concept": "Follow the stated alternating rule.",
+    "formula": "Alternate a_next = 2a and a_next = a + 3.",
+    "given": "5, 10, 13, 26, 29; next operation is ×2.",
+    "calculation": "5 × 2 = 10; 10 + 3 = 13; 13 × 2 = 26; 26 + 3 = 29. Next, 29 × 2 = 58.",
+    "final_answer": "58",
+    "why_correct": "The last step was +3, so the next step must be ×2.",
+    "why_wrong": {
+      "A": "32 applies +3 twice in succession.",
+      "B": "This is correct: 29 × 2 = 58.",
+      "C": "55 is not 29 × 2.",
+      "D": "87 multiplies by 3 rather than 2."
+    },
+    "generation_metadata": {
+      "bank_track": "ORIGINAL",
+      "syllabus_units": [
+        "reasoning-series"
+      ],
+      "difficulty_status": "EDITORIAL_PROVISIONAL"
+    }
+  },
+  {
+    "id": "signalprep-original-b01-012",
+    "question_text": "A code first reverses a word and then replaces each letter with the next letter in the English alphabet, with Z becoming A. How is TRACK coded?",
+    "option_a": "USBDL",
+    "option_b": "KCART",
+    "option_c": "LDBSU",
+    "option_d": "JBZQS",
+    "correct_option": "C",
+    "explanation": "TRACK reversed is KCART. Shift K→L, C→D, A→B, R→S and T→U. The code is LDBSU. Each position follows the reverse-then-shift rule.",
+    "subject": "Reasoning",
+    "topic": "Coding-Decoding",
+    "subtopic": "Reverse and shift letters",
+    "difficulty": "Medium",
+    "source_type": "ORIGINAL",
+    "source_reference": "Original SignalPrep question aligned to CEN 02/2025 using the project syllabus registry; NOT a reproduced PYQ.",
+    "verification_status": "SOLUTION_CHECKED",
+    "generation_method": "original-syllabus-authoring-batch01; independently recomputed by Python checks; editorial solution review",
+    "status": "ACTIVE",
+    "concept": "Apply the two coding steps in their stated order.",
+    "formula": "Reverse the letters; shift each letter forward by one, cyclically.",
+    "given": "Word TRACK; reverse, then shift +1.",
+    "calculation": "TRACK reversed is KCART. Shift K→L, C→D, A→B, R→S and T→U. The code is LDBSU.",
+    "final_answer": "LDBSU",
+    "why_correct": "Each position follows the reverse-then-shift rule.",
+    "why_wrong": {
+      "A": "USBDL shifts the original word without reversing it.",
+      "B": "KCART is only the reversed word, before shifting.",
+      "C": "This is correct: KCART becomes LDBSU.",
+      "D": "JBZQS shifts the reversed word backward, not forward."
+    },
+    "generation_metadata": {
+      "bank_track": "ORIGINAL",
+      "syllabus_units": [
+        "reasoning-coding"
+      ],
+      "difficulty_status": "EDITORIAL_PROVISIONAL"
+    }
+  },
+  {
+    "id": "signalprep-original-b01-013",
+    "question_text": "Meena starts facing north. She walks 6 m, turns right and walks 4 m, turns right and walks 9 m, then turns right and walks 4 m. Where is she relative to her starting point?",
+    "option_a": "3 m north",
+    "option_b": "6 m south",
+    "option_c": "9 m south",
+    "option_d": "3 m south",
+    "correct_option": "D",
+    "explanation": "East-west displacement = 4 - 4 = 0 m. North-south displacement = 6 - 9 = -3 m. Therefore she is 3 m south of the start. The horizontal movements cancel and the southward movement exceeds the northward movement by 3 m.",
+    "subject": "Reasoning",
+    "topic": "Directions",
+    "subtopic": "Turning and net displacement",
+    "difficulty": "Medium",
+    "source_type": "ORIGINAL",
+    "source_reference": "Original SignalPrep question aligned to CEN 02/2025 using the project syllabus registry; NOT a reproduced PYQ.",
+    "verification_status": "SOLUTION_CHECKED",
+    "generation_method": "original-syllabus-authoring-batch01; independently recomputed by Python checks; editorial solution review",
+    "status": "ACTIVE",
+    "concept": "Track north-south and east-west movements separately.",
+    "formula": "Net north = north distance - south distance; net east = east distance - west distance.",
+    "given": "Moves 6 m north, 4 m east, 9 m south, 4 m west.",
+    "calculation": "East-west displacement = 4 - 4 = 0 m. North-south displacement = 6 - 9 = -3 m. Therefore she is 3 m south of the start.",
+    "final_answer": "3 m south",
+    "why_correct": "The horizontal movements cancel and the southward movement exceeds the northward movement by 3 m.",
+    "why_wrong": {
+      "A": "3 m north has the direction reversed.",
+      "B": "6 m south is not the net vertical displacement.",
+      "C": "9 m south ignores the first 6 m north.",
+      "D": "This is correct: net displacement is 3 m south."
+    },
+    "generation_metadata": {
+      "bank_track": "ORIGINAL",
+      "syllabus_units": [
+        "reasoning-directions"
+      ],
+      "difficulty_status": "EDITORIAL_PROVISIONAL"
+    }
+  },
+  {
+    "id": "signalprep-original-b01-014",
+    "question_text": "In a queue of 30 people, Anil is 8th from the front and Bina is 10th from the back. How many people stand strictly between them?",
+    "option_a": "12",
+    "option_b": "13",
+    "option_c": "11",
+    "option_d": "14",
+    "correct_option": "A",
+    "explanation": "Bina’s front rank = 30 - 10 + 1 = 21. People strictly between = 21 - 8 - 1 = 12. The intervening people occupy positions 9 through 20, which is 12 people.",
+    "subject": "Reasoning",
+    "topic": "Ranking/Ordering",
+    "subtopic": "Counting people between two ranks",
+    "difficulty": "Medium",
+    "source_type": "ORIGINAL",
+    "source_reference": "Original SignalPrep question aligned to CEN 02/2025 using the project syllabus registry; NOT a reproduced PYQ.",
+    "verification_status": "SOLUTION_CHECKED",
+    "generation_method": "original-syllabus-authoring-batch01; independently recomputed by Python checks; editorial solution review",
+    "status": "ACTIVE",
+    "concept": "Convert both positions to the same end before subtracting.",
+    "formula": "Front position = total - back position + 1; people between = |p_2 - p_1| - 1.",
+    "given": "Total 30; Anil front rank 8; Bina back rank 10.",
+    "calculation": "Bina’s front rank = 30 - 10 + 1 = 21. People strictly between = 21 - 8 - 1 = 12.",
+    "final_answer": "12",
+    "why_correct": "The intervening people occupy positions 9 through 20, which is 12 people.",
+    "why_wrong": {
+      "A": "This is correct: positions 9–20 give 12 people.",
+      "B": "13 is the difference between the ranks, before excluding an endpoint.",
+      "C": "11 comes from omitting +1 when converting Bina’s rank.",
+      "D": "14 counts both Anil and Bina along with the people between."
+    },
+    "generation_metadata": {
+      "bank_track": "ORIGINAL",
+      "syllabus_units": [
+        "reasoning-analytical"
+      ],
+      "difficulty_status": "EDITORIAL_PROVISIONAL"
+    }
+  },
+  {
+    "id": "signalprep-original-b01-015",
+    "question_text": "Three of these numbers are prime and one is composite. Which is the composite number?",
+    "option_a": "29",
+    "option_b": "43",
+    "option_c": "51",
+    "option_d": "61",
+    "correct_option": "C",
+    "explanation": "51 = 3 × 17, so it is composite. For 29 and 43, tests by 2, 3 and 5 find no divisor. For 61, tests by 2, 3, 5 and 7 find no divisor. These tests cover primes up to each square root. Only 51 has a factor pair other than 1 and itself.",
+    "subject": "Reasoning",
+    "topic": "Classification",
+    "subtopic": "Prime versus composite numbers",
+    "difficulty": "Easy",
+    "source_type": "ORIGINAL",
+    "source_reference": "Original SignalPrep question aligned to CEN 02/2025 using the project syllabus registry; NOT a reproduced PYQ.",
+    "verification_status": "SOLUTION_CHECKED",
+    "generation_method": "original-syllabus-authoring-batch01; independently recomputed by Python checks; editorial solution review",
+    "status": "ACTIVE",
+    "concept": "A composite positive integer has a divisor other than 1 and itself.",
+    "formula": "Check prime divisors up to the square root of each number.",
+    "given": "Options 29, 43, 51 and 61.",
+    "calculation": "51 = 3 × 17, so it is composite. For 29 and 43, tests by 2, 3 and 5 find no divisor. For 61, tests by 2, 3, 5 and 7 find no divisor. These tests cover primes up to each square root.",
+    "final_answer": "51",
+    "why_correct": "Only 51 has a factor pair other than 1 and itself.",
+    "why_wrong": {
+      "A": "29 is prime.",
+      "B": "43 is prime.",
+      "C": "This is correct: 51 = 3 × 17.",
+      "D": "61 is prime."
+    },
+    "generation_metadata": {
+      "bank_track": "ORIGINAL",
+      "syllabus_units": [
+        "reasoning-classification"
+      ],
+      "difficulty_status": "EDITORIAL_PROVISIONAL"
+    }
+  },
+  {
+    "id": "signalprep-original-b01-016",
+    "question_text": "Ravi is the brother of Sita. Sita is the mother of Kiran. How is Ravi related to Kiran?",
+    "option_a": "Father",
+    "option_b": "Maternal uncle",
+    "option_c": "Brother",
+    "option_d": "Maternal grandfather",
+    "correct_option": "B",
+    "explanation": "Kiran’s mother is Sita. Sita’s brother is Ravi. Therefore Ravi is Kiran’s maternal uncle. The relationship follows directly through Kiran’s mother.",
+    "subject": "Reasoning",
+    "topic": "Relationships",
+    "subtopic": "Family-tree deduction",
+    "difficulty": "Easy",
+    "source_type": "ORIGINAL",
+    "source_reference": "Original SignalPrep question aligned to CEN 02/2025 using the project syllabus registry; NOT a reproduced PYQ.",
+    "verification_status": "SOLUTION_CHECKED",
+    "generation_method": "original-syllabus-authoring-batch01; independently recomputed by Python checks; editorial solution review",
+    "status": "ACTIVE",
+    "concept": "A mother’s brother is a maternal uncle.",
+    "formula": "Family rule: brother of mother = maternal uncle.",
+    "given": "Ravi is Sita’s brother; Sita is Kiran’s mother.",
+    "calculation": "Kiran’s mother is Sita. Sita’s brother is Ravi. Therefore Ravi is Kiran’s maternal uncle.",
+    "final_answer": "Maternal uncle",
+    "why_correct": "The relationship follows directly through Kiran’s mother.",
+    "why_wrong": {
+      "A": "The statements identify Ravi as the mother’s brother, not the father.",
+      "B": "This is correct: Ravi is the brother of Kiran’s mother.",
+      "C": "Ravi is Sita’s brother, not Kiran’s brother.",
+      "D": "A maternal grandfather is the mother’s father, not her brother."
+    },
+    "generation_metadata": {
+      "bank_track": "ORIGINAL",
+      "syllabus_units": [
+        "reasoning-relations"
+      ],
+      "difficulty_status": "EDITORIAL_PROVISIONAL"
+    }
+  },
+  {
+    "id": "signalprep-original-b01-017",
+    "question_text": "Given: All painters are artists. Some artists are musicians. Conclusions: I. Some painters are musicians. II. Some musicians are artists. Using only the given statements, which conclusion must follow?",
+    "option_a": "Only I",
+    "option_b": "Both I and II",
+    "option_c": "Neither I nor II",
+    "option_d": "Only II",
+    "correct_option": "D",
+    "explanation": "The artist who is a musician is also a musician who is an artist, so II follows. The given artist-musician may not be a painter, so I does not have to follow. II is guaranteed by the stated overlap. I is not guaranteed.",
+    "subject": "Reasoning",
+    "topic": "Syllogism/Conclusions",
+    "subtopic": "Testing whether overlap is forced",
+    "difficulty": "Medium",
+    "source_type": "ORIGINAL",
+    "source_reference": "Original SignalPrep question aligned to CEN 02/2025 using the project syllabus registry; NOT a reproduced PYQ.",
+    "verification_status": "SOLUTION_CHECKED",
+    "generation_method": "original-syllabus-authoring-batch01; independently recomputed by Python checks; editorial solution review",
+    "status": "ACTIVE",
+    "concept": "A known overlap can be reversed, but a different overlap cannot be assumed.",
+    "formula": "Some A are B implies some B are A; two subsets of one group need not overlap.",
+    "given": "Painters are within artists; at least one artist is a musician.",
+    "calculation": "The artist who is a musician is also a musician who is an artist, so II follows. The given artist-musician may not be a painter, so I does not have to follow.",
+    "final_answer": "Only II",
+    "why_correct": "II is guaranteed by the stated overlap. I is not guaranteed.",
+    "why_wrong": {
+      "A": "I assumes an overlap between painters and musicians that is not given.",
+      "B": "I is not guaranteed, so both cannot be selected.",
+      "C": "II is guaranteed, so neither is incorrect.",
+      "D": "This is correct: only II must follow."
+    },
+    "generation_metadata": {
+      "bank_track": "ORIGINAL",
+      "syllabus_units": [
+        "reasoning-syllogism"
+      ],
+      "difficulty_status": "EDITORIAL_PROVISIONAL"
+    }
+  },
+  {
+    "id": "signalprep-original-b01-018",
+    "question_text": "Asha, Bharat and Charan each use exactly one different tool: a meter, a drill or a soldering iron. Asha uses neither the drill nor the meter. Bharat does not use the meter. Who uses the meter?",
+    "option_a": "Charan",
+    "option_b": "Asha",
+    "option_c": "Bharat",
+    "option_d": "Cannot be determined",
+    "correct_option": "A",
+    "explanation": "Asha must use the soldering iron. Bharat cannot use that occupied tool or the meter, so Bharat uses the drill. The meter remains for Charan. The clues force one assignment: Asha–soldering iron, Bharat–drill, Charan–meter.",
+    "subject": "Reasoning",
+    "topic": "Analytical Reasoning",
+    "subtopic": "Assignment by elimination",
+    "difficulty": "Medium",
+    "source_type": "ORIGINAL",
+    "source_reference": "Original SignalPrep question aligned to CEN 02/2025 using the project syllabus registry; NOT a reproduced PYQ.",
+    "verification_status": "SOLUTION_CHECKED",
+    "generation_method": "original-syllabus-authoring-batch01; independently recomputed by Python checks; editorial solution review",
+    "status": "ACTIVE",
+    "concept": "Use one-to-one assignments and eliminate impossible choices.",
+    "formula": "Each person gets one tool; each tool is used by one person.",
+    "given": "Asha: no drill or meter; Bharat: no meter; three distinct tools.",
+    "calculation": "Asha must use the soldering iron. Bharat cannot use that occupied tool or the meter, so Bharat uses the drill. The meter remains for Charan.",
+    "final_answer": "Charan",
+    "why_correct": "The clues force one assignment: Asha–soldering iron, Bharat–drill, Charan–meter.",
+    "why_wrong": {
+      "A": "This is correct: the meter is the only tool left for Charan.",
+      "B": "Asha is explicitly excluded from using the meter.",
+      "C": "Bharat is explicitly excluded from using the meter.",
+      "D": "All three assignments are forced, so the user of the meter is determined."
+    },
+    "generation_metadata": {
+      "bank_track": "ORIGINAL",
+      "syllabus_units": [
+        "reasoning-analytical"
+      ],
+      "difficulty_status": "EDITORIAL_PROVISIONAL"
+    }
+  },
+  {
+    "id": "signalprep-original-b01-019",
+    "question_text": "In a code, + means multiplication, - means addition, × means division, and ÷ means subtraction. Replace all the symbols first, then use normal arithmetic precedence. What is 18 × 3 + 4 ÷ 5 - 2?",
+    "option_a": "11",
+    "option_b": "21",
+    "option_c": "19",
+    "option_d": "25",
+    "correct_option": "B",
+    "explanation": "Decoded expression = 18 / 3 * 4 - 5 + 2. Division and multiplication run left to right: 18 / 3 = 6, then 6 * 4 = 24. Finally 24 - 5 + 2 = 21. All four operator substitutions and the normal order of operations give 21.",
+    "subject": "Reasoning",
+    "topic": "Mathematical Operations",
+    "subtopic": "Replacing operation symbols",
+    "difficulty": "Medium",
+    "source_type": "ORIGINAL",
+    "source_reference": "Original SignalPrep question aligned to CEN 02/2025 using the project syllabus registry; NOT a reproduced PYQ.",
+    "verification_status": "SOLUTION_CHECKED",
+    "generation_method": "original-syllabus-authoring-batch01; independently recomputed by Python checks; editorial solution review",
+    "status": "ACTIVE",
+    "concept": "Decode the operators before evaluating the expression.",
+    "formula": "Decode ×→/, +→*, ÷→-, -→+; then apply standard precedence.",
+    "given": "Coded expression 18 × 3 + 4 ÷ 5 - 2.",
+    "calculation": "Decoded expression = 18 / 3 * 4 - 5 + 2. Division and multiplication run left to right: 18 / 3 = 6, then 6 * 4 = 24. Finally 24 - 5 + 2 = 21.",
+    "final_answer": "21",
+    "why_correct": "All four operator substitutions and the normal order of operations give 21.",
+    "why_wrong": {
+      "A": "11 does not equal the decoded expression.",
+      "B": "This is correct: 24 - 5 + 2 = 21.",
+      "C": "19 omits the final addition of 2.",
+      "D": "25 is not 24 - 5 + 2."
+    },
+    "generation_metadata": {
+      "bank_track": "ORIGINAL",
+      "syllabus_units": [
+        "reasoning-operations"
+      ],
+      "difficulty_status": "EDITORIAL_PROVISIONAL"
+    }
+  },
+  {
+    "id": "signalprep-original-b01-020",
+    "question_text": "Use the relationship “instrument : quantity it measures”. Thermometer : temperature :: ammeter : ?",
+    "option_a": "Voltage",
+    "option_b": "Resistance",
+    "option_c": "Electric current",
+    "option_d": "Power",
+    "correct_option": "C",
+    "explanation": "A thermometer measures temperature. In the same way, an ammeter measures electric current, usually in amperes. Electric current completes the instrument-to-quantity relationship.",
+    "subject": "Reasoning",
+    "topic": "Analogies",
+    "subtopic": "Instrument and measured quantity",
+    "difficulty": "Easy",
+    "source_type": "ORIGINAL",
+    "source_reference": "Original SignalPrep question aligned to CEN 02/2025 using the project syllabus registry; NOT a reproduced PYQ.",
+    "verification_status": "SOLUTION_CHECKED",
+    "generation_method": "original-syllabus-authoring-batch01; independently recomputed by Python checks; editorial solution review",
+    "status": "ACTIVE",
+    "concept": "An analogy must keep the same relationship in both pairs.",
+    "formula": "Instrument → measured physical quantity.",
+    "given": "Thermometer measures temperature; identify what an ammeter measures.",
+    "calculation": "A thermometer measures temperature. In the same way, an ammeter measures electric current, usually in amperes.",
+    "final_answer": "Electric current",
+    "why_correct": "Electric current completes the instrument-to-quantity relationship.",
+    "why_wrong": {
+      "A": "Voltage is measured by a voltmeter.",
+      "B": "Resistance is measured by an ohmmeter.",
+      "C": "This is correct: an ammeter measures electric current.",
+      "D": "Power is measured by a wattmeter."
+    },
+    "generation_metadata": {
+      "bank_track": "ORIGINAL",
+      "syllabus_units": [
+        "reasoning-analogies"
+      ],
+      "difficulty_status": "EDITORIAL_PROVISIONAL"
+    }
+  }
+]

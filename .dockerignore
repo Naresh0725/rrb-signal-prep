@@ -1,0 +1,14 @@
+node_modules
+.venv
+.git
+.env
+.env.local
+.dev.vars
+*.db
+*.zip
+__pycache__
+.pytest_cache
+.sites-runtime
+.wrangler
+dist
+production.env
