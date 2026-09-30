@@ -1,0 +1,4212 @@
+[
+  {
+    "id": "science-001",
+    "subject": "Science & Engineering",
+    "topic": "Network Theory",
+    "scenario": "A 12 V ideal source feeds a 3 Ω resistor in series with a parallel pair of 6 Ω resistors.",
+    "truth": "The source current is 2 A.",
+    "false": "The source current is 4 A.",
+    "reason": "The parallel pair is 3 Ω. The source sees 3 + 3 = 6 Ω, so its current is 12/6 = 2 A.",
+    "formula": "Rparallel = R1R2/(R1+R2); I = V/R",
+    "checks": "6*6/(6+6)+3=6; 12/6=2",
+    "refs": [
+      "seed-0001",
+      "seed-0005",
+      "seed-0009",
+      "seed-0013",
+      "seed-0017",
+      "seed-0021",
+      "seed-0025",
+      "seed-0029",
+      "seed-0033",
+      "seed-0037",
+      "seed-0041",
+      "seed-0045",
+      "seed-0049",
+      "seed-0053",
+      "seed-0057"
+    ],
+    "closest_original_setup_similarity": 0.507965897030038
+  },
+  {
+    "id": "science-002",
+    "subject": "Science & Engineering",
+    "topic": "Network Theory",
+    "scenario": "Two resistors of 4 Ω and 12 Ω share an ideal 12 V source in parallel.",
+    "truth": "The 4 Ω branch dissipates three times the power of the 12 Ω branch.",
+    "false": "The 12 Ω branch dissipates three times the power of the 4 Ω branch.",
+    "reason": "Each branch has the same voltage. Their powers are 144/4 = 36 W and 144/12 = 12 W.",
+    "formula": "P = V²/R",
+    "checks": "144/4=36; 144/12=12",
+    "refs": [
+      "seed-0001",
+      "seed-0005",
+      "seed-0009",
+      "seed-0013",
+      "seed-0017",
+      "seed-0021",
+      "seed-0025",
+      "seed-0029",
+      "seed-0033",
+      "seed-0037",
+      "seed-0041",
+      "seed-0045",
+      "seed-0049",
+      "seed-0053",
+      "seed-0057"
+    ],
+    "closest_original_setup_similarity": 0.2022434891558224
+  },
+  {
+    "id": "science-003",
+    "subject": "Science & Engineering",
+    "topic": "Kirchhoff laws",
+    "scenario": "At a junction, 3 A and 5 A enter, and one outgoing branch carries 6 A. There is only one other branch.",
+    "truth": "The remaining branch carries 2 A out of the junction.",
+    "false": "The remaining branch carries 2 A into the junction.",
+    "reason": "Current cannot accumulate at the ideal junction. Total incoming current is 8 A, so the missing outgoing current is 8 − 6 = 2 A.",
+    "formula": "Sum of incoming currents = sum of outgoing currents",
+    "checks": "3+5-6=2",
+    "refs": [
+      "batch03-science-003"
+    ],
+    "closest_original_setup_similarity": 0.10959543902481579
+  },
+  {
+    "id": "science-004",
+    "subject": "Science & Engineering",
+    "topic": "Network Theory",
+    "scenario": "An ideal 10 V supply feeds a divider made from two 5 kΩ resistors. A 5 kΩ load is connected across the lower resistor.",
+    "truth": "The loaded output voltage is 10/3 V.",
+    "false": "The loaded output voltage remains 5 V.",
+    "reason": "The lower resistor and load form 2.5 kΩ. The divider becomes 5 kΩ in series with 2.5 kΩ, giving 10×2.5/7.5 V.",
+    "formula": "Vout = Vs Rlower/(Rupper+Rlower)",
+    "checks": "10*2.5/(5+2.5)=3.3333333333333335",
+    "refs": [
+      "seed-0001",
+      "seed-0005",
+      "seed-0009",
+      "seed-0013",
+      "seed-0017",
+      "seed-0021",
+      "seed-0025",
+      "seed-0029",
+      "seed-0033",
+      "seed-0037",
+      "seed-0041",
+      "seed-0045",
+      "seed-0049",
+      "seed-0053",
+      "seed-0057"
+    ],
+    "closest_original_setup_similarity": 0.16833103223476803
+  },
+  {
+    "id": "science-005",
+    "subject": "Science & Engineering",
+    "topic": "Series and parallel circuits",
+    "scenario": "Two identical lamps rated for 12 V are first connected in series across an ideal 12 V supply. One lamp is then shorted. Assume each lamp has constant resistance.",
+    "truth": "The power in the remaining lamp becomes four times its earlier power.",
+    "false": "The power in the remaining lamp becomes twice its earlier power.",
+    "reason": "Its voltage rises from 6 V to 12 V. At constant resistance, doubling voltage multiplies power by four.",
+    "formula": "P = V²/R",
+    "checks": "12**2/6**2=4",
+    "refs": [
+      "batch06-science-003"
+    ],
+    "closest_original_setup_similarity": 0.31474117680771757
+  },
+  {
+    "id": "science-006",
+    "subject": "Science & Engineering",
+    "topic": "Resistance and resistivity",
+    "scenario": "A uniform wire is stretched to twice its original length while its volume and resistivity remain unchanged.",
+    "truth": "Its resistance becomes four times the original resistance.",
+    "false": "Its resistance becomes twice the original resistance.",
+    "reason": "Constant volume means that doubling length halves area. R = ρL/A therefore grows by a factor of 2/(1/2).",
+    "formula": "R = ρL/A; volume = LA",
+    "checks": "2/0.5=4",
+    "refs": [
+      "batch03-science-001",
+      "batch09-science-003"
+    ],
+    "closest_original_setup_similarity": 0.6274487456678394
+  },
+  {
+    "id": "science-007",
+    "subject": "Science & Engineering",
+    "topic": "Resistance and resistivity",
+    "scenario": "Two wires have the same material and length. The diameter of wire X is twice the diameter of wire Y.",
+    "truth": "Wire X has one quarter of the resistance of wire Y.",
+    "false": "Wire X has half the resistance of wire Y.",
+    "reason": "Cross-sectional area is proportional to diameter squared. X has four times the area, so one quarter of the resistance.",
+    "formula": "R ∝ 1/d²",
+    "checks": "1/(2**2)=0.25",
+    "refs": [
+      "batch03-science-001",
+      "batch09-science-003"
+    ],
+    "closest_original_setup_similarity": 0.16015815026630292
+  },
+  {
+    "id": "science-008",
+    "subject": "Science & Engineering",
+    "topic": "Electrical energy",
+    "scenario": "A 500 W heater runs for 20 minutes and a 100 W fan runs for 2 hours.",
+    "truth": "Their total energy use is 11/30 kWh.",
+    "false": "Their total energy use is 0.7 kWh.",
+    "reason": "The heater uses 0.5×(1/3) kWh and the fan uses 0.1×2 kWh. Add the energies, not the operating times.",
+    "formula": "E = Pt",
+    "checks": "0.5*(20/60)+0.1*2=0.3666666666666667",
+    "refs": [
+      "batch03-science-005",
+      "batch09-science-004"
+    ],
+    "closest_original_setup_similarity": 0.09840715761012632
+  },
+  {
+    "id": "science-009",
+    "subject": "Science & Engineering",
+    "topic": "Electrical power",
+    "scenario": "A device is specified as 24 V, 48 W. It is treated as a constant resistor and connected to 12 V.",
+    "truth": "It consumes 12 W.",
+    "false": "It consumes 24 W.",
+    "reason": "Its resistance is 24²/48 = 12 Ω. At 12 V, power is 12²/12 = 12 W.",
+    "formula": "R = V²/P; Pnew = Vnew²/R",
+    "checks": "24**2/48=12; 12**2/12=12",
+    "refs": [
+      "batch03-science-004"
+    ],
+    "closest_original_setup_similarity": 0.17641904642164716
+  },
+  {
+    "id": "science-010",
+    "subject": "Science & Engineering",
+    "topic": "Basic electricity",
+    "scenario": "A battery transfers 180 C through a load in 30 seconds while maintaining 12 V.",
+    "truth": "The load receives 2160 J.",
+    "false": "The load receives 360 J.",
+    "reason": "Voltage is energy transferred per coulomb. Multiply the 12 J/C by 180 C.",
+    "formula": "E = VQ; I = Q/t",
+    "checks": "12*180=2160",
+    "refs": [
+      "batch06-science-001"
+    ],
+    "closest_original_setup_similarity": 0.11551598266972779
+  },
+  {
+    "id": "science-011",
+    "subject": "Science & Engineering",
+    "topic": "Capacitors",
+    "scenario": "A charged capacitor is disconnected from its battery before a dielectric is inserted fully between its plates. Capacitance doubles and no charge leaks away.",
+    "truth": "The stored energy becomes half its initial value.",
+    "false": "The stored energy doubles.",
+    "reason": "An isolated capacitor keeps its charge. Since energy is Q²/(2C), doubling capacitance halves the energy.",
+    "formula": "U = Q²/(2C)",
+    "checks": "1/2=0.5",
+    "refs": [
+      "batch03-science-006",
+      "batch03-science-007",
+      "batch06-science-009",
+      "batch06-science-019"
+    ],
+    "closest_original_setup_similarity": 0.16410117845376515
+  },
+  {
+    "id": "science-012",
+    "subject": "Science & Engineering",
+    "topic": "Capacitors",
+    "scenario": "Two initially uncharged capacitors, 2 μF and 4 μF, are connected in series across 12 V.",
+    "truth": "The 2 μF capacitor has 8 V across it.",
+    "false": "The 2 μF capacitor has 4 V across it.",
+    "reason": "Series capacitors carry equal charge. Voltages divide inversely with capacitance; the smaller capacitor gets twice the voltage.",
+    "formula": "Q1 = Q2; V1/V2 = C2/C1",
+    "checks": "12*(4/(2+4))=8",
+    "refs": [
+      "batch03-science-006",
+      "batch03-science-007",
+      "batch06-science-009",
+      "batch06-science-019"
+    ],
+    "closest_original_setup_similarity": 0.5131512369850975
+  },
+  {
+    "id": "science-013",
+    "subject": "Science & Engineering",
+    "topic": "Capacitors",
+    "scenario": "A 2 μF capacitor charged to 10 V is connected in parallel, with matching polarity, to an uncharged 3 μF capacitor. Ignore leakage and external sources.",
+    "truth": "Their final common voltage is 4 V.",
+    "false": "Their final common voltage is 5 V.",
+    "reason": "Total charge is 20 μC and combined capacitance is 5 μF. Charge conservation gives 20/5 = 4 V.",
+    "formula": "Qtotal = C1V1 + C2V2; Vfinal = Qtotal/(C1+C2)",
+    "checks": "2*10/(2+3)=4",
+    "refs": [
+      "batch03-science-006",
+      "batch03-science-007",
+      "batch06-science-009",
+      "batch06-science-019"
+    ],
+    "closest_original_setup_similarity": 0.3333461843326392
+  },
+  {
+    "id": "science-014",
+    "subject": "Science & Engineering",
+    "topic": "RC circuits",
+    "scenario": "An initially uncharged capacitor is charged through a resistor from a DC step. At one time constant the voltage is about 63.2% of its final value.",
+    "truth": "The resistor voltage at that instant is about 36.8% of the supply.",
+    "false": "The resistor voltage at that instant is about 63.2% of the supply.",
+    "reason": "The capacitor and resistor voltages sum to the supply, so the resistor has the remaining 100 − 63.2 percent.",
+    "formula": "VR = Vs − VC",
+    "checks": "100-63.2=36.8",
+    "refs": [
+      "batch03-science-008"
+    ],
+    "closest_original_setup_similarity": 0.21841931398503056
+  },
+  {
+    "id": "science-015",
+    "subject": "Science & Engineering",
+    "topic": "RC circuits",
+    "scenario": "A capacitor discharges through a fixed resistor. At time t its voltage has fallen to half its starting value.",
+    "truth": "Its stored energy has fallen to one quarter of its starting value.",
+    "false": "Its stored energy has fallen to half its starting value.",
+    "reason": "Stored energy depends on voltage squared, so a voltage factor of 1/2 gives an energy factor of 1/4.",
+    "formula": "U = CV²/2",
+    "checks": "0.5**2=0.25",
+    "refs": [
+      "batch03-science-008"
+    ],
+    "closest_original_setup_similarity": 0.17239872947683796
+  },
+  {
+    "id": "science-016",
+    "subject": "Science & Engineering",
+    "topic": "Inductors",
+    "scenario": "A 0.5 H ideal inductor carries 4 A. Its current then falls to 2 A.",
+    "truth": "The energy released is 3 J.",
+    "false": "The energy released is 1 J.",
+    "reason": "The initial energy is 4 J and final energy is 1 J. The difference is 3 J.",
+    "formula": "U = LI²/2",
+    "checks": "0.5*0.5*(4**2-2**2)=3",
+    "refs": [
+      "batch03-science-009"
+    ],
+    "closest_original_setup_similarity": 0.17118494577658147
+  },
+  {
+    "id": "science-017",
+    "subject": "Science & Engineering",
+    "topic": "RL circuits",
+    "scenario": "An ideal inductor has been connected in series with a resistor to a DC source for a very long time.",
+    "truth": "Its voltage is zero while a nonzero steady current can flow.",
+    "false": "Its current must be zero because its voltage is zero.",
+    "reason": "For an ideal inductor, voltage depends on the rate of change of current. Steady current has zero rate of change.",
+    "formula": "VL = L di/dt",
+    "checks": "",
+    "refs": [
+      "batch03-science-010"
+    ],
+    "closest_original_setup_similarity": 0.33977402846806076
+  },
+  {
+    "id": "science-018",
+    "subject": "Science & Engineering",
+    "topic": "AC circuits",
+    "scenario": "A series circuit has resistance 6 Ω and net inductive reactance 8 Ω. It is supplied with 100 V RMS.",
+    "truth": "Its real power is 600 W.",
+    "false": "Its real power is 1000 W.",
+    "reason": "Impedance magnitude is 10 Ω, so current is 10 A. Only resistance consumes real power: 10²×6 = 600 W.",
+    "formula": "Z = √(R²+X²); P = I²R",
+    "checks": "(6**2+8**2)**0.5=10; (100/10)**2*6=600",
+    "refs": [
+      "batch06-science-010"
+    ],
+    "closest_original_setup_similarity": 0.23604874625184646
+  },
+  {
+    "id": "science-019",
+    "subject": "Science & Engineering",
+    "topic": "AC fundamentals",
+    "scenario": "A sine-wave voltage has 100 V RMS and is applied to a purely resistive 50 Ω load.",
+    "truth": "Its average power is 200 W.",
+    "false": "Its average power is 400 W.",
+    "reason": "RMS values give the heating effect directly. No extra factor of two is needed.",
+    "formula": "P = Vrms²/R",
+    "checks": "100**2/50=200",
+    "refs": [
+      "batch03-science-013",
+      "batch06-science-008"
+    ],
+    "closest_original_setup_similarity": 0.15182491287352304
+  },
+  {
+    "id": "science-020",
+    "subject": "Science & Engineering",
+    "topic": "Capacitors in AC circuits",
+    "scenario": "An ideal capacitor remains connected to a sinusoidal source of fixed RMS voltage. The source frequency doubles.",
+    "truth": "Its RMS current doubles.",
+    "false": "Its RMS current halves.",
+    "reason": "Capacitive reactance falls by half when frequency doubles. With voltage unchanged, the current doubles.",
+    "formula": "Xc = 1/(2πfC); I = V/Xc",
+    "checks": "2/1=2",
+    "refs": [
+      "batch09-science-010"
+    ],
+    "closest_original_setup_similarity": 0.366437737743635
+  },
+  {
+    "id": "science-021",
+    "subject": "Science & Engineering",
+    "topic": "AC circuits",
+    "scenario": "A series RLC circuit is exactly at resonance and has a nonzero resistance.",
+    "truth": "Supply voltage and current are in phase.",
+    "false": "Supply current leads the voltage by 90°.",
+    "reason": "At resonance the inductive and capacitive reactances cancel; total impedance is purely resistive.",
+    "formula": "XL = XC; Z = R",
+    "checks": "",
+    "refs": [
+      "batch06-science-010"
+    ],
+    "closest_original_setup_similarity": 0.07895512230652219
+  },
+  {
+    "id": "science-022",
+    "subject": "Science & Engineering",
+    "topic": "Transformers",
+    "scenario": "An ideal transformer has 600 primary turns and 150 secondary turns. A 240 V primary supply feeds a 30 Ω secondary load.",
+    "truth": "The primary current is 0.5 A.",
+    "false": "The primary current is 2 A.",
+    "reason": "Secondary voltage is 60 V and secondary current is 2 A. Output power is 120 W, so input current is 120/240 A.",
+    "formula": "Vs/Vp = Ns/Np; VpIp = VsIs",
+    "checks": "240*150/600=60; (60**2/30)/240=0.5",
+    "refs": [
+      "seed-0002",
+      "seed-0006",
+      "seed-0010",
+      "seed-0014",
+      "seed-0018",
+      "seed-0022",
+      "seed-0026",
+      "seed-0030",
+      "seed-0034",
+      "seed-0038",
+      "seed-0042",
+      "seed-0046",
+      "seed-0050",
+      "seed-0054",
+      "seed-0058",
+      "batch06-science-002",
+      "batch06-science-018",
+      "batch09-science-006"
+    ],
+    "closest_original_setup_similarity": 0.6207056007757077
+  },
+  {
+    "id": "science-023",
+    "subject": "Science & Engineering",
+    "topic": "Transformers",
+    "scenario": "An ideal transformer has a secondary-to-primary turns ratio of 2. A 100 Ω resistor is connected across the secondary.",
+    "truth": "The resistance seen from the primary is 25 Ω.",
+    "false": "The resistance seen from the primary is 200 Ω.",
+    "reason": "Reflected resistance is scaled by the square of the primary-to-secondary turns ratio, which is (1/2)².",
+    "formula": "Rin = (Np/Ns)² RL",
+    "checks": "100*(1/2)**2=25",
+    "refs": [
+      "seed-0002",
+      "seed-0006",
+      "seed-0010",
+      "seed-0014",
+      "seed-0018",
+      "seed-0022",
+      "seed-0026",
+      "seed-0030",
+      "seed-0034",
+      "seed-0038",
+      "seed-0042",
+      "seed-0046",
+      "seed-0050",
+      "seed-0054",
+      "seed-0058",
+      "batch06-science-002",
+      "batch06-science-018",
+      "batch09-science-006"
+    ],
+    "closest_original_setup_similarity": 0.42586807650189207
+  },
+  {
+    "id": "science-024",
+    "subject": "Science & Engineering",
+    "topic": "Transformers",
+    "scenario": "A transformer delivers 800 W while drawing 1000 W at the same operating point.",
+    "truth": "Its losses are 200 W and its efficiency is 80%.",
+    "false": "Its losses are 250 W and its efficiency is 80%.",
+    "reason": "Loss is input minus output, while efficiency is output divided by input. These use different operations.",
+    "formula": "Loss = Pin − Pout; η = Pout/Pin",
+    "checks": "1000-800=200; 800/1000*100=80",
+    "refs": [
+      "seed-0002",
+      "seed-0006",
+      "seed-0010",
+      "seed-0014",
+      "seed-0018",
+      "seed-0022",
+      "seed-0026",
+      "seed-0030",
+      "seed-0034",
+      "seed-0038",
+      "seed-0042",
+      "seed-0046",
+      "seed-0050",
+      "seed-0054",
+      "seed-0058",
+      "batch06-science-002",
+      "batch06-science-018",
+      "batch09-science-006"
+    ],
+    "closest_original_setup_similarity": 0.09997088579306682
+  },
+  {
+    "id": "science-025",
+    "subject": "Science & Engineering",
+    "topic": "Transformers",
+    "scenario": "A conventional transformer designed for sinusoidal AC is connected directly to a steady DC supply.",
+    "truth": "It cannot provide continuous transformer action from a steady flux.",
+    "false": "It supplies continuous secondary voltage because its turns ratio is unchanged.",
+    "reason": "Faraday's law requires changing flux. After the switching transient, steady flux cannot induce continuous secondary EMF. Primary overheating is also a risk.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "seed-0002",
+      "seed-0006",
+      "seed-0010",
+      "seed-0014",
+      "seed-0018",
+      "seed-0022",
+      "seed-0026",
+      "seed-0030",
+      "seed-0034",
+      "seed-0038",
+      "seed-0042",
+      "seed-0046",
+      "seed-0050",
+      "seed-0054",
+      "seed-0058",
+      "batch06-science-002",
+      "batch06-science-018",
+      "batch09-science-006"
+    ],
+    "closest_original_setup_similarity": 0.1857498050624386
+  },
+  {
+    "id": "science-026",
+    "subject": "Science & Engineering",
+    "topic": "Electromagnetic induction",
+    "scenario": "A coil is rotated so that its normal changes from parallel to a uniform magnetic field to perpendicular to that field.",
+    "truth": "Its magnetic flux changes from maximum magnitude to zero.",
+    "false": "Its magnetic flux changes from zero to maximum magnitude.",
+    "reason": "Flux is BA cos θ where θ is measured between the field and the coil normal.",
+    "formula": "Φ = BA cos θ",
+    "checks": "",
+    "refs": [
+      "batch03-science-011",
+      "batch06-science-015",
+      "batch09-science-005"
+    ],
+    "closest_original_setup_similarity": 0.30214159796911405
+  },
+  {
+    "id": "science-027",
+    "subject": "Science & Engineering",
+    "topic": "Electromagnetic induction and Faraday law",
+    "scenario": "A 100-turn coil experiences a uniform flux decrease from 0.03 Wb to 0.01 Wb per turn in 0.1 s.",
+    "truth": "The magnitude of the average induced EMF is 20 V.",
+    "false": "The magnitude of the average induced EMF is 2 V.",
+    "reason": "Each turn loses 0.02 Wb in 0.1 s. Multiply the rate of change by all 100 turns.",
+    "formula": "Magnitude of E = N abs(ΔΦ)/Δt",
+    "checks": "100*(0.03-0.01)/0.1=20",
+    "refs": [
+      "prep-pattern-015",
+      "supp-2026-s1-092"
+    ],
+    "closest_original_setup_similarity": 0.17310711012336924
+  },
+  {
+    "id": "science-028",
+    "subject": "Science & Engineering",
+    "topic": "Magnetic force",
+    "scenario": "A charged particle moves through a uniform magnetic field exactly along the field direction.",
+    "truth": "The magnetic force on it is zero.",
+    "false": "The magnetic force is maximum.",
+    "reason": "The velocity and field are parallel, so sin θ = 0 in the magnetic-force expression.",
+    "formula": "F = qvB sin θ",
+    "checks": "",
+    "refs": [
+      "batch03-science-012"
+    ],
+    "closest_original_setup_similarity": 0.29347949541765006
+  },
+  {
+    "id": "science-029",
+    "subject": "Science & Engineering",
+    "topic": "Work, power and energy",
+    "scenario": "A machine lifts a 20 kg mass vertically by 3 m in 5 s. Take g = 10 m/s² and ignore losses.",
+    "truth": "Its useful average power is 120 W.",
+    "false": "Its useful average power is 600 W.",
+    "reason": "The useful work is 600 J. Power divides that work by the 5 s interval.",
+    "formula": "W = mgh; P = W/t",
+    "checks": "20*10*3/5=120",
+    "refs": [
+      "prep-pattern-019",
+      "batch09-science-018"
+    ],
+    "closest_original_setup_similarity": 0.18592311152396623
+  },
+  {
+    "id": "science-030",
+    "subject": "Science & Engineering",
+    "topic": "Heat and temperature",
+    "scenario": "Equal masses of the same substance at 20°C and 80°C are mixed in an insulated container, with no phase change and constant heat capacity.",
+    "truth": "The final temperature is 50°C.",
+    "false": "The final temperature is 60°C.",
+    "reason": "Equal heat capacities mean the hotter mass loses exactly the heat gained by the colder mass; the final temperature is their mean.",
+    "formula": "Tf = (T1+T2)/2",
+    "checks": "(20+80)/2=50",
+    "refs": [
+      "prep-pattern-020",
+      "batch09-science-019"
+    ],
+    "closest_original_setup_similarity": 0.17301912835407973
+  },
+  {
+    "id": "science-031",
+    "subject": "Science & Engineering",
+    "topic": "Heat and temperature",
+    "scenario": "A Celsius thermometer rises from 10°C to 30°C.",
+    "truth": "The temperature rise is 20 K.",
+    "false": "The temperature rise is 293.15 K.",
+    "reason": "Celsius and kelvin increments have equal size. The offset applies to absolute readings, not differences.",
+    "formula": "ΔT in K = ΔT in °C",
+    "checks": "30-10=20",
+    "refs": [
+      "prep-pattern-020",
+      "batch09-science-019"
+    ],
+    "closest_original_setup_similarity": 0.11513252428753105
+  },
+  {
+    "id": "science-032",
+    "subject": "Science & Engineering",
+    "topic": "Diodes and rectifiers",
+    "scenario": "An ideal full-wave rectifier is supplied by a 50 Hz sine wave.",
+    "truth": "Its unfiltered output has a repetition frequency of 100 Hz.",
+    "false": "Its unfiltered output has a repetition frequency of 25 Hz.",
+    "reason": "Both input half-cycles produce output pulses with the same polarity, so there are two pulses per input cycle.",
+    "formula": "fripple = 2 fin",
+    "checks": "2*50=100",
+    "refs": [
+      "batch03-science-014"
+    ],
+    "closest_original_setup_similarity": 0.2597731099797797
+  },
+  {
+    "id": "science-033",
+    "subject": "Science & Engineering",
+    "topic": "Zener diode circuits",
+    "scenario": "A 5 V ideal Zener regulator uses a 1 kΩ series resistor from 12 V. A load draws 3 mA, and the Zener is in breakdown.",
+    "truth": "The Zener current is 4 mA.",
+    "false": "The Zener current is 7 mA.",
+    "reason": "The series resistor carries (12−5)/1000 = 7 mA. The load takes 3 mA, leaving 4 mA through the Zener.",
+    "formula": "IZ = (Vs−VZ)/R − IL",
+    "checks": "(12-5)/1000*1000-3=4",
+    "refs": [
+      "batch03-science-015"
+    ],
+    "closest_original_setup_similarity": 0.2056789996241981
+  },
+  {
+    "id": "science-034",
+    "subject": "Science & Engineering",
+    "topic": "LED circuits",
+    "scenario": "An LED has a forward drop of 2 V and is to carry 10 mA from a 5 V DC supply.",
+    "truth": "A 300 Ω series resistor gives the intended current under these assumptions.",
+    "false": "A 500 Ω series resistor gives the intended current under these assumptions.",
+    "reason": "The resistor must drop only 5−2 = 3 V, not the entire supply voltage.",
+    "formula": "R = (Vs−VF)/I",
+    "checks": "(5-2)/0.01=300",
+    "refs": [
+      "batch09-science-008"
+    ],
+    "closest_original_setup_similarity": 0.3910851628498197
+  },
+  {
+    "id": "science-035",
+    "subject": "Science & Engineering",
+    "topic": "Transistors",
+    "scenario": "A transistor is in active mode with base current 20 μA and collector current 2 mA.",
+    "truth": "Its DC current gain is 100.",
+    "false": "Its DC current gain is 0.01.",
+    "reason": "Convert to the same units: 2 mA is 2000 μA. Divide collector current by base current.",
+    "formula": "β = IC/IB",
+    "checks": "2000/20=100",
+    "refs": [
+      "batch03-science-016",
+      "batch06-science-012"
+    ],
+    "closest_original_setup_similarity": 0.265956078749951
+  },
+  {
+    "id": "science-036",
+    "subject": "Science & Engineering",
+    "topic": "Transistors",
+    "scenario": "A BJT switch is already in saturation and the collector load and supply remain fixed.",
+    "truth": "Increasing base drive need not produce the active-region proportional increase in collector current.",
+    "false": "Collector current must keep rising exactly as β times base current.",
+    "reason": "In saturation, the external collector circuit largely limits the current. The active-region gain equation no longer predicts an unrestricted increase.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "batch03-science-016",
+      "batch06-science-012"
+    ],
+    "closest_original_setup_similarity": 0.10058668529808927
+  },
+  {
+    "id": "science-037",
+    "subject": "Science & Engineering",
+    "topic": "Photodiodes",
+    "scenario": "A reverse-biased photodiode is used to detect a changing light level within its normal operating range.",
+    "truth": "Incident light can change its reverse photocurrent.",
+    "false": "It must emit light to measure the incident light.",
+    "reason": "A photodiode converts incoming optical energy into a measurable electrical response. Light emission describes an LED's intended function.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "batch09-science-009"
+    ],
+    "closest_original_setup_similarity": 0.1532351500403665
+  },
+  {
+    "id": "science-038",
+    "subject": "Science & Engineering",
+    "topic": "Measurements",
+    "scenario": "An ammeter has resistance 1 Ω and is mistakenly placed directly across an ideal 12 V source.",
+    "truth": "The meter branch attempts to draw 12 A.",
+    "false": "The meter branch draws zero current because ammeters only measure.",
+    "reason": "Its small internal resistance becomes the entire load across the source. An ammeter belongs in series with the load.",
+    "formula": "I = V/R",
+    "checks": "12/1=12",
+    "refs": [
+      "seed-0003",
+      "seed-0007",
+      "seed-0011",
+      "seed-0015",
+      "seed-0019",
+      "seed-0023",
+      "seed-0027",
+      "seed-0031",
+      "seed-0035",
+      "seed-0039",
+      "seed-0043",
+      "seed-0047",
+      "seed-0051",
+      "seed-0055",
+      "seed-0059"
+    ],
+    "closest_original_setup_similarity": 0.13116241199456696
+  },
+  {
+    "id": "science-039",
+    "subject": "Science & Engineering",
+    "topic": "Measurement instruments",
+    "scenario": "A 10 kΩ voltmeter is connected across one 10 kΩ resistor in an equal-resistor divider driven by 12 V.",
+    "truth": "The reading is 4 V.",
+    "false": "The reading is 6 V.",
+    "reason": "The meter parallels the lower resistor, reducing it to 5 kΩ. The divider output is 12×5/(10+5) = 4 V.",
+    "formula": "Vout = Vs Rlower/(Rupper+Rlower)",
+    "checks": "12*5/(10+5)=4",
+    "refs": [
+      "batch03-science-019"
+    ],
+    "closest_original_setup_similarity": 0.12509997507060713
+  },
+  {
+    "id": "science-040",
+    "subject": "Science & Engineering",
+    "topic": "Range extension methods",
+    "scenario": "A movement reaches full scale at 1 mA and has resistance 100 Ω. It is to measure 10 V at full scale.",
+    "truth": "The additional series resistance is 9900 Ω.",
+    "false": "The additional series resistance is 10000 Ω.",
+    "reason": "Total required resistance is 10/0.001 = 10000 Ω. Subtract the movement's existing 100 Ω.",
+    "formula": "Rseries = V/Im − Rm",
+    "checks": "10/0.001-100=9900",
+    "refs": [
+      "prep-pattern-014"
+    ],
+    "closest_original_setup_similarity": 0.1797221671318694
+  },
+  {
+    "id": "science-041",
+    "subject": "Science & Engineering",
+    "topic": "Range extension methods",
+    "scenario": "A 100 Ω movement carries 1 mA at full scale and is shunted to measure 101 mA total.",
+    "truth": "A 1 Ω shunt is required.",
+    "false": "A 100 Ω shunt is required.",
+    "reason": "The shunt carries 100 mA while the movement carries 1 mA. Both branches have 0.1 V across them.",
+    "formula": "Rsh = Im Rm/(I−Im)",
+    "checks": "0.001*100/(0.101-0.001)=1",
+    "refs": [
+      "prep-pattern-014"
+    ],
+    "closest_original_setup_similarity": 0.11129360367484814
+  },
+  {
+    "id": "science-042",
+    "subject": "Science & Engineering",
+    "topic": "Cathode ray oscilloscope",
+    "scenario": "One full sine-wave cycle spans 5 horizontal divisions at 2 ms per division.",
+    "truth": "The frequency is 100 Hz.",
+    "false": "The frequency is 10 Hz.",
+    "reason": "The period is 10 ms = 0.01 s, whose reciprocal is 100 Hz.",
+    "formula": "T = divisions × time/division; f = 1/T",
+    "checks": "1/(5*0.002)=100",
+    "refs": [
+      "prep-pattern-016"
+    ],
+    "closest_original_setup_similarity": 0.36609044379317907
+  },
+  {
+    "id": "science-043",
+    "subject": "Science & Engineering",
+    "topic": "Electronic measurements",
+    "scenario": "A waveform spans 6 vertical divisions peak to peak at 2 V per division. It is symmetric about zero.",
+    "truth": "Its positive peak is 6 V.",
+    "false": "Its positive peak is 12 V.",
+    "reason": "Peak-to-peak voltage is 12 V. Symmetry about zero makes either peak magnitude half this value.",
+    "formula": "Vp = Vpp/2",
+    "checks": "6*2/2=6",
+    "refs": [
+      "batch09-science-020"
+    ],
+    "closest_original_setup_similarity": 0.39139075320569494
+  },
+  {
+    "id": "science-044",
+    "subject": "Science & Engineering",
+    "topic": "Measurement errors",
+    "scenario": "A meter reads 49 V when a reference value is 50 V.",
+    "truth": "The signed relative error is −2%.",
+    "false": "The signed relative error is +2%.",
+    "reason": "Signed error is measured minus reference. Here it is −1 V, divided by the 50 V reference.",
+    "formula": "Relative error = (measured−reference)/reference ×100",
+    "checks": "(49-50)/50*100=-2",
+    "refs": [
+      "batch09-science-014"
+    ],
+    "closest_original_setup_similarity": 0.28000948397158926
+  },
+  {
+    "id": "science-045",
+    "subject": "Science & Engineering",
+    "topic": "Measurement accuracy",
+    "scenario": "Repeated measurements are tightly clustered at 9.0 V, while a reliable reference is 10.0 V.",
+    "truth": "The readings are precise but show a systematic accuracy problem.",
+    "false": "The readings must be accurate because their spread is small.",
+    "reason": "Precision concerns repeatability. Accuracy concerns closeness to the reference; a consistent offset can preserve precision but spoil accuracy.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "batch03-science-020"
+    ],
+    "closest_original_setup_similarity": 0.07990838048620608
+  },
+  {
+    "id": "science-046",
+    "subject": "Science & Engineering",
+    "topic": "Transducers",
+    "scenario": "A strain gauge is bonded to a beam and its resistance changes as the beam stretches.",
+    "truth": "It can convert mechanical strain into an electrical resistance change.",
+    "false": "It directly converts strain into a fixed-frequency radio signal without supporting circuitry.",
+    "reason": "The gauge's primary output is a resistance change. Further circuits are needed to measure or transmit it.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "prep-pattern-017"
+    ],
+    "closest_original_setup_similarity": 0.04635219771348903
+  },
+  {
+    "id": "science-047",
+    "subject": "Science & Engineering",
+    "topic": "Communication Systems",
+    "scenario": "A conventional AM signal has a 1 MHz carrier and a single 2 kHz modulation tone.",
+    "truth": "Its sidebands occur at 998 kHz and 1002 kHz.",
+    "false": "Its sidebands occur at 2 kHz and 2000 kHz.",
+    "reason": "AM sidebands are at the carrier minus and plus the message frequency.",
+    "formula": "fLSB = fc−fm; fUSB = fc+fm",
+    "checks": "1000-2=998; 1000+2=1002",
+    "refs": [
+      "seed-0004",
+      "seed-0008",
+      "seed-0012",
+      "seed-0016",
+      "seed-0020",
+      "seed-0024",
+      "seed-0028",
+      "seed-0032",
+      "seed-0036",
+      "seed-0040",
+      "seed-0044",
+      "seed-0048",
+      "seed-0052",
+      "seed-0056",
+      "seed-0060"
+    ],
+    "closest_original_setup_similarity": 0.20192635721727945
+  },
+  {
+    "id": "science-048",
+    "subject": "Science & Engineering",
+    "topic": "Signal modulation",
+    "scenario": "A conventional AM envelope has maximum amplitude 9 V and minimum amplitude 3 V.",
+    "truth": "Its modulation index is 0.5.",
+    "false": "Its modulation index is 2.",
+    "reason": "Use the difference divided by the sum of envelope extremes, not the reverse ratio.",
+    "formula": "m = (Emax−Emin)/(Emax+Emin)",
+    "checks": "(9-3)/(9+3)=0.5",
+    "refs": [
+      "batch09-science-017"
+    ],
+    "closest_original_setup_similarity": 0.10023336183341389
+  },
+  {
+    "id": "science-049",
+    "subject": "Science & Engineering",
+    "topic": "Communication Systems",
+    "scenario": "A baseband signal contains frequencies only up to 4 kHz and is ideally sampled at 10 ksample/s.",
+    "truth": "The rate exceeds twice the highest signal frequency.",
+    "false": "The rate is below the Nyquist minimum.",
+    "reason": "Twice 4 kHz is 8 kHz. The stated 10 ksample/s rate exceeds that threshold under ideal band-limited assumptions.",
+    "formula": "fs > 2 fmax",
+    "checks": "2*4000=8000",
+    "refs": [
+      "seed-0004",
+      "seed-0008",
+      "seed-0012",
+      "seed-0016",
+      "seed-0020",
+      "seed-0024",
+      "seed-0028",
+      "seed-0032",
+      "seed-0036",
+      "seed-0040",
+      "seed-0044",
+      "seed-0048",
+      "seed-0052",
+      "seed-0056",
+      "seed-0060"
+    ],
+    "closest_original_setup_similarity": 0.3383324838386219
+  },
+  {
+    "id": "science-050",
+    "subject": "Science & Engineering",
+    "topic": "Digital signal concepts",
+    "scenario": "An ideal uniform ADC has 8 output bits, and another has 10 bits over the same input range.",
+    "truth": "The second ADC has four times as many code levels.",
+    "false": "The second ADC has twice as many code levels.",
+    "reason": "The number of levels is 2 to the power of bit count. Adding two bits multiplies levels by four.",
+    "formula": "Levels = 2^n",
+    "checks": "2**10/2**8=4",
+    "refs": [
+      "batch09-science-016"
+    ],
+    "closest_original_setup_similarity": 0.08687215534249837
+  },
+  {
+    "id": "science-051",
+    "subject": "Science & Engineering",
+    "topic": "Communication fundamentals",
+    "scenario": "Two equal-frequency waves of equal amplitude arrive exactly 180° out of phase.",
+    "truth": "Their ideal resultant amplitude is zero.",
+    "false": "Their ideal resultant amplitude is twice either amplitude.",
+    "reason": "Equal and opposite instantaneous displacements cancel. Reinforcement requires equal phase rather than opposite phase.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "batch06-science-016"
+    ],
+    "closest_original_setup_similarity": 0.09277787432743942
+  },
+  {
+    "id": "science-052",
+    "subject": "Science & Engineering",
+    "topic": "Digital electronics",
+    "scenario": "A two-input NAND gate receives inputs A = 1 and B = 1, and its output is passed through an inverter.",
+    "truth": "The final output is 1.",
+    "false": "The final output is 0.",
+    "reason": "The NAND output is 0 for inputs 1,1. The following inverter changes 0 to 1.",
+    "formula": "Y = NOT(NAND(A,B)) = A AND B",
+    "checks": "",
+    "refs": [
+      "prep-pattern-018",
+      "batch03-science-018",
+      "batch06-science-014",
+      "batch09-science-011",
+      "batch09-science-012",
+      "batch09-science-013"
+    ],
+    "closest_original_setup_similarity": 0.3183614874011496
+  },
+  {
+    "id": "science-053",
+    "subject": "Science & Engineering",
+    "topic": "Digital electronics",
+    "scenario": "An alarm should activate if exactly one of two sensors is high, but remain off if both are high.",
+    "truth": "An XOR function matches this requirement.",
+    "false": "An OR function matches this requirement.",
+    "reason": "XOR is high only for unequal binary inputs. OR is also high when both inputs are high, so it does not meet the requirement.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "prep-pattern-018",
+      "batch03-science-018",
+      "batch06-science-014",
+      "batch09-science-011",
+      "batch09-science-012",
+      "batch09-science-013"
+    ],
+    "closest_original_setup_similarity": 0.03231816905068514
+  },
+  {
+    "id": "science-054",
+    "subject": "Science & Engineering",
+    "topic": "Digital electronics",
+    "scenario": "A binary counter has three flip-flops and uses all possible states before repeating.",
+    "truth": "It can count through eight distinct states.",
+    "false": "It can count through six distinct states.",
+    "reason": "Three binary storage elements represent 2³ combinations, counting 000 through 111.",
+    "formula": "Number of states = 2^n",
+    "checks": "2**3=8",
+    "refs": [
+      "prep-pattern-018",
+      "batch03-science-018",
+      "batch06-science-014",
+      "batch09-science-011",
+      "batch09-science-012",
+      "batch09-science-013"
+    ],
+    "closest_original_setup_similarity": 0.12150608367776172
+  },
+  {
+    "id": "science-055",
+    "subject": "Science & Engineering",
+    "topic": "Practical electrical engineering",
+    "scenario": "A metal-cased appliance has protective earthing, and its live wire touches the case.",
+    "truth": "A suitable low-resistance earth path can help a protective device disconnect the supply.",
+    "false": "The earth connection intentionally keeps the metal case at live voltage.",
+    "reason": "Protective earthing limits touch voltage and provides a fault-current path that enables appropriate protection. It is not a normal supply connection to the case.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "batch06-science-005"
+    ],
+    "closest_original_setup_similarity": 0.4758822302111572
+  },
+  {
+    "id": "science-056",
+    "subject": "Science & Engineering",
+    "topic": "Simple electric circuits",
+    "scenario": "A fuse is rated for current and is installed in series in the live conductor of a circuit.",
+    "truth": "Opening the fuse interrupts the live supply path to the load.",
+    "false": "Opening the fuse connects the load directly to earth.",
+    "reason": "A fuse operates by breaking its series path during excessive current. It does not create an earth connection.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "batch09-science-002"
+    ],
+    "closest_original_setup_similarity": 0.16967409221431562
+  },
+  {
+    "id": "science-057",
+    "subject": "Science & Engineering",
+    "topic": "Diode circuits",
+    "scenario": "An ideal diode is reverse biased and remains below breakdown.",
+    "truth": "The ideal model predicts zero current through it.",
+    "false": "The ideal model predicts zero voltage across it and unlimited current.",
+    "reason": "The ideal reverse-biased diode is an open circuit. A short-circuit model belongs to a forward-conducting ideal diode.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "batch06-science-020"
+    ],
+    "closest_original_setup_similarity": 0.320139817292868
+  },
+  {
+    "id": "science-058",
+    "subject": "Science & Engineering",
+    "topic": "Semiconductors",
+    "scenario": "A pure silicon crystal is doped with a small amount of a pentavalent donor impurity.",
+    "truth": "Electrons become the majority mobile carriers.",
+    "false": "Holes become the majority mobile carriers.",
+    "reason": "A donor contributes an extra electron to form n-type material. Acceptor doping instead produces p-type material.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "batch03-science-017"
+    ],
+    "closest_original_setup_similarity": 0.5562278299641517
+  },
+  {
+    "id": "science-059",
+    "subject": "Science & Engineering",
+    "topic": "Magnetism",
+    "scenario": "A solenoid's current direction is reversed while its geometry remains the same.",
+    "truth": "Its north and south magnetic poles interchange.",
+    "false": "Its magnetic poles stay unchanged because the winding shape is unchanged.",
+    "reason": "The magnetic-field direction follows the current direction through the winding. Reversing current reverses the field.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "batch06-science-006"
+    ],
+    "closest_original_setup_similarity": 0.11276443800103172
+  },
+  {
+    "id": "science-060",
+    "subject": "Science & Engineering",
+    "topic": "Electric current and charge",
+    "scenario": "A constant 2 A current flows for 3 minutes through a conductor.",
+    "truth": "The charge passing a cross-section is 360 C.",
+    "false": "The charge passing a cross-section is 6 C.",
+    "reason": "Convert minutes to seconds before multiplying by current: 2×180 = 360.",
+    "formula": "Q = It",
+    "checks": "2*3*60=360",
+    "refs": [
+      "batch09-science-001"
+    ],
+    "closest_original_setup_similarity": 0.1407936166677142
+  },
+  {
+    "id": "computers-001",
+    "subject": "Computers",
+    "topic": "Number Systems",
+    "scenario": "A four-bit unsigned register contains 1111₂. The instruction adds 1 and keeps only the lowest four bits.",
+    "truth": "The stored result is 0000₂.",
+    "false": "The stored result is 10000₂.",
+    "reason": "The exact sum needs five bits. Keeping only four drops the carry and stores zero.",
+    "formula": "Unsigned wrap modulus = 2^n",
+    "checks": "(15+1)%16=0",
+    "refs": [
+      "seed-0151",
+      "seed-0153",
+      "seed-0155",
+      "seed-0157",
+      "seed-0159",
+      "seed-0161",
+      "seed-0163",
+      "seed-0165",
+      "seed-0167",
+      "seed-0169"
+    ],
+    "closest_original_setup_similarity": 0.1915854658193501
+  },
+  {
+    "id": "computers-002",
+    "subject": "Computers",
+    "topic": "Number Systems",
+    "scenario": "The eight-bit pattern 11111111₂ is interpreted once as unsigned and once as two's complement.",
+    "truth": "The two interpretations give 255 and −1 respectively.",
+    "false": "Both interpretations give 255.",
+    "reason": "The pattern's meaning depends on the number representation. An all-ones two's-complement pattern represents −1.",
+    "formula": "Unsigned maximum = 2^8−1",
+    "checks": "2**8-1=255",
+    "refs": [
+      "seed-0151",
+      "seed-0153",
+      "seed-0155",
+      "seed-0157",
+      "seed-0159",
+      "seed-0161",
+      "seed-0163",
+      "seed-0165",
+      "seed-0167",
+      "seed-0169"
+    ],
+    "closest_original_setup_similarity": 0.11773119813499809
+  },
+  {
+    "id": "computers-003",
+    "subject": "Computers",
+    "topic": "Data representation",
+    "scenario": "The hexadecimal value 2A is converted to decimal, then increased by decimal 6.",
+    "truth": "The final decimal value is 48.",
+    "false": "The final decimal value is 42.",
+    "reason": "2A₁₆ is 2×16+10 = 42. The requested addition occurs after conversion.",
+    "formula": "Positional value = sum of digit × base^position",
+    "checks": "2*16+10+6=48",
+    "refs": [
+      "prep-pattern-006",
+      "supp-2024-s1-054",
+      "batch07-computers-010"
+    ],
+    "closest_original_setup_similarity": 0.22035004232643274
+  },
+  {
+    "id": "computers-004",
+    "subject": "Computers",
+    "topic": "Number systems",
+    "scenario": "An eight-bit two's-complement adder adds 01111111₂ and 00000001₂.",
+    "truth": "The stored pattern represents −128 and signed overflow has occurred.",
+    "false": "The stored pattern represents +128 without overflow.",
+    "reason": "The mathematical answer 128 is outside the signed eight-bit range −128 to 127. The stored 10000000 pattern is −128.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "batch07-computers-006"
+    ],
+    "closest_original_setup_similarity": 0.29836094183226997
+  },
+  {
+    "id": "computers-005",
+    "subject": "Computers",
+    "topic": "Memory representation",
+    "scenario": "A 16-bit integer 0x1234 is stored at consecutive byte addresses 100 and 101 using little-endian order.",
+    "truth": "Address 100 contains 0x34.",
+    "false": "Address 100 contains 0x12.",
+    "reason": "Little-endian order puts the least significant byte at the lowest address. This concerns byte order, not the value of the integer.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "batch11-computers-018"
+    ],
+    "closest_original_setup_similarity": 0.3210691835585451
+  },
+  {
+    "id": "computers-006",
+    "subject": "Computers",
+    "topic": "Memory",
+    "scenario": "A byte-addressable memory has 12 address lines and no bank switching.",
+    "truth": "It has 4096 separately addressable bytes.",
+    "false": "It has 4096 separately addressable bits.",
+    "reason": "Twelve address bits identify 2¹² addresses. Each address holds one byte by the stated design.",
+    "formula": "Address count = 2^n",
+    "checks": "2**12=4096",
+    "refs": [
+      "seed-0132",
+      "seed-0140",
+      "seed-0152",
+      "seed-0154",
+      "seed-0156",
+      "seed-0158",
+      "seed-0160",
+      "seed-0162",
+      "seed-0164",
+      "seed-0166",
+      "seed-0168",
+      "seed-0170"
+    ],
+    "closest_original_setup_similarity": 0.49533753923535256
+  },
+  {
+    "id": "computers-007",
+    "subject": "Computers",
+    "topic": "Memory",
+    "scenario": "A memory device has 1024 locations and each location holds 16 bits.",
+    "truth": "Its total capacity is 2048 bytes.",
+    "false": "Its total capacity is 1024 bytes.",
+    "reason": "Capacity is locations times bits per location; divide bits by eight to get bytes.",
+    "formula": "Bytes = locations × word bits / 8",
+    "checks": "1024*16/8=2048",
+    "refs": [
+      "seed-0132",
+      "seed-0140",
+      "seed-0152",
+      "seed-0154",
+      "seed-0156",
+      "seed-0158",
+      "seed-0160",
+      "seed-0162",
+      "seed-0164",
+      "seed-0166",
+      "seed-0168",
+      "seed-0170"
+    ],
+    "closest_original_setup_similarity": 0.08262438159605212
+  },
+  {
+    "id": "computers-008",
+    "subject": "Computers",
+    "topic": "Memory and cache",
+    "scenario": "A cache hit takes 2 ns and occurs 90% of the time. A miss has a total access time of 22 ns, including the lookup.",
+    "truth": "The average access time is 4 ns.",
+    "false": "The average access time is 24 ns.",
+    "reason": "Weight the total hit and miss times by their probabilities. Do not add the miss time to every access.",
+    "formula": "Average = hit fraction × hit time + miss fraction × total miss time",
+    "checks": "0.9*2+0.1*22=4",
+    "refs": [
+      "batch07-computers-017"
+    ],
+    "closest_original_setup_similarity": 0.08644430940160656
+  },
+  {
+    "id": "computers-009",
+    "subject": "Computers",
+    "topic": "Memory: cache",
+    "scenario": "A direct-mapped cache has 4 lines. Memory blocks map by block number modulo 4. Blocks 1 and 5 are accessed alternately.",
+    "truth": "Both blocks compete for the same cache line.",
+    "false": "The blocks necessarily occupy two different cache lines.",
+    "reason": "Both block numbers leave remainder 1 on division by 4. They therefore map to line 1.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "batch02-computers-002"
+    ],
+    "closest_original_setup_similarity": 0.24310784998366355
+  },
+  {
+    "id": "computers-010",
+    "subject": "Computers",
+    "topic": "Storage formats",
+    "scenario": "A 1 KiB file is stored on a file system allocating whole 4 KiB clusters, without compression or inline storage.",
+    "truth": "Its data allocation is 4 KiB.",
+    "false": "Its data allocation must be exactly 1 KiB.",
+    "reason": "A partly used cluster is still allocated as a whole. This does not mean the logical file length changes.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "batch11-computers-004"
+    ],
+    "closest_original_setup_similarity": 0.15782409925714766
+  },
+  {
+    "id": "computers-011",
+    "subject": "Computers",
+    "topic": "Storage devices",
+    "scenario": "A machine loses electrical power after data has been written successfully to an SSD but before an unsaved edit leaves RAM.",
+    "truth": "The SSD data normally persists, while the RAM-only edit is lost.",
+    "false": "The unsaved RAM-only edit is guaranteed to persist while the SSD data is lost.",
+    "reason": "SSD storage is nonvolatile; ordinary working RAM is volatile. Successful persistent writes differ from unsaved working changes.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "prep-pattern-007",
+      "batch02-computers-004"
+    ],
+    "closest_original_setup_similarity": 0.0881285106316183
+  },
+  {
+    "id": "computers-012",
+    "subject": "Computers",
+    "topic": "Operating systems",
+    "scenario": "Process P waits for a disk read while process Q is ready to run on a single CPU.",
+    "truth": "The operating system can run Q while P is blocked.",
+    "false": "The CPU must stay idle until P's disk read completes.",
+    "reason": "Scheduling another ready process can overlap CPU work with an outstanding I/O operation. A blocked process does not need the CPU while waiting.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "batch02-computers-005",
+      "batch07-computers-001",
+      "batch11-computers-002"
+    ],
+    "closest_original_setup_similarity": 0.12417710521402617
+  },
+  {
+    "id": "computers-013",
+    "subject": "Computers",
+    "topic": "Operating Systems",
+    "scenario": "Two running processes each hold one resource and wait indefinitely for a resource held by the other, with no forced release.",
+    "truth": "This describes a circular-wait deadlock situation.",
+    "false": "This proves both processes are making progress concurrently.",
+    "reason": "Each process prevents the other from obtaining what it needs. With the stated indefinite wait and no release mechanism, neither progresses.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "seed-0136",
+      "seed-0143",
+      "seed-0150"
+    ],
+    "closest_original_setup_similarity": 0.04628676040310914
+  },
+  {
+    "id": "computers-014",
+    "subject": "Computers",
+    "topic": "File systems",
+    "scenario": "A user renames a file from report.txt to report.jpg without converting its contents.",
+    "truth": "The name change alone does not convert the text into JPEG image data.",
+    "false": "The file contents become a valid JPEG solely because the suffix changes.",
+    "reason": "An extension is part of a name. Actual format depends on the stored bytes and their structure.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "batch02-computers-006",
+      "batch11-computers-009"
+    ],
+    "closest_original_setup_similarity": 0.303311442087977
+  },
+  {
+    "id": "computers-015",
+    "subject": "Computers",
+    "topic": "Linux files and folders",
+    "scenario": "In a Unix-style permission model, a regular file has mode 640.",
+    "truth": "The owner may read and write, the group may read, and others have no permission.",
+    "false": "The owner may execute the file because the first digit is 6.",
+    "reason": "Permission weights are read=4, write=2 and execute=1. Six is 4+2 and contains no execute bit.",
+    "formula": "Permission digit = read + write + execute",
+    "checks": "4+2=6",
+    "refs": [
+      "batch11-computers-005"
+    ],
+    "closest_original_setup_similarity": 0.11304714082333635
+  },
+  {
+    "id": "computers-016",
+    "subject": "Computers",
+    "topic": "CPU registers",
+    "scenario": "The processor has just fetched an instruction and advances its program counter in a simple sequential instruction model.",
+    "truth": "The program counter identifies where the next instruction is to be fetched.",
+    "false": "The program counter must contain the arithmetic result of the current instruction.",
+    "reason": "The program counter tracks instruction sequencing. Arithmetic results are usually stored in other registers or memory.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "batch11-computers-001"
+    ],
+    "closest_original_setup_similarity": 0.2627914227691083
+  },
+  {
+    "id": "computers-017",
+    "subject": "Computers",
+    "topic": "CPU fundamentals",
+    "scenario": "A processor's clock frequency rises, but the program now needs twice as many cycles per instruction and the instruction count is unchanged. Clock frequency rises by only 25%.",
+    "truth": "The execution time becomes 1.6 times the original.",
+    "false": "The execution time falls to 0.8 times the original.",
+    "reason": "Execution time is instruction count times cycles per instruction divided by clock frequency. The ratio is 2/1.25.",
+    "formula": "Time = instruction count × CPI / clock rate",
+    "checks": "2/1.25=1.6",
+    "refs": [
+      "batch07-computers-004"
+    ],
+    "closest_original_setup_similarity": 0.1543839741792483
+  },
+  {
+    "id": "computers-018",
+    "subject": "Computers",
+    "topic": "Computer performance",
+    "scenario": "A program spends half its time in a section that is made twice as fast; the other half is unchanged.",
+    "truth": "Overall execution time falls to 75% of its original value.",
+    "false": "Overall execution time falls to 50% of its original value.",
+    "reason": "The improved half now takes a quarter of the original total time. Add the unchanged half.",
+    "formula": "New time ratio = unchanged fraction + improved fraction/speedup",
+    "checks": "0.5+0.5/2=0.75",
+    "refs": [
+      "batch11-computers-019"
+    ],
+    "closest_original_setup_similarity": 0.07364524169449624
+  },
+  {
+    "id": "computers-019",
+    "subject": "Computers",
+    "topic": "Input/output",
+    "scenario": "A computer sends a scanned document to a printer after receiving it from a scanner.",
+    "truth": "The scanner is the input device and the printer is the output device in this operation.",
+    "false": "The printer is the input device because it receives data from the computer.",
+    "reason": "Device classification is relative to the computer: information enters through the scanner and leaves through the printer.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "batch11-computers-003"
+    ],
+    "closest_original_setup_similarity": 0.14487261886825045
+  },
+  {
+    "id": "computers-020",
+    "subject": "Computers",
+    "topic": "Networking",
+    "scenario": "Two computers in the same IPv4 subnet exchange Ethernet frames through a switch with a learned MAC table.",
+    "truth": "The switch can forward using the destination MAC address.",
+    "false": "The switch must use the email address of the recipient to select a port.",
+    "reason": "Ordinary Ethernet switching uses link-layer addresses. Email addresses are application-level identifiers.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "prep-pattern-009",
+      "seed-0133",
+      "seed-0134",
+      "seed-0141",
+      "seed-0147",
+      "batch11-computers-020"
+    ],
+    "closest_original_setup_similarity": 0.12592515548441363
+  },
+  {
+    "id": "computers-021",
+    "subject": "Computers",
+    "topic": "IP addressing",
+    "scenario": "A host has IPv4 address 192.168.4.70 with subnet mask 255.255.255.192.",
+    "truth": "Its /26 subnet starts at 192.168.4.64.",
+    "false": "Its /26 subnet starts at 192.168.4.0.",
+    "reason": "The last-octet block size is 64. Address 70 belongs to the block 64 through 127.",
+    "formula": "Block size = 256 − last mask octet",
+    "checks": "256-192=64",
+    "refs": [
+      "batch02-computers-012"
+    ],
+    "closest_original_setup_similarity": 0.342589456637749
+  },
+  {
+    "id": "computers-022",
+    "subject": "Computers",
+    "topic": "IP networking",
+    "scenario": "An IPv4 /27 subnet uses the conventional network and broadcast reservations.",
+    "truth": "It supports 30 ordinary host addresses.",
+    "false": "It supports 32 ordinary host addresses.",
+    "reason": "There are five host bits, giving 32 total addresses. Two are conventionally reserved.",
+    "formula": "Usable hosts = 2^(32−prefix) − 2",
+    "checks": "2**(32-27)-2=30",
+    "refs": [
+      "batch07-computers-019"
+    ],
+    "closest_original_setup_similarity": 0.25954780631336494
+  },
+  {
+    "id": "computers-023",
+    "subject": "Computers",
+    "topic": "DNS",
+    "scenario": "A website opens when its numeric IP address is used, but its name fails to resolve. Connectivity otherwise works.",
+    "truth": "Investigating DNS configuration is a reasonable first step.",
+    "false": "Replacing the display monitor is the most direct explanation for the symptom.",
+    "reason": "DNS maps names to addresses. Working address-based connectivity with failed name resolution points toward that mapping stage.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "batch11-computers-011"
+    ],
+    "closest_original_setup_similarity": 0.16243059687870365
+  },
+  {
+    "id": "computers-024",
+    "subject": "Computers",
+    "topic": "HTTP",
+    "scenario": "A browser receives a valid HTTP 404 response from a server.",
+    "truth": "A server answered, but the requested resource was not found.",
+    "false": "The response proves that no network communication with a server occurred.",
+    "reason": "An HTTP status response itself requires an HTTP exchange. A 404 concerns the requested resource, not the absence of any connection.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "batch11-computers-012"
+    ],
+    "closest_original_setup_similarity": 0.2552722225719394
+  },
+  {
+    "id": "computers-025",
+    "subject": "Computers",
+    "topic": "Internet and protocols",
+    "scenario": "A message must be delivered reliably and in order over a transport connection, even if packets are retransmitted.",
+    "truth": "TCP provides mechanisms supporting those requirements.",
+    "false": "UDP by itself guarantees both ordered delivery and retransmission.",
+    "reason": "TCP tracks sequence and acknowledgements. UDP does not itself supply those reliability guarantees.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "batch02-computers-013"
+    ],
+    "closest_original_setup_similarity": 0.07845997337044344
+  },
+  {
+    "id": "computers-026",
+    "subject": "Computers",
+    "topic": "Digital communication",
+    "scenario": "A 1200-byte payload is sent with 300 bytes of overhead over a 12000 bit/s link.",
+    "truth": "The transmission time for the complete frame is 1 second.",
+    "false": "The transmission time for the complete frame is 0.8 second.",
+    "reason": "The link sends payload and overhead: 1500 bytes = 12000 bits. At 12000 bit/s, this takes one second.",
+    "formula": "Time = (payload bytes + overhead bytes) × 8 / bit rate",
+    "checks": "(1200+300)*8/12000=1",
+    "refs": [
+      "batch11-computers-006"
+    ],
+    "closest_original_setup_similarity": 0.17117968492386476
+  },
+  {
+    "id": "computers-027",
+    "subject": "Computers",
+    "topic": "Networking",
+    "scenario": "A data link operates full duplex at 10 Mbit/s in each direction.",
+    "truth": "It can carry traffic in both directions simultaneously.",
+    "false": "It must alternate directions because full duplex permits only one transmitter at a time.",
+    "reason": "Full duplex provides simultaneous two-way communication. Alternating directions describes half duplex.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "prep-pattern-009",
+      "seed-0133",
+      "seed-0134",
+      "seed-0141",
+      "seed-0147",
+      "batch11-computers-020"
+    ],
+    "closest_original_setup_similarity": 0.20924033034748127
+  },
+  {
+    "id": "computers-028",
+    "subject": "Computers",
+    "topic": "Email protocols",
+    "scenario": "A user can send email from a mail client but needs a protocol to synchronize received messages and folders with a server.",
+    "truth": "IMAP is suited to the synchronization task.",
+    "false": "SMTP alone supplies the mailbox-folder synchronization function.",
+    "reason": "SMTP is used for sending/relaying mail. IMAP is designed for accessing and synchronizing server mailboxes.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "batch02-computers-014"
+    ],
+    "closest_original_setup_similarity": 0.16700344447756366
+  },
+  {
+    "id": "computers-029",
+    "subject": "Computers",
+    "topic": "Authentication security",
+    "scenario": "A login requires a memorized password and a time-based code from a separately possessed authenticator.",
+    "truth": "The two requirements can represent knowledge and possession factors.",
+    "false": "Both requirements are knowledge factors simply because both are typed.",
+    "reason": "The factor category depends on what proves identity, not on whether the user types characters. A separately held authenticator is a possession factor.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "batch07-computers-014"
+    ],
+    "closest_original_setup_similarity": 0.07310990779645853
+  },
+  {
+    "id": "computers-030",
+    "subject": "Computers",
+    "topic": "Cybersecurity",
+    "scenario": "An email urges a user to enter a banking password on an unfamiliar look-alike domain.",
+    "truth": "The user should verify through a known official channel instead of trusting the link.",
+    "false": "The urgent wording makes the unfamiliar domain trustworthy.",
+    "reason": "Impersonation and pressure are common phishing tactics. Independent verification avoids relying on the potentially deceptive message.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "batch07-computers-008",
+      "batch11-computers-013"
+    ],
+    "closest_original_setup_similarity": 0.0766554512905254
+  },
+  {
+    "id": "computers-031",
+    "subject": "Computers",
+    "topic": "Encryption",
+    "scenario": "A message is encrypted with a recipient's public key in a suitable public-key encryption system.",
+    "truth": "The corresponding private key is needed to decrypt it.",
+    "false": "Any person holding the public key can necessarily decrypt it.",
+    "reason": "The public key may be shared for encryption, while the matching private key is kept secret for decryption.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "batch11-computers-014"
+    ],
+    "closest_original_setup_similarity": 0.37244680021629695
+  },
+  {
+    "id": "computers-032",
+    "subject": "Computers",
+    "topic": "Security",
+    "scenario": "A downloaded file is checked against a trusted published cryptographic hash.",
+    "truth": "A matching hash can support an integrity check.",
+    "false": "A matching hash by itself proves the file is harmless software.",
+    "reason": "A hash comparison checks whether bytes match the trusted reference. Harmfulness is a different property and requires additional assessment.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "seed-0135",
+      "seed-0142",
+      "seed-0148"
+    ],
+    "closest_original_setup_similarity": 0.22616247183946175
+  },
+  {
+    "id": "computers-033",
+    "subject": "Computers",
+    "topic": "Storage and backups",
+    "scenario": "A backup disk is permanently writable from a computer that becomes infected with ransomware.",
+    "truth": "The writable backup may also be at risk.",
+    "false": "The backup is guaranteed safe merely because it is on a second disk.",
+    "reason": "A second disk is not the same as isolation. Malware with write access can alter reachable backup data.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "batch07-computers-015"
+    ],
+    "closest_original_setup_similarity": 0.11461569956578169
+  },
+  {
+    "id": "computers-034",
+    "subject": "Computers",
+    "topic": "Databases",
+    "scenario": "An Orders table stores CustomerID values that reference a Customers table's primary key.",
+    "truth": "A foreign-key constraint can reject an order referring to a nonexistent customer.",
+    "false": "A foreign-key constraint automatically encrypts the customer's data.",
+    "reason": "Referential integrity concerns valid relationships between rows. Encryption is a separate security feature.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "seed-0137",
+      "seed-0138",
+      "seed-0144",
+      "seed-0149",
+      "batch07-computers-013"
+    ],
+    "closest_original_setup_similarity": 0.16774879338363918
+  },
+  {
+    "id": "computers-035",
+    "subject": "Computers",
+    "topic": "Database design",
+    "scenario": "Customer phone numbers are copied into every order row, and the same customer's number changes.",
+    "truth": "Storing customer details separately can reduce inconsistent duplicate updates.",
+    "false": "Repeating the number in every order guarantees that all copies update together.",
+    "reason": "Repeated attributes create an update anomaly unless managed explicitly. Separating entities helps keep one authoritative customer record.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "batch11-computers-015"
+    ],
+    "closest_original_setup_similarity": 0.1988106210812147
+  },
+  {
+    "id": "computers-036",
+    "subject": "Computers",
+    "topic": "SQL basics",
+    "scenario": "A table has three rows with a Score column containing 10, NULL and 20. Standard SQL COUNT(Score) is evaluated.",
+    "truth": "The result is 2.",
+    "false": "The result is 3.",
+    "reason": "COUNT(column) ignores NULL values; COUNT(*) counts rows. Two scores are non-NULL.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "batch11-computers-008"
+    ],
+    "closest_original_setup_similarity": 0.36038338466322783
+  },
+  {
+    "id": "computers-037",
+    "subject": "Computers",
+    "topic": "SQL aggregation",
+    "scenario": "Rows are grouped by Department, and only groups with AVG(Salary) above a threshold should remain.",
+    "truth": "A HAVING condition can filter the aggregate groups.",
+    "false": "A plain WHERE AVG(Salary) condition is the standard way to filter groups at that stage.",
+    "reason": "WHERE filters rows before grouping; HAVING filters the resulting groups using aggregates.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "batch11-computers-017"
+    ],
+    "closest_original_setup_similarity": 0.05603778588049277
+  },
+  {
+    "id": "computers-038",
+    "subject": "Computers",
+    "topic": "Databases",
+    "scenario": "A database transaction transfers funds by debiting one account and crediting another.",
+    "truth": "Atomicity aims to make the transfer's changes happen together or not at all.",
+    "false": "Atomicity requires the debit to be permanently committed before the credit is attempted.",
+    "reason": "An all-or-nothing transaction prevents a partial transfer from leaving only one side applied.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "seed-0137",
+      "seed-0138",
+      "seed-0144",
+      "seed-0149",
+      "batch07-computers-013"
+    ],
+    "closest_original_setup_similarity": 0.12133080592630316
+  },
+  {
+    "id": "computers-039",
+    "subject": "Computers",
+    "topic": "MS Office: spreadsheets",
+    "scenario": "Cell C2 contains =$A2*B$1 and the formula is copied one column right and one row down to D3.",
+    "truth": "The copied formula is =$A3*C$1.",
+    "false": "The copied formula is =$B3*C$2.",
+    "reason": "The dollar sign fixes column A and row 1. Unfixed row 2 shifts to 3 and column B shifts to C.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "batch02-computers-016"
+    ],
+    "closest_original_setup_similarity": 0.548291207532606
+  },
+  {
+    "id": "computers-040",
+    "subject": "Computers",
+    "topic": "MS Office: spreadsheets",
+    "scenario": "A spreadsheet computes SUM(A1:A3), where A1=2, A2=3 and A3=5. A4 contains 100.",
+    "truth": "The result is 10.",
+    "false": "The result is 110.",
+    "reason": "The specified range stops at A3, so A4 is excluded.",
+    "formula": "SUM adds only the referenced cells",
+    "checks": "2+3+5=10",
+    "refs": [
+      "batch02-computers-016"
+    ],
+    "closest_original_setup_similarity": 0.12171230040938845
+  },
+  {
+    "id": "computers-041",
+    "subject": "Computers",
+    "topic": "MS Office: word processing",
+    "scenario": "A long report uses heading styles consistently before inserting an automatic table of contents.",
+    "truth": "The styles help the program identify entries for the table of contents.",
+    "false": "Manually making every heading bold necessarily provides the same structural information.",
+    "reason": "Styles assign document structure. Bold formatting alone does not identify heading levels to the table-of-contents mechanism.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "batch02-computers-017"
+    ],
+    "closest_original_setup_similarity": 0.06055444992446034
+  },
+  {
+    "id": "computers-042",
+    "subject": "Computers",
+    "topic": "Algorithms and programming fundamentals",
+    "scenario": "A sorted list is searched by repeatedly halving the remaining search interval.",
+    "truth": "Binary search is appropriate for this stated organization.",
+    "false": "The halving strategy is guaranteed to work on any unsorted list without preparation.",
+    "reason": "Binary search relies on ordering to decide which half cannot contain the target. Unsorted data removes that guarantee.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "batch02-computers-019"
+    ],
+    "closest_original_setup_similarity": 0.06125612310997266
+  },
+  {
+    "id": "computers-043",
+    "subject": "Computers",
+    "topic": "Programming fundamentals",
+    "scenario": "A loop starts with s=0 and adds i for each integer i from 1 through 4 inclusive.",
+    "truth": "The final s is 10.",
+    "false": "The final s is 6.",
+    "reason": "The inclusive endpoint contributes 4, so add 1+2+3+4.",
+    "formula": "s = Σ i",
+    "checks": "1+2+3+4=10",
+    "refs": [
+      "batch07-computers-016"
+    ],
+    "closest_original_setup_similarity": 0.09189085851964404
+  },
+  {
+    "id": "computers-044",
+    "subject": "Computers",
+    "topic": "Programming fundamentals",
+    "scenario": "A stack receives Push(A), Push(B), Pop(), then Push(C), followed by Pop().",
+    "truth": "The final Pop returns C.",
+    "false": "The final Pop returns A.",
+    "reason": "The first Pop removes B. Pushing C places it above A, so C is removed next under last-in-first-out order.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "batch07-computers-016"
+    ],
+    "closest_original_setup_similarity": 0.02749338330211487
+  },
+  {
+    "id": "computers-045",
+    "subject": "Computers",
+    "topic": "Algorithms and programming fundamentals",
+    "scenario": "A queue receives Enqueue(A), Enqueue(B), Dequeue(), Enqueue(C), then Dequeue().",
+    "truth": "The final Dequeue returns B.",
+    "false": "The final Dequeue returns C.",
+    "reason": "The first removal takes A. The remaining order is B then C, so the next removal takes B under first-in-first-out order.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "batch02-computers-019"
+    ],
+    "closest_original_setup_similarity": 0.06160404546569201
+  },
+  {
+    "id": "computers-046",
+    "subject": "Computers",
+    "topic": "Boolean logic",
+    "scenario": "A permission rule is NOT(A OR B).",
+    "truth": "Access under this rule requires both A and B to be false.",
+    "false": "Access under this rule requires at least one of A and B to be false.",
+    "reason": "By De Morgan's law, NOT(A OR B) equals (NOT A) AND (NOT B). Both conditions must be false.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "batch07-computers-018"
+    ],
+    "closest_original_setup_similarity": 0.11747820883322657
+  },
+  {
+    "id": "computers-047",
+    "subject": "Computers",
+    "topic": "Error detection",
+    "scenario": "A received word fails its required even-parity check.",
+    "truth": "At least one bit error is detected under the parity model.",
+    "false": "The parity failure tells the receiver exactly which bit to correct.",
+    "reason": "Parity detects inconsistency but a single parity bit does not identify the error position.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "batch11-computers-010"
+    ],
+    "closest_original_setup_similarity": 0.10160220287811143
+  },
+  {
+    "id": "computers-048",
+    "subject": "Computers",
+    "topic": "Error detection",
+    "scenario": "Two bits flip in a word protected only by a single even-parity bit.",
+    "truth": "The parity check can miss this error.",
+    "false": "A single even-parity check must detect every two-bit error.",
+    "reason": "An even number of flips preserves parity. This is a known limitation of a single parity bit.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "batch11-computers-010"
+    ],
+    "closest_original_setup_similarity": 0.13363190713507578
+  },
+  {
+    "id": "computers-049",
+    "subject": "Computers",
+    "topic": "Hardware",
+    "scenario": "A desktop works with an external display while its built-in display remains blank.",
+    "truth": "The symptom can be consistent with a display-path fault rather than a total CPU failure.",
+    "false": "The symptom proves that every CPU operation has stopped.",
+    "reason": "Producing working external video requires substantial system operation. The evidence narrows the investigation but does not identify one exact faulty component.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "seed-0131",
+      "seed-0145"
+    ],
+    "closest_original_setup_similarity": 0.06158423977156714
+  },
+  {
+    "id": "computers-050",
+    "subject": "Computers",
+    "topic": "Software",
+    "scenario": "A compiler rejects a program because a required closing bracket is missing.",
+    "truth": "This is a syntax problem caught before a normal run of that program.",
+    "false": "This proves the program's numerical algorithm is incorrect on every input.",
+    "reason": "Syntax determines whether code is well formed. An algorithmic correctness claim is different and cannot be established from this bracket error alone.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "seed-0139",
+      "seed-0146"
+    ],
+    "closest_original_setup_similarity": 0.10253074698658911
+  },
+  {
+    "id": "computers-051",
+    "subject": "Computers",
+    "topic": "Memory: ROM and firmware",
+    "scenario": "Firmware is stored in nonvolatile flash memory and supports updates.",
+    "truth": "The stored instructions can persist without power and can still be rewritten by an update procedure.",
+    "false": "Nonvolatile storage means the instructions can never be rewritten.",
+    "reason": "Nonvolatile describes retention without power. Reprogrammability is a separate property; flash supports controlled rewriting.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "batch02-computers-003"
+    ],
+    "closest_original_setup_similarity": 0.060404120552900537
+  },
+  {
+    "id": "computers-052",
+    "subject": "Computers",
+    "topic": "Number systems and data representation",
+    "scenario": "An unsigned 10-bit sensor value must fit in an unsigned 8-bit field without loss for every possible input.",
+    "truth": "The smaller field cannot represent every possible sensor value.",
+    "false": "The smaller field can represent all values because both are unsigned.",
+    "reason": "Ten bits support 1024 values, but eight bits support only 256. At least some values cannot be represented losslessly.",
+    "formula": "Number of values = 2^n",
+    "checks": "2**10=1024; 2**8=256",
+    "refs": [
+      "batch02-computers-008"
+    ],
+    "closest_original_setup_similarity": 0.16625862956083423
+  },
+  {
+    "id": "computers-053",
+    "subject": "Computers",
+    "topic": "Computer networks",
+    "scenario": "A router links two different IP networks, while a basic Ethernet switch connects devices inside one LAN.",
+    "truth": "The router makes network-layer forwarding decisions between the networks.",
+    "false": "The basic switch must route all traffic between unrelated IP networks by default.",
+    "reason": "Routing selects paths using network-layer information. Ordinary layer-2 switching uses MAC addresses within its switching domain.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "batch07-computers-009"
+    ],
+    "closest_original_setup_similarity": 0.2855691871307403
+  },
+  {
+    "id": "computers-054",
+    "subject": "Computers",
+    "topic": "Files and folders",
+    "scenario": "A shortcut points to a document. The shortcut itself is deleted, while the target file remains unchanged.",
+    "truth": "The document may still be opened directly at its actual location.",
+    "false": "Deleting the shortcut necessarily erases the target document's contents.",
+    "reason": "A shortcut is a reference to a target; it is not generally the target file itself.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "batch07-computers-002"
+    ],
+    "closest_original_setup_similarity": 0.20827781714514984
+  },
+  {
+    "id": "computers-055",
+    "subject": "Computers",
+    "topic": "Digital terminology and data transfer",
+    "scenario": "A transfer rate is 8 Mbit/s and decimal SI units are used, with all overhead ignored.",
+    "truth": "The rate is 1 megabyte per second.",
+    "false": "The rate is 8 megabytes per second.",
+    "reason": "One byte has eight bits, so divide the bit rate by eight.",
+    "formula": "Byte rate = bit rate / 8",
+    "checks": "8/8=1",
+    "refs": [
+      "batch02-computers-009"
+    ],
+    "closest_original_setup_similarity": 0.12600291825166435
+  },
+  {
+    "id": "mathematics-001",
+    "subject": "Mathematics",
+    "topic": "Percentage",
+    "scenario": "A price rises by 20% and then falls by 20% of the increased price.",
+    "truth": "The final price is 4% below the starting price.",
+    "false": "The final price equals the starting price.",
+    "reason": "The multipliers act on different bases. Their product is 1.2×0.8 = 0.96.",
+    "formula": "Final/original = product of successive multipliers",
+    "checks": "1.2*0.8=0.96",
+    "refs": [
+      "batch05-mathematics-006",
+      "batch08-mathematics-005"
+    ],
+    "closest_original_setup_similarity": 0.16273148440482788
+  },
+  {
+    "id": "mathematics-002",
+    "subject": "Mathematics",
+    "topic": "Percentage",
+    "scenario": "A worker's wage increases by 25%. Prices of everything the worker buys also increase by 25%, with the spending pattern unchanged.",
+    "truth": "The wage buys the same quantity as before.",
+    "false": "The wage buys 25% more than before.",
+    "reason": "Real purchasing quantity depends on the wage-to-price ratio. Both numerator and denominator have the same multiplier.",
+    "formula": "Real ratio = wage multiplier / price multiplier",
+    "checks": "1.25/1.25=1",
+    "refs": [
+      "batch05-mathematics-006",
+      "batch08-mathematics-005"
+    ],
+    "closest_original_setup_similarity": 0.045025249221957574
+  },
+  {
+    "id": "mathematics-003",
+    "subject": "Mathematics",
+    "topic": "Profit and Loss",
+    "scenario": "A trader marks an item 50% above cost and offers a 20% discount on that marked price.",
+    "truth": "The sale yields a 20% profit on cost.",
+    "false": "The sale yields a 30% profit on cost.",
+    "reason": "The selling-price multiplier is 1.5×0.8 = 1.2. Percentage markup and discount cannot simply be subtracted.",
+    "formula": "SP/CP = markup multiplier × discount multiplier",
+    "checks": "1.5*0.8=1.2",
+    "refs": [
+      "batch05-mathematics-007"
+    ],
+    "closest_original_setup_similarity": 0.38147838603804296
+  },
+  {
+    "id": "mathematics-004",
+    "subject": "Mathematics",
+    "topic": "Profit and loss",
+    "scenario": "Two articles are sold at ₹120 each. One sale gives a 20% gain and the other a 20% loss, both measured on cost.",
+    "truth": "There is an overall loss of ₹10.",
+    "false": "There is no overall gain or loss.",
+    "reason": "The costs are 120/1.2 = 100 and 120/0.8 = 150. Total cost 250 exceeds total selling price 240.",
+    "formula": "CP = SP/(1+gain rate) or SP/(1−loss rate)",
+    "checks": "120/1.2+120/0.8-240=10",
+    "refs": [
+      "batch08-mathematics-006"
+    ],
+    "closest_original_setup_similarity": 0.2231072772983958
+  },
+  {
+    "id": "mathematics-005",
+    "subject": "Mathematics",
+    "topic": "Ratio and Proportion",
+    "scenario": "A mixture contains milk and water in the ratio 3:2. Ten litres of water are added and the ratio becomes 1:1.",
+    "truth": "The original mixture had 50 litres.",
+    "false": "The original mixture had 25 litres.",
+    "reason": "Write original amounts as 3k and 2k. Equality after adding water gives 3k = 2k+10, so k=10 and total=5k.",
+    "formula": "3k = 2k+10; total = 5k",
+    "checks": "5*10=50",
+    "refs": [
+      "batch05-mathematics-005"
+    ],
+    "closest_original_setup_similarity": 0.11054141397125977
+  },
+  {
+    "id": "mathematics-006",
+    "subject": "Mathematics",
+    "topic": "Mixture and Alligation",
+    "scenario": "A 20-litre solution is 30% salt by volume under an ideal additive-volume model. Five litres of pure water are added.",
+    "truth": "The new concentration is 24%.",
+    "false": "The new concentration is 25%.",
+    "reason": "Salt stays at 6 litres while total volume becomes 25 litres. Concentration is 6/25.",
+    "formula": "New concentration = unchanged solute / new volume",
+    "checks": "20*0.3/25*100=24",
+    "refs": [
+      "batch05-mathematics-020"
+    ],
+    "closest_original_setup_similarity": 0.22745389559912776
+  },
+  {
+    "id": "mathematics-007",
+    "subject": "Mathematics",
+    "topic": "Mixtures",
+    "scenario": "A container holds 10 litres of pure milk. Two litres are removed and replaced with water; the same operation is then repeated after complete mixing.",
+    "truth": "The final amount of milk is 6.4 litres.",
+    "false": "The final amount of milk is 6 litres.",
+    "reason": "Each replacement retains 8/10 of the milk present before that operation. The second removal includes some water.",
+    "formula": "Remaining milk = initial × retained fraction^operations",
+    "checks": "10*(1-2/10)**2=6.4",
+    "refs": [
+      "batch08-mathematics-017"
+    ],
+    "closest_original_setup_similarity": 0.1112381784989018
+  },
+  {
+    "id": "mathematics-008",
+    "subject": "Mathematics",
+    "topic": "Averages",
+    "scenario": "The mean of five numbers is 12. One number, 8, is replaced by 18.",
+    "truth": "The new mean is 14.",
+    "false": "The new mean is 22.",
+    "reason": "The total increases by 10 across five entries, so the mean increases by 2.",
+    "formula": "New mean = old mean + change in total/count",
+    "checks": "12+(18-8)/5=14",
+    "refs": [
+      "seed-0062",
+      "seed-0066",
+      "seed-0070",
+      "seed-0074",
+      "seed-0078",
+      "seed-0082",
+      "seed-0086",
+      "seed-0090",
+      "seed-0094",
+      "seed-0098"
+    ],
+    "closest_original_setup_similarity": 0.15901416663192905
+  },
+  {
+    "id": "mathematics-009",
+    "subject": "Mathematics",
+    "topic": "Average",
+    "scenario": "A class of 20 students has mean score 60, and another class of 30 has mean score 80.",
+    "truth": "The combined mean is 72.",
+    "false": "The combined mean is 70.",
+    "reason": "Use the group sizes as weights, rather than averaging the two means equally.",
+    "formula": "Combined mean = (n1m1+n2m2)/(n1+n2)",
+    "checks": "(20*60+30*80)/50=72",
+    "refs": [
+      "batch05-mathematics-013",
+      "batch08-mathematics-007"
+    ],
+    "closest_original_setup_similarity": 0.13163417654038162
+  },
+  {
+    "id": "mathematics-010",
+    "subject": "Mathematics",
+    "topic": "Statistics",
+    "scenario": "Every observation in a dataset is increased by 7.",
+    "truth": "Its mean rises by 7, but its standard deviation stays the same.",
+    "false": "Both its mean and standard deviation rise by 7.",
+    "reason": "Adding a constant shifts the centre without changing any deviation from the mean.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "signalprep-original-b01-008",
+      "batch08-mathematics-015"
+    ],
+    "closest_original_setup_similarity": 0.0965790953661474
+  },
+  {
+    "id": "mathematics-011",
+    "subject": "Mathematics",
+    "topic": "Statistics",
+    "scenario": "Every observation in a dataset is multiplied by 3.",
+    "truth": "Its variance becomes nine times the original variance.",
+    "false": "Its variance becomes three times the original variance.",
+    "reason": "Deviations multiply by 3 and squared deviations therefore multiply by 9.",
+    "formula": "Var(aX) = a² Var(X)",
+    "checks": "3**2=9",
+    "refs": [
+      "signalprep-original-b01-008",
+      "batch08-mathematics-015"
+    ],
+    "closest_original_setup_similarity": 0.09494671502273376
+  },
+  {
+    "id": "mathematics-012",
+    "subject": "Mathematics",
+    "topic": "Range, mean deviation, variance and standard deviation: grouped/ungrouped data",
+    "scenario": "The dataset is 2, 4, 6 and population variance is requested.",
+    "truth": "The population variance is 8/3.",
+    "false": "The population variance is 4.",
+    "reason": "The mean is 4; squared deviations are 4,0,4. Population variance divides their sum by 3, not by 2.",
+    "formula": "Population variance = Σ(x−mean)²/n",
+    "checks": "(4+0+4)/3=2.6666666666666665",
+    "refs": [
+      "prep-pattern-002"
+    ],
+    "closest_original_setup_similarity": 0.30950219942855683
+  },
+  {
+    "id": "mathematics-013",
+    "subject": "Mathematics",
+    "topic": "Probability",
+    "scenario": "A fair coin is tossed twice. It is known that at least one toss is heads.",
+    "truth": "The probability that both tosses are heads is 1/3.",
+    "false": "The probability that both tosses are heads is 1/2.",
+    "reason": "The condition leaves HH, HT and TH as three equally likely outcomes. Only HH meets the target condition.",
+    "formula": "Conditional probability = favourable retained outcomes / all retained outcomes",
+    "checks": "1/3=0.3333333333333333",
+    "refs": [
+      "signalprep-original-b01-009",
+      "batch08-mathematics-016",
+      "batch08-mathematics-020"
+    ],
+    "closest_original_setup_similarity": 0.26360030056566247
+  },
+  {
+    "id": "mathematics-014",
+    "subject": "Mathematics",
+    "topic": "Probability",
+    "scenario": "A bag has 3 red and 2 blue balls. Two balls are drawn without replacement.",
+    "truth": "The probability that both are blue is 1/10.",
+    "false": "The probability that both are blue is 4/25.",
+    "reason": "After a blue ball is drawn, only one blue remains among four balls. The draws are not independent.",
+    "formula": "P(B then B) = (2/5)(1/4)",
+    "checks": "(2/5)*(1/4)=0.1",
+    "refs": [
+      "signalprep-original-b01-009",
+      "batch08-mathematics-016",
+      "batch08-mathematics-020"
+    ],
+    "closest_original_setup_similarity": 0.733969579315124
+  },
+  {
+    "id": "mathematics-015",
+    "subject": "Mathematics",
+    "topic": "Probability: occurrence, exhaustive and mutually exclusive events",
+    "scenario": "Two events A and B are mutually exclusive, with probabilities 0.3 and 0.4.",
+    "truth": "The probability of A or B is 0.7.",
+    "false": "The probability of A and B is 0.12.",
+    "reason": "Mutually exclusive events have zero intersection. Their union probability is the sum, but multiplication would assume a different relationship.",
+    "formula": "P(A∪B) = P(A)+P(B) when disjoint",
+    "checks": "0.3+0.4=0.7",
+    "refs": [
+      "prep-pattern-003"
+    ],
+    "closest_original_setup_similarity": 0.0
+  },
+  {
+    "id": "mathematics-016",
+    "subject": "Mathematics",
+    "topic": "Universal sets, Venn diagrams, union, intersection, difference and complements",
+    "scenario": "Of 50 students, 28 study physics, 25 study chemistry and 10 study both.",
+    "truth": "Seven students study neither subject.",
+    "false": "Seventeen students study neither subject.",
+    "reason": "The union is 28+25−10 = 43. Subtract that from the class total to find those in neither set.",
+    "formula": "Neither = total − (A+B−intersection)",
+    "checks": "50-(28+25-10)=7",
+    "refs": [
+      "prep-pattern-004"
+    ],
+    "closest_original_setup_similarity": 0.11187515295621372
+  },
+  {
+    "id": "mathematics-017",
+    "subject": "Mathematics",
+    "topic": "Time and Work",
+    "scenario": "A completes a task in 12 days and B in 18 days. They work together for 3 days at constant independent rates.",
+    "truth": "They finish 5/12 of the task in those 3 days.",
+    "false": "They finish 1/5 of the task in those 3 days.",
+    "reason": "Their combined daily rate is 1/12+1/18 = 5/36. Multiply by 3 days.",
+    "formula": "Work = time × sum of rates",
+    "checks": "3*(1/12+1/18)=0.4166666666666667",
+    "refs": [
+      "batch05-mathematics-010"
+    ],
+    "closest_original_setup_similarity": 0.40357716654268383
+  },
+  {
+    "id": "mathematics-018",
+    "subject": "Mathematics",
+    "topic": "Time and work",
+    "scenario": "A can finish a task in 10 days and B in 15 days. A works alone for 2 days; then B finishes the remainder alone.",
+    "truth": "B needs 12 additional days.",
+    "false": "B needs 8 additional days.",
+    "reason": "A completes 1/5 of the work, leaving 4/5. At 1/15 per day, B needs 12 days.",
+    "formula": "Remaining work / B's rate",
+    "checks": "(1-2/10)/(1/15)=12",
+    "refs": [
+      "batch08-mathematics-011",
+      "batch08-mathematics-019"
+    ],
+    "closest_original_setup_similarity": 0.24457760942814755
+  },
+  {
+    "id": "mathematics-019",
+    "subject": "Mathematics",
+    "topic": "Pipes and Cisterns",
+    "scenario": "An inlet fills a tank in 6 hours and an outlet empties a full tank in 9 hours. Both are opened in an initially empty tank, with constant rates.",
+    "truth": "The tank fills in 18 hours.",
+    "false": "The tank fills in 3 hours.",
+    "reason": "The rates oppose each other. Net filling rate is 1/6−1/9 = 1/18 tank per hour.",
+    "formula": "Net rate = inlet rate − outlet rate",
+    "checks": "1/(1/6-1/9)=18",
+    "refs": [
+      "batch05-mathematics-011"
+    ],
+    "closest_original_setup_similarity": 0.4387216044885999
+  },
+  {
+    "id": "mathematics-020",
+    "subject": "Mathematics",
+    "topic": "Speed & Distance",
+    "scenario": "A vehicle travels equal distances at 30 km/h and 60 km/h, with no stops.",
+    "truth": "The average speed is 40 km/h.",
+    "false": "The average speed is 45 km/h.",
+    "reason": "Equal distances at different speeds take different times; total distance divided by total time gives the harmonic mean.",
+    "formula": "vavg = 2uv/(u+v)",
+    "checks": "2*30*60/(30+60)=40",
+    "refs": [
+      "seed-0063",
+      "seed-0067",
+      "seed-0071",
+      "seed-0075",
+      "seed-0079",
+      "seed-0083",
+      "seed-0087",
+      "seed-0091",
+      "seed-0095",
+      "seed-0099"
+    ],
+    "closest_original_setup_similarity": 0.13658108025398663
+  },
+  {
+    "id": "mathematics-021",
+    "subject": "Mathematics",
+    "topic": "Time, Speed and Distance",
+    "scenario": "Two trains of lengths 100 m and 150 m move in opposite directions at 36 km/h and 54 km/h.",
+    "truth": "They take 10 seconds to pass each other completely.",
+    "false": "They take 50 seconds to pass each other completely.",
+    "reason": "Combined length is 250 m. Opposite directions give relative speed 90 km/h = 25 m/s.",
+    "formula": "Time = sum of lengths / relative speed",
+    "checks": "250/((36+54)/3.6)=10",
+    "refs": [
+      "batch05-mathematics-012"
+    ],
+    "closest_original_setup_similarity": 0.12744512096081245
+  },
+  {
+    "id": "mathematics-022",
+    "subject": "Mathematics",
+    "topic": "Time speed and distance",
+    "scenario": "A 120 m train moving at 20 m/s overtakes a runner moving in the same direction at 5 m/s.",
+    "truth": "It takes 8 seconds to pass the runner completely.",
+    "false": "It takes 4.8 seconds to pass the runner completely.",
+    "reason": "Same-direction relative speed is 20−5 = 15 m/s. The relative distance is the train's length.",
+    "formula": "Time = train length / difference in speeds",
+    "checks": "120/(20-5)=8",
+    "refs": [
+      "batch08-mathematics-012"
+    ],
+    "closest_original_setup_similarity": 0.1225542991830868
+  },
+  {
+    "id": "mathematics-023",
+    "subject": "Mathematics",
+    "topic": "Simple Interest",
+    "scenario": "Two equal principals earn simple interest for the same time, one at 6% and the other at 9% per year.",
+    "truth": "The interest amounts are in the ratio 2:3.",
+    "false": "The final amounts are necessarily in the ratio 2:3.",
+    "reason": "With equal principal and time, interest scales with rate. Final amounts also include principal and do not have that ratio in general.",
+    "formula": "SI = Prt",
+    "checks": "6/9=0.6666666666666666",
+    "refs": [
+      "seed-0061",
+      "seed-0065",
+      "seed-0069",
+      "seed-0073",
+      "seed-0077",
+      "seed-0081",
+      "seed-0085",
+      "seed-0089",
+      "seed-0093",
+      "seed-0097",
+      "batch05-mathematics-008"
+    ],
+    "closest_original_setup_similarity": 0.1942634366817969
+  },
+  {
+    "id": "mathematics-024",
+    "subject": "Mathematics",
+    "topic": "Simple interest",
+    "scenario": "An amount of ₹1200 becomes ₹1440 in 4 years under simple interest.",
+    "truth": "The annual rate is 5%.",
+    "false": "The annual rate is 20%.",
+    "reason": "The 20% total increase is spread over four years under simple interest.",
+    "formula": "r = (A−P)/(Pt)",
+    "checks": "((1440-1200)/(1200*4))*100=5",
+    "refs": [
+      "batch08-mathematics-009"
+    ],
+    "closest_original_setup_similarity": 0.4074157717155879
+  },
+  {
+    "id": "mathematics-025",
+    "subject": "Mathematics",
+    "topic": "Compound Interest",
+    "scenario": "₹1000 earns 10% annual compound interest for two years, without deposits or withdrawals.",
+    "truth": "The second year's interest is ₹110.",
+    "false": "The second year's interest is ₹100.",
+    "reason": "The second year begins with ₹1100, so 10% of that amount is ₹110.",
+    "formula": "Year-2 interest = P(1+r)r",
+    "checks": "1000*1.1*0.1=110",
+    "refs": [
+      "batch05-mathematics-009"
+    ],
+    "closest_original_setup_similarity": 0.17811503476913965
+  },
+  {
+    "id": "mathematics-026",
+    "subject": "Mathematics",
+    "topic": "Compound interest",
+    "scenario": "A sum doubles every fixed number of years at a fixed compound growth rate.",
+    "truth": "It takes two such periods to become four times the original sum.",
+    "false": "It takes four such periods to become four times the original sum.",
+    "reason": "Each period multiplies the balance by two, so two periods give 2×2 = 4.",
+    "formula": "Growth factor after k periods = 2^k",
+    "checks": "2**2=4",
+    "refs": [
+      "batch08-mathematics-010"
+    ],
+    "closest_original_setup_similarity": 0.12058416204658727
+  },
+  {
+    "id": "mathematics-027",
+    "subject": "Mathematics",
+    "topic": "Algebra",
+    "scenario": "Real numbers x and y satisfy x+y=8 and xy=12.",
+    "truth": "The value of x²+y² is 40.",
+    "false": "The value of x²+y² is 64.",
+    "reason": "Squaring the sum includes an extra 2xy term, which must be subtracted.",
+    "formula": "x²+y² = (x+y)²−2xy",
+    "checks": "8**2-2*12=40",
+    "refs": [
+      "seed-0064",
+      "seed-0068",
+      "seed-0072",
+      "seed-0076",
+      "seed-0080",
+      "seed-0084",
+      "seed-0088",
+      "seed-0092",
+      "seed-0096",
+      "seed-0100",
+      "batch05-mathematics-014"
+    ],
+    "closest_original_setup_similarity": 0.1493385271457264
+  },
+  {
+    "id": "mathematics-028",
+    "subject": "Mathematics",
+    "topic": "Quadratic equations",
+    "scenario": "A quadratic has roots 2 and 5 and leading coefficient 1.",
+    "truth": "Its equation is x²−7x+10=0.",
+    "false": "Its equation is x²+7x+10=0.",
+    "reason": "Expand (x−2)(x−5). The sum of roots enters with a negative sign.",
+    "formula": "(x−α)(x−β) = x²−(α+β)x+αβ",
+    "checks": "2+5=7; 2*5=10",
+    "refs": [
+      "prep-pattern-001"
+    ],
+    "closest_original_setup_similarity": 0.1083865792000463
+  },
+  {
+    "id": "mathematics-029",
+    "subject": "Mathematics",
+    "topic": "Linear equations",
+    "scenario": "A shop sells pens at ₹10 and notebooks at ₹30. A purchase of 8 items costs ₹160.",
+    "truth": "The purchase contains 4 notebooks.",
+    "false": "The purchase contains 6 notebooks.",
+    "reason": "Let n be notebooks, leaving 8−n pens. Then 30n+10(8−n)=160, so 20n=80.",
+    "formula": "30n+10(8−n)=160",
+    "checks": "(160-10*8)/(30-10)=4",
+    "refs": [
+      "batch08-mathematics-008"
+    ],
+    "closest_original_setup_similarity": 0.11100916254944419
+  },
+  {
+    "id": "mathematics-030",
+    "subject": "Mathematics",
+    "topic": "Age Problems",
+    "scenario": "A parent's age is currently three times a child's age. After 12 years, the parent's age will be twice the child's age.",
+    "truth": "The child is currently 12 years old.",
+    "false": "The child is currently 6 years old.",
+    "reason": "Let the child's age be x. Then 3x+12=2(x+12), giving x=12.",
+    "formula": "3x+12=2x+24",
+    "checks": "24-12=12",
+    "refs": [
+      "batch05-mathematics-019"
+    ],
+    "closest_original_setup_similarity": 0.2710399890799989
+  },
+  {
+    "id": "mathematics-031",
+    "subject": "Mathematics",
+    "topic": "Arithmetic Progression",
+    "scenario": "An arithmetic progression starts at 4 and has common difference 3.",
+    "truth": "Its tenth term is 31.",
+    "false": "Its tenth term is 34.",
+    "reason": "The tenth term is nine steps after the first term, not ten steps.",
+    "formula": "an = a1+(n−1)d",
+    "checks": "4+(10-1)*3=31",
+    "refs": [
+      "signalprep-original-b01-003"
+    ],
+    "closest_original_setup_similarity": 0.22967620791807314
+  },
+  {
+    "id": "mathematics-032",
+    "subject": "Mathematics",
+    "topic": "Arithmetic Progression",
+    "scenario": "An arithmetic progression has 10 terms, first term 3 and last term 30.",
+    "truth": "Its sum is 165.",
+    "false": "Its sum is 330.",
+    "reason": "The mean of the equally spaced terms is (3+30)/2 = 16.5. Multiply by ten.",
+    "formula": "Sn = n(first+last)/2",
+    "checks": "10*(3+30)/2=165",
+    "refs": [
+      "signalprep-original-b01-003"
+    ],
+    "closest_original_setup_similarity": 0.44037647960917337
+  },
+  {
+    "id": "mathematics-033",
+    "subject": "Mathematics",
+    "topic": "LCM and HCF",
+    "scenario": "Two positive integers have HCF 6 and LCM 60. One integer is 12.",
+    "truth": "The other integer is 30.",
+    "false": "The other integer is 24.",
+    "reason": "For two positive integers, their product equals HCF times LCM. Divide 360 by 12.",
+    "formula": "ab = HCF × LCM",
+    "checks": "6*60/12=30",
+    "refs": [
+      "batch05-mathematics-004",
+      "batch08-mathematics-003"
+    ],
+    "closest_original_setup_similarity": 0.19656639254839675
+  },
+  {
+    "id": "mathematics-034",
+    "subject": "Mathematics",
+    "topic": "Number System",
+    "scenario": "An integer leaves remainder 2 when divided by 5.",
+    "truth": "Its square leaves remainder 4 when divided by 5.",
+    "false": "Its square must leave remainder 2 when divided by 5.",
+    "reason": "Write the integer as 5k+2. Squaring leaves the same remainder as 2².",
+    "formula": "If n≡r mod m, n²≡r² mod m",
+    "checks": "2**2%5=4",
+    "refs": [
+      "signalprep-original-b01-001",
+      "batch05-mathematics-001"
+    ],
+    "closest_original_setup_similarity": 0.46681345301043975
+  },
+  {
+    "id": "mathematics-035",
+    "subject": "Mathematics",
+    "topic": "Number system",
+    "scenario": "A positive integer is divisible by both 8 and 12.",
+    "truth": "It must be divisible by 24.",
+    "false": "It must be divisible by 96.",
+    "reason": "A common multiple is divisible by the least common multiple. LCM(8,12)=24; 24 itself disproves the 96 claim.",
+    "formula": "LCM = product/HCF",
+    "checks": "8*12/4=24",
+    "refs": [
+      "batch08-mathematics-001"
+    ],
+    "closest_original_setup_similarity": 0.36718746383431167
+  },
+  {
+    "id": "mathematics-036",
+    "subject": "Mathematics",
+    "topic": "BODMAS",
+    "scenario": "The expression is 18÷3×2, with ordinary left-to-right evaluation for equal-precedence operations.",
+    "truth": "Its value is 12.",
+    "false": "Its value is 3.",
+    "reason": "Division and multiplication have equal precedence, so evaluate (18÷3)×2.",
+    "formula": "Equal-precedence multiplication/division proceed left to right",
+    "checks": "18/3*2=12",
+    "refs": [
+      "signalprep-original-b01-002",
+      "batch05-mathematics-002"
+    ],
+    "closest_original_setup_similarity": 0.16362875574110256
+  },
+  {
+    "id": "mathematics-037",
+    "subject": "Mathematics",
+    "topic": "Decimals and Fractions",
+    "scenario": "A container is 3/4 full and then loses 1/3 of the liquid currently in it.",
+    "truth": "It remains 1/2 full.",
+    "false": "It remains 5/12 full.",
+    "reason": "The removed fraction applies to the present liquid. Retained liquid is (3/4)(2/3) of capacity.",
+    "formula": "Remaining fraction = current fraction × retained fraction",
+    "checks": "(3/4)*(1-1/3)=0.5",
+    "refs": [
+      "batch05-mathematics-003"
+    ],
+    "closest_original_setup_similarity": 0.10656607763608388
+  },
+  {
+    "id": "mathematics-038",
+    "subject": "Mathematics",
+    "topic": "Decimals and measurement",
+    "scenario": "A length is reported to the nearest 0.1 cm as 12.3 cm.",
+    "truth": "A true length of 12.34 cm is consistent with that report.",
+    "false": "A true length of 12.39 cm is consistent with that report.",
+    "reason": "Ordinary rounding to one decimal sends 12.34 to 12.3, while 12.39 rounds to 12.4.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "batch08-mathematics-002"
+    ],
+    "closest_original_setup_similarity": 0.2625908858499948
+  },
+  {
+    "id": "mathematics-039",
+    "subject": "Mathematics",
+    "topic": "Geometry",
+    "scenario": "The angles of a triangle are in the ratio 2:3:4.",
+    "truth": "Its largest angle is 80°.",
+    "false": "Its largest angle is 90°.",
+    "reason": "The nine ratio parts sum to 180°, so each part is 20°. The largest angle has four parts.",
+    "formula": "Triangle angle sum = 180°",
+    "checks": "180*4/(2+3+4)=80",
+    "refs": [
+      "batch05-mathematics-015",
+      "batch08-mathematics-013"
+    ],
+    "closest_original_setup_similarity": 0.12162384970359215
+  },
+  {
+    "id": "mathematics-040",
+    "subject": "Mathematics",
+    "topic": "Similar Triangles",
+    "scenario": "Two similar triangles have corresponding side lengths in the ratio 2:5.",
+    "truth": "Their areas are in the ratio 4:25.",
+    "false": "Their areas are in the ratio 2:5.",
+    "reason": "Area scales with the square of the linear scale factor.",
+    "formula": "Area ratio = square of side ratio",
+    "checks": "(2/5)**2=0.16",
+    "refs": [
+      "signalprep-original-b01-010"
+    ],
+    "closest_original_setup_similarity": 0.2675777551587024
+  },
+  {
+    "id": "mathematics-041",
+    "subject": "Mathematics",
+    "topic": "Pythagoras Theorem",
+    "scenario": "A rectangle has sides 6 cm and 8 cm.",
+    "truth": "Its diagonal is 10 cm.",
+    "false": "Its diagonal is 14 cm.",
+    "reason": "The sides and diagonal form a right triangle. Add squared sides before taking the square root.",
+    "formula": "d = √(a²+b²)",
+    "checks": "(6**2+8**2)**0.5=10",
+    "refs": [
+      "signalprep-original-b01-004"
+    ],
+    "closest_original_setup_similarity": 0.294217740291963
+  },
+  {
+    "id": "mathematics-042",
+    "subject": "Mathematics",
+    "topic": "Coordinate Geometry",
+    "scenario": "Points P=(−2,3) and Q=(4,−1) are endpoints of a segment.",
+    "truth": "Their midpoint is (1,1).",
+    "false": "Their midpoint is (2,2).",
+    "reason": "Average the two x-coordinates and separately average the two y-coordinates.",
+    "formula": "Midpoint = ((x1+x2)/2,(y1+y2)/2)",
+    "checks": "(-2+4)/2=1; (3-1)/2=1",
+    "refs": [
+      "signalprep-original-b01-005"
+    ],
+    "closest_original_setup_similarity": 0.13512640357198122
+  },
+  {
+    "id": "mathematics-043",
+    "subject": "Mathematics",
+    "topic": "Coordinate Geometry",
+    "scenario": "A line rises by 6 units when moving 3 units to the right.",
+    "truth": "Its slope is 2.",
+    "false": "Its slope is 1/2.",
+    "reason": "Slope is vertical change divided by horizontal change, not its reciprocal.",
+    "formula": "m = Δy/Δx",
+    "checks": "6/3=2",
+    "refs": [
+      "signalprep-original-b01-005"
+    ],
+    "closest_original_setup_similarity": 0.06460121963990281
+  },
+  {
+    "id": "mathematics-044",
+    "subject": "Mathematics",
+    "topic": "Trigonometric Ratios",
+    "scenario": "An acute angle in a right triangle has opposite side 3 and hypotenuse 5.",
+    "truth": "Its cosine is 4/5.",
+    "false": "Its cosine is 3/5.",
+    "reason": "The adjacent side is 4 by Pythagoras. Cosine is adjacent divided by hypotenuse; 3/5 is sine.",
+    "formula": "cos θ = adjacent/hypotenuse; adjacent = √(5²−3²)",
+    "checks": "(5**2-3**2)**0.5/5=0.8",
+    "refs": [
+      "signalprep-original-b01-006"
+    ],
+    "closest_original_setup_similarity": 0.5218517852567784
+  },
+  {
+    "id": "mathematics-045",
+    "subject": "Mathematics",
+    "topic": "Heights and distances",
+    "scenario": "From a point on level ground 20 m from a tower's base, the angle of elevation to its top is 45°. Ignore observer height.",
+    "truth": "The tower is 20 m high.",
+    "false": "The tower is 20√2 m high.",
+    "reason": "Tangent 45° equals one, so vertical height equals horizontal distance. The hypotenuse is not the height.",
+    "formula": "h = d tan 45°",
+    "checks": "20*1=20",
+    "refs": [
+      "prep-pattern-005"
+    ],
+    "closest_original_setup_similarity": 0.45509626021866434
+  },
+  {
+    "id": "mathematics-046",
+    "subject": "Mathematics",
+    "topic": "Surface Area and Volume",
+    "scenario": "A solid cube of side 4 cm is melted and recast into cubes of side 2 cm without loss.",
+    "truth": "Eight smaller cubes are obtained.",
+    "false": "Four smaller cubes are obtained.",
+    "reason": "Volume is conserved. The large cube has 64 cm³ and each small cube has 8 cm³.",
+    "formula": "Count = original volume / each new volume",
+    "checks": "4**3/2**3=8",
+    "refs": [
+      "signalprep-original-b01-007"
+    ],
+    "closest_original_setup_similarity": 0.23792457066830458
+  },
+  {
+    "id": "mathematics-047",
+    "subject": "Mathematics",
+    "topic": "Mensuration",
+    "scenario": "A cylinder's radius doubles while its height is halved.",
+    "truth": "Its volume doubles.",
+    "false": "Its volume stays unchanged.",
+    "reason": "Radius contributes a square factor of four, while height contributes a factor of one half.",
+    "formula": "V = πr²h; volume factor = radius factor² × height factor",
+    "checks": "2**2*0.5=2",
+    "refs": [
+      "batch05-mathematics-016",
+      "batch08-mathematics-014"
+    ],
+    "closest_original_setup_similarity": 0.23394824095323022
+  },
+  {
+    "id": "mathematics-048",
+    "subject": "Mathematics",
+    "topic": "Geometry and mensuration",
+    "scenario": "A square of side 10 cm has a circular hole of radius 2 cm cut from it.",
+    "truth": "The remaining area is 100−4π cm².",
+    "false": "The remaining area is 100−2π cm².",
+    "reason": "Subtract the circle's area, πr², from the square's area. Circumference is not an area.",
+    "formula": "Remaining area = side²−πr²",
+    "checks": "10**2=100; 2**2=4",
+    "refs": [
+      "batch08-mathematics-018"
+    ],
+    "closest_original_setup_similarity": 0.23981634504230562
+  },
+  {
+    "id": "mathematics-049",
+    "subject": "Mathematics",
+    "topic": "Data Interpretation",
+    "scenario": "A factory's output increases from 200 units to 250, then returns to 200.",
+    "truth": "The return change is a 20% decrease.",
+    "false": "The return change is a 25% decrease.",
+    "reason": "The decrease is measured against the new base 250. The 50-unit decrease is 50/250.",
+    "formula": "Decrease percentage = fall / starting value of decrease ×100",
+    "checks": "(250-200)/250*100=20",
+    "refs": [
+      "batch05-mathematics-018"
+    ],
+    "closest_original_setup_similarity": 0.06016658731829078
+  },
+  {
+    "id": "mathematics-050",
+    "subject": "Mathematics",
+    "topic": "Algebra",
+    "scenario": "A nonzero real number x satisfies x+1/x=3.",
+    "truth": "The value of x²+1/x² is 7.",
+    "false": "The value of x²+1/x² is 9.",
+    "reason": "Squaring includes the cross term 2x(1/x)=2; subtract it.",
+    "formula": "x²+1/x² = (x+1/x)²−2",
+    "checks": "3**2-2=7",
+    "refs": [
+      "seed-0064",
+      "seed-0068",
+      "seed-0072",
+      "seed-0076",
+      "seed-0080",
+      "seed-0084",
+      "seed-0088",
+      "seed-0092",
+      "seed-0096",
+      "seed-0100",
+      "batch05-mathematics-014"
+    ],
+    "closest_original_setup_similarity": 0.10975358106588158
+  },
+  {
+    "id": "mathematics-051",
+    "subject": "Mathematics",
+    "topic": "Ratio and proportion",
+    "scenario": "A sum is divided among A, B and C in the ratio 2:3:5. B receives ₹90.",
+    "truth": "A and C together receive ₹210.",
+    "false": "A and C together receive ₹180.",
+    "reason": "Three parts are ₹90, so one part is ₹30. A and C receive seven parts.",
+    "formula": "Part value = known share / its ratio parts",
+    "checks": "90/3*(2+5)=210",
+    "refs": [
+      "batch08-mathematics-004"
+    ],
+    "closest_original_setup_similarity": 0.368068697521005
+  },
+  {
+    "id": "mathematics-052",
+    "subject": "Mathematics",
+    "topic": "Time and Work",
+    "scenario": "Six equally efficient workers complete a job in 8 days. The same work must be done in 4 days at the same rate per worker.",
+    "truth": "Twelve workers are needed.",
+    "false": "Three workers are needed.",
+    "reason": "Total work is 48 worker-days. Halving the time requires twice as many workers.",
+    "formula": "Workers × days = constant work",
+    "checks": "6*8/4=12",
+    "refs": [
+      "batch05-mathematics-010"
+    ],
+    "closest_original_setup_similarity": 0.364679451190948
+  },
+  {
+    "id": "mathematics-053",
+    "subject": "Mathematics",
+    "topic": "Averages",
+    "scenario": "The average of four readings is 15. A fifth reading is added and the new average is 16.",
+    "truth": "The fifth reading is 20.",
+    "false": "The fifth reading is 16.",
+    "reason": "The old sum is 60 and new sum is 80. Their difference is the added reading.",
+    "formula": "Added value = new count × new mean − old count × old mean",
+    "checks": "5*16-4*15=20",
+    "refs": [
+      "seed-0062",
+      "seed-0066",
+      "seed-0070",
+      "seed-0074",
+      "seed-0078",
+      "seed-0082",
+      "seed-0086",
+      "seed-0090",
+      "seed-0094",
+      "seed-0098"
+    ],
+    "closest_original_setup_similarity": 0.12971910002474274
+  },
+  {
+    "id": "mathematics-054",
+    "subject": "Mathematics",
+    "topic": "Probability",
+    "scenario": "A fair six-sided die is rolled. Let A mean an even result and B mean a result greater than 4.",
+    "truth": "A and B are not mutually exclusive.",
+    "false": "A and B are mutually exclusive.",
+    "reason": "The result 6 belongs to both events. A shared possible outcome disproves mutual exclusivity.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "signalprep-original-b01-009",
+      "batch08-mathematics-016",
+      "batch08-mathematics-020"
+    ],
+    "closest_original_setup_similarity": 0.24911594237702875
+  },
+  {
+    "id": "mathematics-055",
+    "subject": "Mathematics",
+    "topic": "Geometry",
+    "scenario": "An exterior angle of a triangle is 110° and one of its two remote interior angles is 45°.",
+    "truth": "The other remote interior angle is 65°.",
+    "false": "The other remote interior angle is 25°.",
+    "reason": "An exterior angle equals the sum of the two remote interior angles.",
+    "formula": "Other remote angle = exterior − known remote",
+    "checks": "110-45=65",
+    "refs": [
+      "batch05-mathematics-015",
+      "batch08-mathematics-013"
+    ],
+    "closest_original_setup_similarity": 0.17158573364879168
+  },
+  {
+    "id": "mathematics-056",
+    "subject": "Mathematics",
+    "topic": "Algebra",
+    "scenario": "For real x, the equation (x−3)²=0 is considered.",
+    "truth": "It has the single distinct solution x=3.",
+    "false": "It has two distinct solutions, x=3 and x=−3.",
+    "reason": "A real square is zero only when its base is zero. The repeated root does not give a second distinct value.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "seed-0064",
+      "seed-0068",
+      "seed-0072",
+      "seed-0076",
+      "seed-0080",
+      "seed-0084",
+      "seed-0088",
+      "seed-0092",
+      "seed-0096",
+      "seed-0100",
+      "batch05-mathematics-014"
+    ],
+    "closest_original_setup_similarity": 0.12427753659359349
+  },
+  {
+    "id": "reasoning-001",
+    "subject": "Reasoning",
+    "topic": "Conditional reasoning",
+    "scenario": "A rule states: whenever relay R operates, lamp L glows. Lamp L is not glowing. Assume the rule has no exceptions.",
+    "truth": "Relay R has not operated.",
+    "false": "Relay R must have operated.",
+    "reason": "This is the contrapositive: R implies L, so not L implies not R.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "batch04-reasoning-020"
+    ],
+    "closest_original_setup_similarity": 0.10443414472199541
+  },
+  {
+    "id": "reasoning-002",
+    "subject": "Reasoning",
+    "topic": "Conditional reasoning",
+    "scenario": "A rule states: if a card is valid, a gate opens. The gate is observed to be open; there may be other opening mechanisms.",
+    "truth": "The observation alone does not establish that the card is valid.",
+    "false": "The open gate proves that a valid card was used.",
+    "reason": "A sufficient condition is not necessarily necessary. Other mechanisms can produce the same observation.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "batch04-reasoning-020"
+    ],
+    "closest_original_setup_similarity": 0.09908148572066332
+  },
+  {
+    "id": "reasoning-003",
+    "subject": "Reasoning",
+    "topic": "Syllogism",
+    "scenario": "Every copper item in a collection is a conductor. Some ornaments in the collection are copper.",
+    "truth": "Some ornaments in the collection are conductors.",
+    "false": "Every conductor in the collection is a copper ornament.",
+    "reason": "The particular ornaments known to be copper inherit conductor status. The premises do not classify all conductors.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "prep-pattern-010",
+      "batch04-reasoning-010"
+    ],
+    "closest_original_setup_similarity": 0.08800820402169493
+  },
+  {
+    "id": "reasoning-004",
+    "subject": "Reasoning",
+    "topic": "Syllogisms",
+    "scenario": "No red token is square. Every token in box P is square.",
+    "truth": "No token in box P is red.",
+    "false": "Every non-red token must be in box P.",
+    "reason": "The sets red and square are disjoint, and box P is inside square. Nothing states that all non-red tokens belong to P.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "batch10-reasoning-009"
+    ],
+    "closest_original_setup_similarity": 0.12798056877217825
+  },
+  {
+    "id": "reasoning-005",
+    "subject": "Reasoning",
+    "topic": "Syllogism",
+    "scenario": "All alpha objects are beta objects. All beta objects are gamma objects. No existence assumption is made.",
+    "truth": "Every alpha object is a gamma object.",
+    "false": "At least one alpha object must exist.",
+    "reason": "Universal inclusion chains support another inclusion but do not, by themselves, assert that the smaller set has a member.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "prep-pattern-010",
+      "batch04-reasoning-010"
+    ],
+    "closest_original_setup_similarity": 0.07474009396777943
+  },
+  {
+    "id": "reasoning-006",
+    "subject": "Reasoning",
+    "topic": "Statement and conclusion",
+    "scenario": "Some technicians are musicians. Some musicians are cyclists. These are the only premises.",
+    "truth": "It is possible that no technician is a cyclist.",
+    "false": "At least one technician must be a cyclist.",
+    "reason": "The two mentioned subsets of musicians may be different people. Their overlap is not forced.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "batch04-reasoning-017"
+    ],
+    "closest_original_setup_similarity": 0.1785042125324874
+  },
+  {
+    "id": "reasoning-007",
+    "subject": "Reasoning",
+    "topic": "Logical deduction",
+    "scenario": "Exactly one of switches A and B is on. Switch A is off.",
+    "truth": "Switch B is on.",
+    "false": "Switch B is off.",
+    "reason": "Exactly one requires one on state and excludes both-off and both-on arrangements.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "batch10-reasoning-018"
+    ],
+    "closest_original_setup_similarity": 0.32517350589239846
+  },
+  {
+    "id": "reasoning-008",
+    "subject": "Reasoning",
+    "topic": "Logical deduction",
+    "scenario": "At least one of sensors X and Y is active. Sensor X is active.",
+    "truth": "Sensor Y's state is not determined.",
+    "false": "Sensor Y must be inactive.",
+    "reason": "At least one permits one or both to be active. Knowing X is active does not determine Y.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "batch10-reasoning-018"
+    ],
+    "closest_original_setup_similarity": 0.09649840560550232
+  },
+  {
+    "id": "reasoning-009",
+    "subject": "Reasoning",
+    "topic": "Analytical reasoning",
+    "scenario": "Only employees with permits may enter a room. Ravi has entered in accordance with that rule.",
+    "truth": "Ravi has a permit.",
+    "false": "Every employee with a permit must have entered.",
+    "reason": "Entry requires a permit, but having permission does not force entry.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "prep-pattern-012"
+    ],
+    "closest_original_setup_similarity": 0.09125323369757074
+  },
+  {
+    "id": "reasoning-010",
+    "subject": "Reasoning",
+    "topic": "Ranking",
+    "scenario": "A is taller than B, B is taller than C, and D is taller than A.",
+    "truth": "D is taller than C.",
+    "false": "C is taller than D.",
+    "reason": "Chaining the comparisons gives D>A>B>C.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "seed-0103",
+      "seed-0106",
+      "seed-0109",
+      "seed-0112",
+      "seed-0115",
+      "seed-0118",
+      "seed-0121",
+      "seed-0124",
+      "seed-0127",
+      "seed-0130"
+    ],
+    "closest_original_setup_similarity": 0.0
+  },
+  {
+    "id": "reasoning-011",
+    "subject": "Reasoning",
+    "topic": "Ranking/Ordering",
+    "scenario": "Four distinct scores satisfy P>Q, R>P and Q>S.",
+    "truth": "R is the highest of the four.",
+    "false": "P is the highest of the four.",
+    "reason": "The complete ordering is R>P>Q>S.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "signalprep-original-b01-014"
+    ],
+    "closest_original_setup_similarity": 0.09888628800672793
+  },
+  {
+    "id": "reasoning-012",
+    "subject": "Reasoning",
+    "topic": "Ranking and order",
+    "scenario": "Meena is fifth from the front and seventh from the back in a line with no ties.",
+    "truth": "There are 11 people in the line.",
+    "false": "There are 12 people in the line.",
+    "reason": "The two counts include Meena twice, so subtract one.",
+    "formula": "Total = front rank + back rank − 1",
+    "checks": "5+7-1=11",
+    "refs": [
+      "batch04-reasoning-008"
+    ],
+    "closest_original_setup_similarity": 0.06355413159355383
+  },
+  {
+    "id": "reasoning-013",
+    "subject": "Reasoning",
+    "topic": "Ranking/order",
+    "scenario": "In a line of 20 people, R is eighth from the front. Four people leave, all of whom stood ahead of R.",
+    "truth": "R becomes fourth from the front.",
+    "false": "R becomes twelfth from the front.",
+    "reason": "Only the number of people ahead matters for the front rank. It falls by four.",
+    "formula": "New front rank = old rank − departures ahead",
+    "checks": "8-4=4",
+    "refs": [
+      "batch10-reasoning-008"
+    ],
+    "closest_original_setup_similarity": 0.23774240210369246
+  },
+  {
+    "id": "reasoning-014",
+    "subject": "Reasoning",
+    "topic": "Directions",
+    "scenario": "A person walks 6 m east, 8 m north, then 6 m west.",
+    "truth": "The final position is 8 m north of the starting point.",
+    "false": "The final position is 20 m north of the starting point.",
+    "reason": "East and west displacements cancel. Total path length is not straight-line displacement.",
+    "formula": "Net east = 6−6; net north = 8",
+    "checks": "6-6=0",
+    "refs": [
+      "seed-0102",
+      "seed-0105",
+      "seed-0108",
+      "seed-0111",
+      "seed-0114",
+      "seed-0117",
+      "seed-0120",
+      "seed-0123",
+      "seed-0126",
+      "seed-0129",
+      "signalprep-original-b01-013"
+    ],
+    "closest_original_setup_similarity": 0.526111480109025
+  },
+  {
+    "id": "reasoning-015",
+    "subject": "Reasoning",
+    "topic": "Direction sense",
+    "scenario": "A person faces west, turns right, then turns right again.",
+    "truth": "The person now faces east.",
+    "false": "The person now faces north.",
+    "reason": "A right turn from west gives north; the second right turn gives east.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "batch04-reasoning-007",
+      "batch10-reasoning-007"
+    ],
+    "closest_original_setup_similarity": 0.3488607008177293
+  },
+  {
+    "id": "reasoning-016",
+    "subject": "Reasoning",
+    "topic": "Directions",
+    "scenario": "A walker goes 3 m north and 4 m east. No further motion occurs.",
+    "truth": "The shortest distance back to the start is 5 m.",
+    "false": "The shortest distance back to the start is 7 m.",
+    "reason": "The direct route is the hypotenuse of a right triangle; 7 m is the travelled path length.",
+    "formula": "Distance = √(north²+east²)",
+    "checks": "(3**2+4**2)**0.5=5",
+    "refs": [
+      "seed-0102",
+      "seed-0105",
+      "seed-0108",
+      "seed-0111",
+      "seed-0114",
+      "seed-0117",
+      "seed-0120",
+      "seed-0123",
+      "seed-0126",
+      "seed-0129",
+      "signalprep-original-b01-013"
+    ],
+    "closest_original_setup_similarity": 0.1179674631096802
+  },
+  {
+    "id": "reasoning-017",
+    "subject": "Reasoning",
+    "topic": "Direction sense",
+    "scenario": "P is north of Q. R is east of P. S is directly south of R at the same north-south level as Q.",
+    "truth": "S is east of Q.",
+    "false": "S is west of Q.",
+    "reason": "The vertical offset is cancelled by moving south to Q's level; the eastward offset remains.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "batch04-reasoning-007",
+      "batch10-reasoning-007"
+    ],
+    "closest_original_setup_similarity": 0.14484321408653958
+  },
+  {
+    "id": "reasoning-018",
+    "subject": "Reasoning",
+    "topic": "Blood relations",
+    "scenario": "Arun is the son of Bela. Bela is the sister of Charu. The terms have their ordinary family meanings.",
+    "truth": "Charu is a sibling of Arun's mother.",
+    "false": "Charu must be Arun's maternal uncle.",
+    "reason": "The sibling relationship is certain, but Charu's gender has not been specified, so uncle is not forced.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "batch04-reasoning-006",
+      "batch10-reasoning-006"
+    ],
+    "closest_original_setup_similarity": 0.15016967450537264
+  },
+  {
+    "id": "reasoning-019",
+    "subject": "Reasoning",
+    "topic": "Relationships",
+    "scenario": "P is the brother of Q. Q is the mother of R. P and Q share the same parents.",
+    "truth": "P is R's maternal uncle.",
+    "false": "P is R's paternal grandfather.",
+    "reason": "P is a male sibling of R's mother, which defines maternal uncle.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "signalprep-original-b01-016"
+    ],
+    "closest_original_setup_similarity": 0.16164958204791904
+  },
+  {
+    "id": "reasoning-020",
+    "subject": "Reasoning",
+    "topic": "Blood relations",
+    "scenario": "A is B's daughter. B is C's father.",
+    "truth": "A and C share a father.",
+    "false": "A must be older than C.",
+    "reason": "The shared father follows directly. No ages or birth order are stated.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "batch04-reasoning-006",
+      "batch10-reasoning-006"
+    ],
+    "closest_original_setup_similarity": 0.15338150705532505
+  },
+  {
+    "id": "reasoning-021",
+    "subject": "Reasoning",
+    "topic": "Coding-decoding",
+    "scenario": "A code replaces each letter with the next alphabet letter, wrapping Z to A. The word ZAP is encoded.",
+    "truth": "The code is ABQ.",
+    "false": "The code is AAQ.",
+    "reason": "Apply the rule to every letter: Z→A, A→B and P→Q.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "batch04-reasoning-005",
+      "batch04-reasoning-019",
+      "batch10-reasoning-005"
+    ],
+    "closest_original_setup_similarity": 0.34016718969075227
+  },
+  {
+    "id": "reasoning-022",
+    "subject": "Reasoning",
+    "topic": "Coding-Decoding",
+    "scenario": "A code reverses a word first and then advances every letter by one, wrapping Z to A. The input is CAT.",
+    "truth": "The output is UBD.",
+    "false": "The output is DBU.",
+    "reason": "Reversing CAT gives TAC; advancing T,A,C gives U,B,D. Order of operations matters.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "signalprep-original-b01-012"
+    ],
+    "closest_original_setup_similarity": 0.3410193560758582
+  },
+  {
+    "id": "reasoning-023",
+    "subject": "Reasoning",
+    "topic": "Mathematical operations",
+    "scenario": "In a puzzle, the symbol ★ is defined by a★b=2a+b. It has no other meaning.",
+    "truth": "3★4 equals 10.",
+    "false": "3★4 equals 14.",
+    "reason": "Substitute a=3 and b=4 into the given definition; do not assume ordinary multiplication.",
+    "formula": "a★b = 2a+b",
+    "checks": "2*3+4=10",
+    "refs": [
+      "batch04-reasoning-009",
+      "batch10-reasoning-011"
+    ],
+    "closest_original_setup_similarity": 0.15891505263873168
+  },
+  {
+    "id": "reasoning-024",
+    "subject": "Reasoning",
+    "topic": "Mathematical Operations",
+    "scenario": "A puzzle defines a◇b=a²−b². Evaluate 5◇3.",
+    "truth": "The result is 16.",
+    "false": "The result is 4.",
+    "reason": "The definition subtracts squares, rather than squaring the difference.",
+    "formula": "a◇b = a²−b²",
+    "checks": "5**2-3**2=16",
+    "refs": [
+      "signalprep-original-b01-019"
+    ],
+    "closest_original_setup_similarity": 0.41827054026897975
+  },
+  {
+    "id": "reasoning-025",
+    "subject": "Reasoning",
+    "topic": "Data sufficiency",
+    "scenario": "The task is to determine a positive integer x. Statement I says x is a multiple of 3 less than 10. Statement II says x is even.",
+    "truth": "The two statements together determine x=6.",
+    "false": "Statement I alone determines x=6.",
+    "reason": "Statement I permits 3,6,9. Adding evenness leaves only 6; neither statement alone fixes x.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "batch04-reasoning-014",
+      "batch10-reasoning-020"
+    ],
+    "closest_original_setup_similarity": 0.20793165852965162
+  },
+  {
+    "id": "reasoning-026",
+    "subject": "Reasoning",
+    "topic": "Data sufficiency",
+    "scenario": "The task is to find a rectangle's area. Statement I gives length 8 cm. Statement II gives perimeter 28 cm.",
+    "truth": "The two statements together are sufficient.",
+    "false": "Statement II alone is sufficient.",
+    "reason": "Together they give width 14−8 = 6 and area 48. Perimeter alone permits different rectangles with different areas.",
+    "formula": "w = perimeter/2−length; area = length×width",
+    "checks": "8*(28/2-8)=48",
+    "refs": [
+      "batch04-reasoning-014",
+      "batch10-reasoning-020"
+    ],
+    "closest_original_setup_similarity": 0.18033246191570068
+  },
+  {
+    "id": "reasoning-027",
+    "subject": "Reasoning",
+    "topic": "Data interpretation and sufficiency",
+    "scenario": "The task is to decide whether integer n is divisible by 6. Statement I says n is divisible by 2. Statement II says n is divisible by 3.",
+    "truth": "The two statements together answer yes.",
+    "false": "Statement I alone answers yes.",
+    "reason": "Divisibility by both coprime factors 2 and 3 gives divisibility by 6. Even numbers need not be divisible by 3.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "prep-pattern-011"
+    ],
+    "closest_original_setup_similarity": 0.2612650367471674
+  },
+  {
+    "id": "reasoning-028",
+    "subject": "Reasoning",
+    "topic": "Venn diagrams",
+    "scenario": "Every device in set A is also in B, and no device in B is in C.",
+    "truth": "A and C have no common member.",
+    "false": "Every device outside A must be in C.",
+    "reason": "Any A member would also be B, which cannot be C. The premises do not classify everything outside A.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "batch04-reasoning-011",
+      "batch10-reasoning-010"
+    ],
+    "closest_original_setup_similarity": 0.14609892694364546
+  },
+  {
+    "id": "reasoning-029",
+    "subject": "Reasoning",
+    "topic": "Venn diagrams",
+    "scenario": "A collection has 12 round objects, 9 blue objects and 4 objects that are both round and blue.",
+    "truth": "There are 17 objects that are round or blue.",
+    "false": "There are 21 distinct objects that are round or blue.",
+    "reason": "The four shared objects were counted twice in 12+9 and must be subtracted once.",
+    "formula": "Union count = A+B−intersection",
+    "checks": "12+9-4=17",
+    "refs": [
+      "batch04-reasoning-011",
+      "batch10-reasoning-010"
+    ],
+    "closest_original_setup_similarity": 0.07711679133552819
+  },
+  {
+    "id": "reasoning-030",
+    "subject": "Reasoning",
+    "topic": "Seating arrangement",
+    "scenario": "Four people occupy seats 1 to 4 from left to right. A is in seat 1, B is immediately right of C, and D is in seat 4.",
+    "truth": "C is in seat 2 and B is in seat 3.",
+    "false": "B is in seat 2 and C is in seat 3.",
+    "reason": "Only seats 2 and 3 remain. The stated right-neighbour relationship fixes their order.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "batch04-reasoning-018"
+    ],
+    "closest_original_setup_similarity": 0.33806233835037036
+  },
+  {
+    "id": "reasoning-031",
+    "subject": "Reasoning",
+    "topic": "Arrangement",
+    "scenario": "Three tasks X, Y and Z must all be completed. Y must follow X, and Z must follow Y.",
+    "truth": "X,Y,Z is the only allowed order.",
+    "false": "X,Z,Y is an allowed order.",
+    "reason": "The precedence chain is X before Y before Z; swapping Y and Z violates the second condition.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "batch10-reasoning-015"
+    ],
+    "closest_original_setup_similarity": 0.35639176310894727
+  },
+  {
+    "id": "reasoning-032",
+    "subject": "Reasoning",
+    "topic": "Puzzle reasoning",
+    "scenario": "Three labelled boxes contain a key in exactly one box. The key is not in box A and is not in box C.",
+    "truth": "The key is in box B.",
+    "false": "The key may be in both B and C.",
+    "reason": "The exactly-one condition and both exclusions leave only box B.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "batch10-reasoning-017"
+    ],
+    "closest_original_setup_similarity": 0.23775316225019832
+  },
+  {
+    "id": "reasoning-033",
+    "subject": "Reasoning",
+    "topic": "Analytical Reasoning",
+    "scenario": "A committee must include exactly two of P,Q,R. P and Q cannot serve together.",
+    "truth": "The feasible pairs are P,R and Q,R.",
+    "false": "R may be excluded by choosing P,Q.",
+    "reason": "The only pair without R violates the incompatibility rule, so both allowed pairs contain R.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "signalprep-original-b01-018"
+    ],
+    "closest_original_setup_similarity": 0.0482887068681173
+  },
+  {
+    "id": "reasoning-034",
+    "subject": "Reasoning",
+    "topic": "Logical sequence",
+    "scenario": "A maintenance procedure requires isolation before inspection and inspection before restoration.",
+    "truth": "Restoration cannot be first in a compliant execution.",
+    "false": "Inspection may precede isolation in a compliant execution.",
+    "reason": "The explicit precedence conditions give isolation, then inspection, then restoration.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "batch04-reasoning-015"
+    ],
+    "closest_original_setup_similarity": 0.11001991286494657
+  },
+  {
+    "id": "reasoning-035",
+    "subject": "Reasoning",
+    "topic": "Clock reasoning",
+    "scenario": "At exactly 3:30 on an ideal analogue clock, the minute hand is at 180° clockwise from 12.",
+    "truth": "The smaller angle between the hands is 75°.",
+    "false": "The smaller angle between the hands is 90°.",
+    "reason": "The hour hand has moved to 105°, not stayed at 90°. The difference is 180−105 = 75°.",
+    "formula": "Hour angle = 30h+0.5m; minute angle = 6m",
+    "checks": "6*30-(30*3+0.5*30)=75",
+    "refs": [
+      "batch04-reasoning-012"
+    ],
+    "closest_original_setup_similarity": 0.43840953504604785
+  },
+  {
+    "id": "reasoning-036",
+    "subject": "Reasoning",
+    "topic": "Clock",
+    "scenario": "A correctly running clock's minute hand turns through 150° from its starting position.",
+    "truth": "Twenty-five minutes have elapsed.",
+    "false": "Thirty minutes have elapsed.",
+    "reason": "The minute hand moves 360° in 60 minutes, or 6° per minute.",
+    "formula": "Time in minutes = angle/6",
+    "checks": "150/6=25",
+    "refs": [
+      "batch10-reasoning-014"
+    ],
+    "closest_original_setup_similarity": 0.3200736527269796
+  },
+  {
+    "id": "reasoning-037",
+    "subject": "Reasoning",
+    "topic": "Calendar reasoning",
+    "scenario": "Today is Wednesday. A task is scheduled 17 days from today.",
+    "truth": "The task falls on Saturday.",
+    "false": "The task falls on Friday.",
+    "reason": "Seventeen days is two complete weeks plus three days. Wednesday plus three days is Saturday.",
+    "formula": "Weekday shift = days modulo 7",
+    "checks": "17%7=3",
+    "refs": [
+      "batch04-reasoning-013"
+    ],
+    "closest_original_setup_similarity": 0.11348641064292986
+  },
+  {
+    "id": "reasoning-038",
+    "subject": "Reasoning",
+    "topic": "Calendar",
+    "scenario": "A non-leap year begins on Monday.",
+    "truth": "The next year begins on Tuesday.",
+    "false": "The next year begins on Wednesday.",
+    "reason": "A non-leap year contains 365 days, which is 52 weeks plus one day.",
+    "formula": "365 mod 7 = 1",
+    "checks": "365%7=1",
+    "refs": [
+      "batch10-reasoning-013"
+    ],
+    "closest_original_setup_similarity": 0.2501375924679594
+  },
+  {
+    "id": "reasoning-039",
+    "subject": "Reasoning",
+    "topic": "Number series",
+    "scenario": "A sequence is defined, rather than guessed, by a1=2 and a(n+1)=2a(n)+1.",
+    "truth": "Its fourth term is 23.",
+    "false": "Its fourth term is 15.",
+    "reason": "The successive terms are 2,5,11,23 under the explicit recurrence.",
+    "formula": "Next = 2×previous+1",
+    "checks": "2*(2*(2*2+1)+1)+1=23",
+    "refs": [
+      "batch04-reasoning-003",
+      "batch10-reasoning-001"
+    ],
+    "closest_original_setup_similarity": 0.0916770659767346
+  },
+  {
+    "id": "reasoning-040",
+    "subject": "Reasoning",
+    "topic": "Number Series",
+    "scenario": "A sequence alternates adding 3 and multiplying by 2, starting at 4 with the addition step first.",
+    "truth": "Its first four terms are 4,7,14,17.",
+    "false": "Its first four terms are 4,8,11,22.",
+    "reason": "Follow the given first operation and alternate: add 3, double, add 3.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "seed-0101",
+      "seed-0104",
+      "seed-0107",
+      "seed-0110",
+      "seed-0113",
+      "seed-0116",
+      "seed-0119",
+      "seed-0122",
+      "seed-0125",
+      "seed-0128",
+      "signalprep-original-b01-011"
+    ],
+    "closest_original_setup_similarity": 0.08548374621972843
+  },
+  {
+    "id": "reasoning-041",
+    "subject": "Reasoning",
+    "topic": "Alphabet series",
+    "scenario": "Letters advance by successive steps +1,+2,+3 from A, without wrapping during these steps.",
+    "truth": "The four displayed letters are A,B,D,G.",
+    "false": "The four displayed letters are A,B,C,D.",
+    "reason": "Positions are 1,2,4,7 after cumulative advances, corresponding to A,B,D,G.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "batch10-reasoning-002"
+    ],
+    "closest_original_setup_similarity": 0.07056203905179803
+  },
+  {
+    "id": "reasoning-042",
+    "subject": "Reasoning",
+    "topic": "Letter series",
+    "scenario": "A letter sequence starts at Y and advances three positions each time, wrapping after Z.",
+    "truth": "The next two letters are B and E.",
+    "false": "The next two letters are A and D.",
+    "reason": "From Y, three advances are Z,A,B. Three more advances give C,D,E.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "batch04-reasoning-004"
+    ],
+    "closest_original_setup_similarity": 0.18576258087921443
+  },
+  {
+    "id": "reasoning-043",
+    "subject": "Reasoning",
+    "topic": "Classification",
+    "scenario": "Items are classified by whether they are perfect squares. The list is 16,25,36,45.",
+    "truth": "45 is the only item outside the square class.",
+    "false": "36 is the only item outside the square class.",
+    "reason": "The first three are 4²,5² and 6². No integer square lies between 36 and 49.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "signalprep-original-b01-015",
+      "batch04-reasoning-002",
+      "batch10-reasoning-004"
+    ],
+    "closest_original_setup_similarity": 0.11569127822769838
+  },
+  {
+    "id": "reasoning-044",
+    "subject": "Reasoning",
+    "topic": "Classification",
+    "scenario": "A rule groups integers having exactly two positive divisors. The candidates are 2,9,11,15.",
+    "truth": "Exactly two candidates belong to the group.",
+    "false": "Exactly three candidates belong to the group.",
+    "reason": "Numbers with exactly two positive divisors are prime. Here 2 and 11 qualify; 9 and 15 are composite.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "signalprep-original-b01-015",
+      "batch04-reasoning-002",
+      "batch10-reasoning-004"
+    ],
+    "closest_original_setup_similarity": 0.09225293313840613
+  },
+  {
+    "id": "reasoning-045",
+    "subject": "Reasoning",
+    "topic": "Analogies",
+    "scenario": "The relation in a numeric analogy is explicitly defined as mapping n to n³. The pair 3:27 is followed by 4:?.",
+    "truth": "The missing value is 64.",
+    "false": "The missing value is 16.",
+    "reason": "Use the stated cube relation, not a different relation suggested by one example.",
+    "formula": "Output = n³",
+    "checks": "4**3=64",
+    "refs": [
+      "signalprep-original-b01-020"
+    ],
+    "closest_original_setup_similarity": 0.06421459866179244
+  },
+  {
+    "id": "reasoning-046",
+    "subject": "Reasoning",
+    "topic": "Analogy",
+    "scenario": "In a relation puzzle, each word is paired with its letter count, counting every letter once. TRAIN is paired with 5.",
+    "truth": "SIGNAL is paired with 6.",
+    "false": "SIGNAL is paired with 5.",
+    "reason": "SIGNAL contains S,I,G,N,A,L, which are six letters.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "batch04-reasoning-001",
+      "batch10-reasoning-003"
+    ],
+    "closest_original_setup_similarity": 0.1360363926869308
+  },
+  {
+    "id": "reasoning-047",
+    "subject": "Reasoning",
+    "topic": "Data-based reasoning",
+    "scenario": "On a chart, Monday has 12 faults and Tuesday has 8. Only these two days are under consideration.",
+    "truth": "Monday accounts for 60% of the two-day total.",
+    "false": "Monday accounts for 150% of the two-day total.",
+    "reason": "The denominator is the combined total 20. The 150% ratio compares Monday to Tuesday, which is a different question.",
+    "formula": "Share = category / total",
+    "checks": "12/(12+8)*100=60",
+    "refs": [
+      "batch10-reasoning-016"
+    ],
+    "closest_original_setup_similarity": 0.151847359352466
+  },
+  {
+    "id": "reasoning-048",
+    "subject": "Reasoning",
+    "topic": "Mathematical reasoning",
+    "scenario": "Two odd integers are added.",
+    "truth": "Their sum must be even.",
+    "false": "Their sum must be odd.",
+    "reason": "Writing them as 2a+1 and 2b+1 gives 2(a+b+1), a multiple of two.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "batch10-reasoning-019"
+    ],
+    "closest_original_setup_similarity": 0.09808677833306746
+  },
+  {
+    "id": "reasoning-049",
+    "subject": "Reasoning",
+    "topic": "Missing number",
+    "scenario": "A table rule states that the third entry in each row equals the product of the first two entries minus the first. A row begins 4,7.",
+    "truth": "The missing third entry is 24.",
+    "false": "The missing third entry is 28.",
+    "reason": "Apply the full stated rule, including subtraction of the first entry.",
+    "formula": "Third = first×second−first",
+    "checks": "4*7-4=24",
+    "refs": [
+      "batch10-reasoning-012"
+    ],
+    "closest_original_setup_similarity": 0.13091381257280846
+  },
+  {
+    "id": "reasoning-050",
+    "subject": "Reasoning",
+    "topic": "Non-verbal reasoning",
+    "scenario": "A square tile has a dot only at its top-left corner. It is rotated 90° clockwise in its own plane.",
+    "truth": "The dot moves to the top-right corner.",
+    "false": "The dot moves to the bottom-left corner.",
+    "reason": "A clockwise quarter-turn takes the top-left corner to the top-right. Bottom-left would correspond to a counterclockwise quarter-turn.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "batch04-reasoning-016"
+    ],
+    "closest_original_setup_similarity": 0.07044925844032188
+  },
+  {
+    "id": "reasoning-051",
+    "subject": "Reasoning",
+    "topic": "Statement and conclusion",
+    "scenario": "A survey states that all 40 devices inspected passed a test; no other devices were inspected.",
+    "truth": "The statement establishes a result for the 40 inspected devices.",
+    "false": "The statement proves that every uninspected device will pass.",
+    "reason": "A result for an inspected subset does not logically establish the same result for every unobserved member.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "batch04-reasoning-017"
+    ],
+    "closest_original_setup_similarity": 0.09211133190648138
+  },
+  {
+    "id": "reasoning-052",
+    "subject": "Reasoning",
+    "topic": "Analytical reasoning",
+    "scenario": "Exactly three lamps are on among A,B,C,D. Lamp D is off.",
+    "truth": "A,B and C must all be on.",
+    "false": "At least one of A,B,C must be off.",
+    "reason": "With one named lamp off and exactly three on in a four-lamp set, every remaining lamp must be on.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "prep-pattern-012"
+    ],
+    "closest_original_setup_similarity": 0.2038643896189558
+  },
+  {
+    "id": "awareness-001",
+    "subject": "General Awareness",
+    "topic": "Economics",
+    "scenario": "A household's nominal income remains fixed while the overall price level rises.",
+    "truth": "Its purchasing power generally falls.",
+    "false": "Its purchasing power generally rises.",
+    "reason": "With the same money and higher prices, the household can generally purchase fewer goods and services. This describes the purchasing-power effect of inflation.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "seed-0181",
+      "seed-0190"
+    ],
+    "closest_original_setup_similarity": 0.08841881580107551
+  },
+  {
+    "id": "awareness-002",
+    "subject": "General Awareness",
+    "topic": "Economics",
+    "scenario": "A person can attend only one of two free training sessions. The chosen session yields a benefit valued at 500 units and the rejected best alternative at 300 units.",
+    "truth": "The opportunity cost is the 300-unit benefit forgone.",
+    "false": "The opportunity cost is zero because neither session charges a fee.",
+    "reason": "Opportunity cost includes the best alternative benefit sacrificed, not just a cash payment.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "seed-0181",
+      "seed-0190"
+    ],
+    "closest_original_setup_similarity": 0.07847039163290445
+  },
+  {
+    "id": "awareness-003",
+    "subject": "General Awareness",
+    "topic": "Economics",
+    "scenario": "A basket costs ₹100 one year and ₹110 the next, with quantities unchanged.",
+    "truth": "The basket price has risen by 10%.",
+    "false": "The basket price has risen by 110%.",
+    "reason": "The increase is ₹10 compared with the original ₹100. The new level and the percentage change are different quantities.",
+    "formula": "Percentage change = (new−old)/old ×100",
+    "checks": "(110-100)/100*100=10",
+    "refs": [
+      "seed-0181",
+      "seed-0190"
+    ],
+    "closest_original_setup_similarity": 0.10783967271200745
+  },
+  {
+    "id": "awareness-004",
+    "subject": "General Awareness",
+    "topic": "Economics",
+    "scenario": "A student spends an evening studying instead of taking an available paid shift. There is no tuition charge for the evening study.",
+    "truth": "The forgone shift income can be part of the opportunity cost of studying.",
+    "false": "The opportunity cost must be zero because the study itself is free.",
+    "reason": "The relevant sacrifice is the best alternative forgone, including income that could have been earned.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "seed-0181",
+      "seed-0190"
+    ],
+    "closest_original_setup_similarity": 0.07147835441595775
+  },
+  {
+    "id": "awareness-005",
+    "subject": "General Awareness",
+    "topic": "Geography",
+    "scenario": "A point moves due north from 10° south latitude, crosses the Equator, and reaches 10° north latitude.",
+    "truth": "It has changed from the Southern Hemisphere to the Northern Hemisphere.",
+    "false": "It has necessarily changed from the Eastern Hemisphere to the Western Hemisphere.",
+    "reason": "The Equator separates north and south. Longitude, not crossing the Equator, determines east-west hemisphere classification.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "seed-0172",
+      "seed-0175",
+      "seed-0179",
+      "seed-0184",
+      "seed-0188"
+    ],
+    "closest_original_setup_similarity": 0.24531267459748923
+  },
+  {
+    "id": "awareness-006",
+    "subject": "General Awareness",
+    "topic": "Geography",
+    "scenario": "Two places lie at the same latitude but at different longitudes.",
+    "truth": "Their east-west positions can differ even though their north-south angular positions match.",
+    "false": "They must be the same place because their latitude matches.",
+    "reason": "Latitude specifies only one coordinate. Longitude is also needed to distinguish locations along that parallel.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "seed-0172",
+      "seed-0175",
+      "seed-0179",
+      "seed-0184",
+      "seed-0188"
+    ],
+    "closest_original_setup_similarity": 0.13091347656820723
+  },
+  {
+    "id": "awareness-007",
+    "subject": "General Awareness",
+    "topic": "Geography",
+    "scenario": "A diagram labels Earth's layers outward to inward as crust, mantle, outer core, inner core.",
+    "truth": "The mantle is placed between the crust and the core.",
+    "false": "The mantle is placed outside the crust.",
+    "reason": "The crust is the outer solid layer; the mantle lies beneath it and above the core.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "seed-0172",
+      "seed-0175",
+      "seed-0179",
+      "seed-0184",
+      "seed-0188"
+    ],
+    "closest_original_setup_similarity": 0.11450203959195585
+  },
+  {
+    "id": "awareness-008",
+    "subject": "General Awareness",
+    "topic": "Geography",
+    "scenario": "A student compares Earth's oceans by surface area using the standard named oceans.",
+    "truth": "The Pacific exceeds the Atlantic in surface area.",
+    "false": "The Arctic exceeds the Pacific in surface area.",
+    "reason": "The Pacific is the largest ocean; the Arctic is much smaller. This comparison concerns surface area, not a particular coastline length.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "seed-0172",
+      "seed-0175",
+      "seed-0179",
+      "seed-0184",
+      "seed-0188"
+    ],
+    "closest_original_setup_similarity": 0.12402441638623964
+  },
+  {
+    "id": "awareness-009",
+    "subject": "General Awareness",
+    "topic": "Geography",
+    "scenario": "A map marks the Tropic of Cancer near 23.5° north and the Equator at 0° latitude.",
+    "truth": "Both lines are parallels of latitude.",
+    "false": "Both lines are meridians of longitude.",
+    "reason": "They describe north-south angular location relative to the Equator. Meridians instead run from pole to pole and identify longitude.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "seed-0172",
+      "seed-0175",
+      "seed-0179",
+      "seed-0184",
+      "seed-0188"
+    ],
+    "closest_original_setup_similarity": 0.1603690819547952
+  },
+  {
+    "id": "awareness-010",
+    "subject": "General Awareness",
+    "topic": "General Science",
+    "scenario": "A circuit transfers 15 coulombs of charge in 3 seconds.",
+    "truth": "Its average current is 5 amperes.",
+    "false": "Its average current is 45 amperes.",
+    "reason": "Current is charge passing per unit time. Multiply would give the wrong dimensions.",
+    "formula": "I = Q/t",
+    "checks": "15/3=5",
+    "refs": [
+      "seed-0173",
+      "seed-0177",
+      "seed-0180",
+      "seed-0183",
+      "seed-0186",
+      "seed-0189"
+    ],
+    "closest_original_setup_similarity": 0.0759863336004688
+  },
+  {
+    "id": "awareness-011",
+    "subject": "General Awareness",
+    "topic": "General Science",
+    "scenario": "A 2 kg body accelerates at 3 m/s² under a net force.",
+    "truth": "The net force is 6 newtons.",
+    "false": "The net force is 6 joules.",
+    "reason": "Mass times acceleration has units kg·m/s², named newtons. Joules measure energy.",
+    "formula": "F = ma",
+    "checks": "2*3=6",
+    "refs": [
+      "seed-0173",
+      "seed-0177",
+      "seed-0180",
+      "seed-0183",
+      "seed-0186",
+      "seed-0189"
+    ],
+    "closest_original_setup_similarity": 0.11580843363038971
+  },
+  {
+    "id": "awareness-012",
+    "subject": "General Awareness",
+    "topic": "General Science",
+    "scenario": "A laboratory labels two samples Na and N using chemical element symbols.",
+    "truth": "Na denotes sodium and N denotes nitrogen.",
+    "false": "Both labels denote sodium.",
+    "reason": "Element symbols are case-sensitive identifiers. Na and N are different symbols for different elements.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "seed-0173",
+      "seed-0177",
+      "seed-0180",
+      "seed-0183",
+      "seed-0186",
+      "seed-0189"
+    ],
+    "closest_original_setup_similarity": 0.10828065644851098
+  },
+  {
+    "id": "awareness-013",
+    "subject": "General Awareness",
+    "topic": "General Science",
+    "scenario": "A sample of ordinary dry air is compared by volume of its principal gases.",
+    "truth": "Nitrogen is more abundant than oxygen.",
+    "false": "Oxygen makes up roughly 78% of the dry air.",
+    "reason": "Nitrogen accounts for roughly 78% and oxygen for roughly 21% of ordinary dry air by volume.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "seed-0173",
+      "seed-0177",
+      "seed-0180",
+      "seed-0183",
+      "seed-0186",
+      "seed-0189"
+    ],
+    "closest_original_setup_similarity": 0.08229661910411554
+  },
+  {
+    "id": "awareness-014",
+    "subject": "General Awareness",
+    "topic": "General Science",
+    "scenario": "A diagram follows blood from the heart through vessels and back to the heart.",
+    "truth": "The heart supplies the pumping action for circulation.",
+    "false": "The stomach supplies the main pumping action for circulation.",
+    "reason": "The muscular heart drives blood circulation. Digestion in the stomach has a different principal role.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "seed-0173",
+      "seed-0177",
+      "seed-0180",
+      "seed-0183",
+      "seed-0186",
+      "seed-0189"
+    ],
+    "closest_original_setup_similarity": 0.08774825342644307
+  },
+  {
+    "id": "awareness-015",
+    "subject": "General Awareness",
+    "topic": "General Science",
+    "scenario": "Pure water is considered at 25°C under ordinary conditions.",
+    "truth": "Neutrality corresponds approximately to pH 7.",
+    "false": "Neutrality at these conditions requires pH 1.",
+    "reason": "At 25°C, pure water has equal hydrogen- and hydroxide-ion concentrations and approximately pH 7. A pH near 1 is strongly acidic.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "seed-0173",
+      "seed-0177",
+      "seed-0180",
+      "seed-0183",
+      "seed-0186",
+      "seed-0189"
+    ],
+    "closest_original_setup_similarity": 0.3072526594975442
+  },
+  {
+    "id": "awareness-016",
+    "subject": "General Awareness",
+    "topic": "General Science",
+    "scenario": "A solution at 25°C has pH 3, and another at the same temperature has pH 5.",
+    "truth": "The first has approximately 100 times the hydrogen-ion activity of the second.",
+    "false": "The first has approximately two times the hydrogen-ion activity of the second.",
+    "reason": "The pH scale is logarithmic. A difference of two pH units corresponds to a factor of 10².",
+    "formula": "Activity ratio = 10^(pH2−pH1)",
+    "checks": "10**(5-3)=100",
+    "refs": [
+      "seed-0173",
+      "seed-0177",
+      "seed-0180",
+      "seed-0183",
+      "seed-0186",
+      "seed-0189"
+    ],
+    "closest_original_setup_similarity": 0.2395723526188828
+  },
+  {
+    "id": "awareness-017",
+    "subject": "General Awareness",
+    "topic": "General Science",
+    "scenario": "An astronomy description identifies a planet by its especially prominent ring system made largely of ice particles.",
+    "truth": "Saturn matches that description.",
+    "false": "Mercury matches that description.",
+    "reason": "Saturn is noted for its extensive, easily recognized ring system. Mercury does not have such a ring system.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "seed-0173",
+      "seed-0177",
+      "seed-0180",
+      "seed-0183",
+      "seed-0186",
+      "seed-0189"
+    ],
+    "closest_original_setup_similarity": 0.32774076960118836
+  },
+  {
+    "id": "awareness-018",
+    "subject": "General Awareness",
+    "topic": "Indian Polity",
+    "scenario": "A study note distinguishes the date of adoption of India's Constitution from its principal commencement date.",
+    "truth": "26 November 1949 is the adoption date and 26 January 1950 the principal commencement date.",
+    "false": "26 January 1950 is the adoption date and 26 November 1949 the principal commencement date.",
+    "reason": "Adoption and commencement are different milestones; the latter is commemorated as Republic Day.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "seed-0171",
+      "seed-0176",
+      "seed-0182",
+      "seed-0187"
+    ],
+    "closest_original_setup_similarity": 0.22354207973685974
+  },
+  {
+    "id": "awareness-019",
+    "subject": "General Awareness",
+    "topic": "Indian Polity",
+    "scenario": "A student organizes constitutional notes into Fundamental Rights and Directive Principles of State Policy.",
+    "truth": "Part III is the appropriate main heading for Fundamental Rights and Part IV for Directive Principles.",
+    "false": "Part IV is the appropriate main heading for Fundamental Rights and Part III for Directive Principles.",
+    "reason": "The two sets of provisions occupy different parts of the Constitution; interchanging their labels misclassifies them.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "seed-0171",
+      "seed-0176",
+      "seed-0182",
+      "seed-0187"
+    ],
+    "closest_original_setup_similarity": 0.4703175643658055
+  },
+  {
+    "id": "awareness-020",
+    "subject": "General Awareness",
+    "topic": "Indian Polity",
+    "scenario": "An English-language civics chart uses the alternative names of India's two houses of Parliament.",
+    "truth": "Council of States refers to Rajya Sabha, while House of the People refers to Lok Sabha.",
+    "false": "Council of States refers to Lok Sabha, while House of the People refers to Rajya Sabha.",
+    "reason": "These are the respective constitutional names of the two houses; they are not interchangeable.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "seed-0171",
+      "seed-0176",
+      "seed-0182",
+      "seed-0187"
+    ],
+    "closest_original_setup_similarity": 0.07153314100685813
+  },
+  {
+    "id": "awareness-021",
+    "subject": "General Awareness",
+    "topic": "History",
+    "scenario": "A history note links the 1930 Dandi March with opposition to the British salt monopoly.",
+    "truth": "Salt, rather than an income-tax filing rule, was central to that protest.",
+    "false": "The note should replace salt with railway ticket tax as the central issue.",
+    "reason": "The march and breaking of the salt law challenged colonial control over salt and the associated tax.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "seed-0174",
+      "seed-0178",
+      "seed-0185"
+    ],
+    "closest_original_setup_similarity": 0.2207808889556483
+  },
+  {
+    "id": "awareness-022",
+    "subject": "General Awareness",
+    "topic": "History",
+    "scenario": "A cultural-history exhibit pairs Jana Gana Mana with its composer.",
+    "truth": "Rabindranath Tagore is the appropriate composer for that pairing.",
+    "false": "Alexander Fleming is the appropriate composer for that pairing.",
+    "reason": "Tagore composed Jana Gana Mana. Fleming belongs to the history of penicillin, not the composition of the anthem.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "seed-0174",
+      "seed-0178",
+      "seed-0185"
+    ],
+    "closest_original_setup_similarity": 0.33531683754165603
+  },
+  {
+    "id": "awareness-023",
+    "subject": "General Awareness",
+    "topic": "History",
+    "scenario": "A science-history timeline places Fleming's observation of the antibacterial effect of Penicillium mould in 1928.",
+    "truth": "It links that observation with the discovery of penicillin.",
+    "false": "It links that observation with the discovery of the planet Saturn.",
+    "reason": "The observation was a key milestone in penicillin's discovery. Later development into a widely usable drug involved further work.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "seed-0174",
+      "seed-0178",
+      "seed-0185"
+    ],
+    "closest_original_setup_similarity": 0.04477313910736187
+  },
+  {
+    "id": "awareness-024",
+    "subject": "General Awareness",
+    "topic": "General Science",
+    "scenario": "A label gives a force as 12 N and an electric current as 2 A.",
+    "truth": "The symbols correspond to newtons and amperes respectively.",
+    "false": "The symbols correspond to newtons and coulombs respectively.",
+    "reason": "A is the symbol for ampere, the SI unit of electric current; coulomb is the unit of charge and uses C.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "seed-0173",
+      "seed-0177",
+      "seed-0180",
+      "seed-0183",
+      "seed-0186",
+      "seed-0189"
+    ],
+    "closest_original_setup_similarity": 0.33150503817644184
+  },
+  {
+    "id": "awareness-025",
+    "subject": "General Awareness",
+    "topic": "Geography",
+    "scenario": "A vessel crosses the Equator while staying in the Pacific Ocean.",
+    "truth": "Crossing the Equator does not require crossing an ocean boundary.",
+    "false": "Every Equator crossing necessarily leaves the Pacific for the Atlantic.",
+    "reason": "The Equator is a latitude line crossing the Pacific itself, not a boundary between those two oceans.",
+    "formula": "",
+    "checks": "",
+    "refs": [
+      "seed-0172",
+      "seed-0175",
+      "seed-0179",
+      "seed-0184",
+      "seed-0188"
+    ],
+    "closest_original_setup_similarity": 0.13235843072669645
+  }
+]

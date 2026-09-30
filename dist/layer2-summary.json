@@ -1,0 +1,345 @@
+{
+  "original_sha256": "d0048cb99f595e07544e1c17c05cd60034e6a1f5094f55ff9afe1a2cf637830b",
+  "original_count": 432,
+  "original_scored_count": 431,
+  "layer2_count": 1000,
+  "subject_counts": {
+    "Science & Engineering": 300,
+    "Computers": 245,
+    "Mathematics": 220,
+    "Reasoning": 190,
+    "General Awareness": 45
+  },
+  "primary_topic_counts": {
+    "Science & Engineering / Network Theory": 24,
+    "Science & Engineering / AC fundamentals": 5,
+    "Science & Engineering / Resistance and resistivity": 12,
+    "Science & Engineering / Capacitors": 22,
+    "Science & Engineering / Heat and temperature": 16,
+    "Science & Engineering / Transformers": 24,
+    "Science & Engineering / Transistors": 9,
+    "Science & Engineering / Photodiodes": 7,
+    "Science & Engineering / Range extension methods": 7,
+    "Science & Engineering / Electromagnetic induction and Faraday law": 7,
+    "Science & Engineering / Basic electricity": 11,
+    "Science & Engineering / Electrical power": 12,
+    "Science & Engineering / Inductors": 10,
+    "Science & Engineering / RC circuits": 17,
+    "Science & Engineering / Kirchhoff laws": 12,
+    "Science & Engineering / Electrical energy": 10,
+    "Science & Engineering / AC circuits": 17,
+    "Science & Engineering / Measurements": 4,
+    "Science & Engineering / Series and parallel circuits": 11,
+    "Science & Engineering / Transducers": 3,
+    "Science & Engineering / Zener diode circuits": 9,
+    "Science & Engineering / Digital electronics": 3,
+    "Science & Engineering / Magnetic force": 6,
+    "Science & Engineering / Signal modulation": 3,
+    "Science & Engineering / Diodes and rectifiers": 7,
+    "Science & Engineering / Work, power and energy": 4,
+    "Science & Engineering / RL circuits": 7,
+    "Science & Engineering / Electromagnetic induction": 6,
+    "Science & Engineering / Measurement accuracy": 2,
+    "Science & Engineering / Measurement errors": 4,
+    "Science & Engineering / Communication Systems": 3,
+    "Science & Engineering / Digital signal concepts": 3,
+    "Science & Engineering / Measurement instruments": 2,
+    "Science & Engineering / Communication fundamentals": 1,
+    "Computers / Input/output": 5,
+    "Computers / Memory": 10,
+    "Computers / Number systems": 8,
+    "Computers / Memory: cache": 7,
+    "Computers / DNS": 8,
+    "Computers / Number Systems": 20,
+    "Computers / Algorithms and programming fundamentals": 8,
+    "Computers / Computer performance": 7,
+    "Computers / Storage formats": 9,
+    "Computers / Networking": 12,
+    "Computers / Storage and backups": 5,
+    "Computers / Linux files and folders": 7,
+    "Computers / Hardware": 3,
+    "Computers / Operating systems": 9,
+    "Computers / File systems": 9,
+    "Computers / Operating Systems": 9,
+    "Computers / Digital communication": 5,
+    "Computers / Data representation": 10,
+    "Computers / Boolean logic": 1,
+    "Computers / Database design": 6,
+    "Computers / HTTP": 6,
+    "Computers / Authentication security": 2,
+    "Computers / CPU fundamentals": 5,
+    "Computers / Error detection": 3,
+    "Computers / SQL aggregation": 3,
+    "Computers / Databases": 10,
+    "Computers / Memory and cache": 9,
+    "Computers / MS Office: word processing": 2,
+    "Computers / CPU registers": 6,
+    "Computers / Storage devices": 9,
+    "Computers / IP networking": 7,
+    "Computers / Cybersecurity": 3,
+    "Computers / Software": 2,
+    "Computers / Email protocols": 5,
+    "Computers / MS Office: spreadsheets": 4,
+    "Computers / Security": 3,
+    "Computers / Internet and protocols": 5,
+    "Computers / Programming fundamentals": 2,
+    "Computers / Computer networks": 1,
+    "Mathematics / Profit and loss": 7,
+    "Mathematics / Universal sets, Venn diagrams, union, intersection, difference and complements": 9,
+    "Mathematics / Probability": 8,
+    "Mathematics / Mixtures": 5,
+    "Mathematics / Algebra": 8,
+    "Mathematics / Average": 8,
+    "Mathematics / Geometry": 3,
+    "Mathematics / Arithmetic Progression": 6,
+    "Mathematics / LCM and HCF": 5,
+    "Mathematics / Linear equations": 3,
+    "Mathematics / Range, mean deviation, variance and standard deviation: grouped/ungrouped data": 6,
+    "Mathematics / Mixture and Alligation": 9,
+    "Mathematics / Statistics": 18,
+    "Mathematics / Percentage": 19,
+    "Mathematics / Profit and Loss": 10,
+    "Mathematics / Probability: occurrence, exhaustive and mutually exclusive events": 9,
+    "Mathematics / Speed & Distance": 9,
+    "Mathematics / Decimals and Fractions": 4,
+    "Mathematics / Ratio and Proportion": 6,
+    "Mathematics / Averages": 11,
+    "Mathematics / Quadratic equations": 6,
+    "Mathematics / Decimals and measurement": 4,
+    "Mathematics / Time and work": 5,
+    "Mathematics / Number system": 4,
+    "Mathematics / Compound Interest": 5,
+    "Mathematics / Number System": 2,
+    "Mathematics / Geometry and mensuration": 3,
+    "Mathematics / Compound interest": 5,
+    "Mathematics / BODMAS": 2,
+    "Mathematics / Similar Triangles": 2,
+    "Mathematics / Time speed and distance": 5,
+    "Mathematics / Time, Speed and Distance": 4,
+    "Mathematics / Surface Area and Volume": 1,
+    "Mathematics / Coordinate Geometry": 4,
+    "Mathematics / Simple Interest": 4,
+    "Mathematics / Data Interpretation": 1,
+    "Reasoning / Ranking/Ordering": 6,
+    "Reasoning / Ranking/order": 6,
+    "Reasoning / Calendar reasoning": 5,
+    "Reasoning / Logical deduction": 16,
+    "Reasoning / Direction sense": 12,
+    "Reasoning / Conditional reasoning": 17,
+    "Reasoning / Ranking": 8,
+    "Reasoning / Analytical Reasoning": 4,
+    "Reasoning / Relationships": 5,
+    "Reasoning / Statement and conclusion": 8,
+    "Reasoning / Logical sequence": 6,
+    "Reasoning / Ranking and order": 7,
+    "Reasoning / Analytical reasoning": 6,
+    "Reasoning / Syllogism": 13,
+    "Reasoning / Data interpretation and sufficiency": 3,
+    "Reasoning / Syllogisms": 8,
+    "Reasoning / Data sufficiency": 5,
+    "Reasoning / Coding-decoding": 6,
+    "Reasoning / Blood relations": 10,
+    "Reasoning / Puzzle reasoning": 3,
+    "Reasoning / Venn diagrams": 4,
+    "Reasoning / Seating arrangement": 4,
+    "Reasoning / Analogies": 1,
+    "Reasoning / Clock": 4,
+    "Reasoning / Mathematical operations": 5,
+    "Reasoning / Mathematical reasoning": 1,
+    "Reasoning / Mathematical Operations": 3,
+    "Reasoning / Number Series": 3,
+    "Reasoning / Coding-Decoding": 4,
+    "Reasoning / Data-based reasoning": 1,
+    "Reasoning / Alphabet series": 2,
+    "Reasoning / Letter series": 1,
+    "Reasoning / Number series": 2,
+    "Reasoning / Analogy": 1,
+    "General Awareness / General Science": 11,
+    "General Awareness / Geography": 16,
+    "General Awareness / Economics": 14,
+    "General Awareness / History": 3,
+    "General Awareness / Indian Polity": 1
+  },
+  "covered_topics": 161,
+  "difficulty_counts": {
+    "Medium-Hard": 509,
+    "Medium": 286,
+    "Hard": 205
+  },
+  "authored_cases": 248,
+  "retained_cases": 216,
+  "case_exclusions": [
+    {
+      "case": "science-001",
+      "original": "prep-pattern-013",
+      "similarity": 0.508
+    },
+    {
+      "case": "science-006",
+      "original": "batch03-science-001",
+      "similarity": 0.6274
+    },
+    {
+      "case": "science-012",
+      "original": "batch03-science-007",
+      "similarity": 0.5132
+    },
+    {
+      "case": "science-020",
+      "original": "batch09-science-010",
+      "similarity": 0.3664
+    },
+    {
+      "case": "science-022",
+      "original": "seed-0002",
+      "similarity": 0.6207
+    },
+    {
+      "case": "science-034",
+      "original": "batch09-science-008",
+      "similarity": 0.3911
+    },
+    {
+      "case": "science-042",
+      "original": "prep-pattern-016",
+      "similarity": 0.3661
+    },
+    {
+      "case": "science-043",
+      "original": "prep-pattern-016",
+      "similarity": 0.3914
+    },
+    {
+      "case": "science-055",
+      "original": "batch06-science-005",
+      "similarity": 0.4759
+    },
+    {
+      "case": "science-058",
+      "original": "batch03-science-017",
+      "similarity": 0.5562
+    },
+    {
+      "case": "computers-005",
+      "original": "batch11-computers-018",
+      "similarity": 0.3211
+    },
+    {
+      "case": "computers-006",
+      "original": "prep-pattern-007",
+      "similarity": 0.4953
+    },
+    {
+      "case": "computers-021",
+      "original": "seed-0147",
+      "similarity": 0.3426
+    },
+    {
+      "case": "computers-031",
+      "original": "batch11-computers-014",
+      "similarity": 0.3724
+    },
+    {
+      "case": "computers-036",
+      "original": "batch07-computers-011",
+      "similarity": 0.3604
+    },
+    {
+      "case": "computers-039",
+      "original": "prep-pattern-008",
+      "similarity": 0.5483
+    },
+    {
+      "case": "mathematics-014",
+      "original": "prep-pattern-003",
+      "similarity": 0.734
+    },
+    {
+      "case": "mathematics-017",
+      "original": "batch08-mathematics-019",
+      "similarity": 0.4036
+    },
+    {
+      "case": "mathematics-019",
+      "original": "batch05-mathematics-011",
+      "similarity": 0.4387
+    },
+    {
+      "case": "mathematics-024",
+      "original": "seed-0061",
+      "similarity": 0.4074
+    },
+    {
+      "case": "mathematics-030",
+      "original": "batch05-mathematics-019",
+      "similarity": 0.271
+    },
+    {
+      "case": "mathematics-032",
+      "original": "signalprep-original-b01-003",
+      "similarity": 0.4404
+    },
+    {
+      "case": "mathematics-041",
+      "original": "signalprep-original-b01-004",
+      "similarity": 0.2942
+    },
+    {
+      "case": "mathematics-044",
+      "original": "signalprep-original-b01-006",
+      "similarity": 0.5219
+    },
+    {
+      "case": "mathematics-045",
+      "original": "prep-pattern-005",
+      "similarity": 0.4551
+    },
+    {
+      "case": "mathematics-051",
+      "original": "batch05-mathematics-005",
+      "similarity": 0.3681
+    },
+    {
+      "case": "mathematics-052",
+      "original": "batch05-mathematics-010",
+      "similarity": 0.3647
+    },
+    {
+      "case": "reasoning-014",
+      "original": "seed-0102",
+      "similarity": 0.5261
+    },
+    {
+      "case": "reasoning-016",
+      "original": "batch04-reasoning-007",
+      "similarity": 0.118
+    },
+    {
+      "case": "reasoning-031",
+      "original": "batch04-reasoning-015",
+      "similarity": 0.3564
+    },
+    {
+      "case": "reasoning-035",
+      "original": "batch04-reasoning-012",
+      "similarity": 0.4384
+    },
+    {
+      "case": "awareness-019",
+      "original": "seed-0187",
+      "similarity": 0.4703
+    }
+  ],
+  "arithmetic_equations_checked": 142,
+  "exact_duplicates": 0,
+  "digit_normalized_duplicates": 0,
+  "near_duplicate_threshold": 0.78,
+  "near_duplicate_candidates": [],
+  "max_new_to_original_similarity": 0.3175,
+  "max_new_to_new_similarity": 0.7157,
+  "format_limitation": "Finite bank of distinct two-case combinations. Component cases intentionally recur in different combinations; no numeric-only variants are generated. Automated text similarity cannot prove absence of semantic duplicates.",
+  "case_exposure_range": [
+    3,
+    13
+  ]
+}

@@ -1,0 +1,14 @@
+import {test} from 'node:test';import assert from 'node:assert/strict';import fs from 'node:fs';import {selectQuestions,remaining,score,breakdown,display} from '../dist/core.js';
+const bank=JSON.parse(fs.readFileSync('dist/questions.json','utf8')),pool=bank.filter(q=>q.status==='ACTIVE'&&q.verification_status!=='KEY_CONFLICT');
+test('432 source records preserved; 431 eligible and one pending',()=>{assert.equal(bank.length,432);assert.equal(pool.length,431);assert.equal(bank.filter(q=>q.status==='PENDING_REVIEW').length,1)});
+test('100 distinct questions per full mock',()=>{for(let i=0;i<20;i++){const qs=selectQuestions(pool,100);assert.equal(qs.length,100);assert.equal(new Set(qs.map(q=>q.id)).size,100)}});
+test('new sessions prioritize unseen questions',()=>{const first=selectQuestions(pool,100);const ids=first.map(q=>q.id);const next=selectQuestions(pool,100,ids);assert(next.every(q=>!ids.includes(q.id)))});
+test('small pools never manufacture questions or repeat',()=>{assert.equal(selectQuestions(pool.slice(0,3),20).length,3)});
+test('correct, wrong, unanswered and minus one third',()=>{const qs=pool.slice(0,100),answers={};qs.slice(0,73).forEach(q=>answers[q.id]=q.correct_option);answers[qs[73].id]=['A','B','C','D'].find(l=>l!==qs[73].correct_option);const s=score(qs,answers);assert.equal(s.marks.toFixed(2),'72.67');assert.equal(s.correct,73);assert.equal(s.wrong,1);assert.equal(s.unanswered,26);assert.equal(s.accuracy,73/74*100)});
+test('unanswered scores zero with defined accuracy',()=>{assert.equal(score(pool,{}).marks,0);assert.equal(score(pool,{}).accuracy,0)});
+test('timer clamps at zero, respects deadline across reloads',()=>{assert.equal(remaining(9000,10000),0);assert.equal(remaining(10000,1000),9);assert.equal(remaining(1001,1000),1)});
+test('subject and topic aggregates reconcile',()=>{for(const field of ['subject','topic']){const rows=breakdown(pool,{},field);assert.equal(rows.reduce((n,r)=>n+r.total,0),431)}});
+test('subject/topic selection stays inside chosen pool',()=>{const qs=pool.filter(q=>q.subject==='Mathematics'&&q.topic===pool.find(q=>q.subject==='Mathematics').topic);assert(selectQuestions(qs,20).every(q=>qs.includes(q)))});
+test('display-only encoding repair preserves source',()=>{const s=bank[0].question_text;assert(display(s).includes('x²'));assert.equal(bank[0].question_text,s)});
+test('clearing answer removes its score',()=>{const q=pool[0],answers={[q.id]:q.correct_option};assert.equal(score([q],answers).marks,1);delete answers[q.id];assert.equal(score([q],answers).unanswered,1)});
+test('all questions have A-D and valid keys',()=>{for(const q of bank){assert(['A','B','C','D'].includes(q.correct_option));for(const l of ['a','b','c','d'])assert(q['option_'+l]);assert(q.explanation)}});

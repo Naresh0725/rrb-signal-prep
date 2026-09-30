@@ -1,124 +1,82 @@
-> **Verified foundation required:** PYQ-pattern generation requires a reviewed actual PYQ mapped to the official syllabus. MATCHED/HARDER drafts retain source lineage and require alignment checks plus human approval. Original challenges do not satisfy this requirement.
+# Signal Practice
 
-> **Exam preparation update:** The 190 starter questions remain Basic Practice. The official CEN 02/2025 syllabus is mapped; 20 original patterns and 2 supplementary examples are added, with source/coverage and duplicate-review views. See [MATERIAL_REPORT.md](MATERIAL_REPORT.md) for limits and [EXAM_PREPARATION.md](EXAM_PREPARATION.md) for safe Windows upgrade steps.
+Fresh standalone RRB Technician Grade-I Signal practice website. Built from the user-supplied `rrb-432-question-bank.zip`, without reusing the old application.
 
-# SignalPrep — RRB Technician Grade-I Signal
+## Architecture
 
-A runnable React/TypeScript + FastAPI preparation application built around a persistent question bank. Includes Supabase/PostgreSQL migrations, Supabase Auth integration, server-side CBT generation/scoring, original seed questions, and a provider-neutral AI draft/review workflow.
+Dependency-free HTML, CSS and JavaScript ES modules. Static question data; browser localStorage for sessions, deadlines, answers, review flags, theme, recent results, and question selection history. No application server, authentication, accounts, Supabase, secrets or environment configuration.
 
-## Delivery status — read first
+Public deployment: https://signal-practice-432.mamillanaresh717.chatgpt.site/
 
-The local application is implemented and tested. The hosted Sites frontend is an **explicit preview until you connect a deployed FastAPI backend**. It can browse 190 original educational questions and run an unsaved 10-question sample without credentials. It does not pretend to save accounts or results.
+## Source preservation
 
-Production activation requires your Supabase project/database connection, a deployed FastAPI service, and optional AI credentials. Live Supabase login, PostgreSQL migration execution, and real AI-provider generation were not end-to-end tested because no external project or credentials were supplied. This is not a claim of a fully commissioned or security-audited production service.
+`source/original-question-bank.zip` is an unchanged copy of the supplied archive, kept outside the public static directory. `dist/questions.json` contains all 432 question records and all original fields. JSON-valued database fields are parsed into objects. All fields have been compared with the read-only database. Display-time decoding repairs common pre-existing text encoding artifacts without modifying stored data.
 
-The default exam distribution follows the supplied specification (100 questions, 90 minutes, 35/20/20/15/10 and −1/3 wrong). It is configurable, not a certification of any current RRB notification. Check the applicable official notification before publication.
+430 ORIGINAL and 2 SUPPLEMENTARY records. No official-PYQ claims are added. The 431 ACTIVE questions are available for scored practice; the original pending-review KEY_CONFLICT record is preserved and browseable with a warning, excluded from scoring.
 
-Seed questions are **ORIGINAL**, not real PYQs. There are no verified PYQs bundled. They are introductory educational material, including deterministic numerical variants. Difficulty labels are initial editorial labels; obtain subject-expert review and calibration before advertising them as hard exam-standard questions. The bank is not comprehensive syllabus coverage.
+Subject counts: Science & Engineering 129, Computers 105, Mathematics 95, Reasoning 83, General Awareness 20.
 
-## Windows quick start (PowerShell)
+## Features
 
-Install Python 3.12 or 3.13 and Node.js 24 first. Extract the project, then open a terminal in the `rrb-signal-mock` folder. Keep both terminals running.
+- Full mock: 100 distinct questions, 90-minute absolute deadline, 100 marks, +1 / -1/3 / 0.
+- Subject, topic and 10/20-question quick practice; caps sessions at available pool size.
+- Instant feedback and supplied structured explanations, including why-wrong explanations where available. Missing separate option rationale is disclosed rather than invented.
+- Clickable numbered palette; answered/review/unanswered states and counters.
+- Previous, Save/Next, clear, review, jump, and confirmation before manual submission.
+- Auto-submit on expiry, including after reload; timer never becomes negative.
+- Results, subject/topic breakdown, mistake flags, and read-only answer review.
+- Browser-local session recovery and last 20 results. Timer continues while away; scoring uses final selections, clearly disclosed.
+- Unseen questions prioritized across sessions, no duplicate IDs within a session.
+- Bank filters, source metadata, light/dark themes, responsive desktop/tablet/mobile layouts.
 
-Terminal 1 — backend:
+## Validation
 
-```powershell
-cd "C:\Users\mamil\Downloads\rrb-signal-mock"
-py -m venv .venv
-.\.venv\Scripts\python.exe -m pip install -r backend\requirements.txt
-Copy-Item .env.example .env
-.\.venv\Scripts\python.exe -m uvicorn backend.app.main:app --host 127.0.0.1 --port 8000
-```
+`npm run check`: JavaScript syntax checks.
+`npm test`: 16 core and application-handler tests, including controlled-clock automatic expiry and reload tests.
+`npm run build`: validates production assets and all 432 records. Static assets are authored directly in dist; no compilation or runtime packages required.
 
-Using the venv's Python directly avoids PowerShell activation-policy problems. The first launch creates `signalprep.db` and seeds 190 questions plus full/quick test configurations. Development mode signs you in as a **local-only administrator**. Do not run this mode on a publicly accessible host.
+Live browser verification completed on 2026-09-29 UTC:
+- Home opens without authentication; Full Mock Test starts 100 questions.
+- No correct answer displayed before selection.
+- Wrong and correct feedback, Concept, Formula, Given, Calculation, Final Answer.
+- Clear resets answer/feedback; review remains independent.
+- Save/Next, Previous and direct jump to question 50.
+- Timer counts down and survives reload; review state and current question recover.
+- Submission: 1 correct / 99 unanswered -> 1.00 / 100.
+- Negative marking: 1 wrong / 9 unanswered -> -0.33 / 10.
+- Subject/topic performance visible after submission.
+- Mathematics subject session, topic session capped at 3 available records, quick session of 10 questions.
+- Question-bank subject/difficulty filters and explanations; theme switching.
 
-Terminal 2 — frontend:
+Automatic deadline expiry was verified with controlled-clock application tests, not by waiting 90 minutes in the live browser. Responsive breakpoints are implemented; live UI flow verification used a desktop browser.
 
-```powershell
-cd "C:\Users\mamil\Downloads\rrb-signal-mock"
-npx --yes pnpm@11.25.0 install --frozen-lockfile
-npx --yes pnpm@11.25.0 dev
-```
+## Layer 2 update — 2026-09-30
 
-Open **http://localhost:5173**. If the app says Preview, open **Settings & connection**, enter **http://127.0.0.1:8000**, and press **Test & connect**. The API documentation is at **http://127.0.0.1:8000/docs**.
+The original JSON SHA-256 remains `d0048cb99f595e07544e1c17c05cd60034e6a1f5094f55ff9afe1a2cf637830b`. All 432 original records remain unchanged, with 431 eligible and the existing conflict excluded.
 
-Start with **Mock Tests → Practice mode** for immediate feedback, or **Exam mode** for hidden answers. Admin tools are in Question Bank, AI Generator, Admin Review, and Settings.
+`dist/layer2.json` adds 1,000 **NEW — BANK-BASED PRACTICE** questions separately. Distribution: Science & Engineering 300, Computers 245, Mathematics 220, Reasoning 190, General Awareness 45. Coverage spans 161 supplied topic labels; some labels in the source overlap in meaning. Difficulties are editorial estimates: Medium 286, Medium-Hard 509, Hard 205.
 
-Tests:
+### Content scope and limitations
 
-```powershell
-.\.venv\Scripts\python.exe -m pytest backend\tests -q
-npx --yes pnpm@11.25.0 exec tsc --noEmit
-npx --yes pnpm@11.25.0 build
-```
+These are **1,000 distinct paired-case combinations constructed from 216 retained application cases**, not 1,000 wholly independent case narratives. Each item requires classifying two conclusions. Component cases recur across different pairs. Each unordered pair occurs once, and no numeric-only variants are generated. This finite bank permits ongoing practice through least-recently-used repetition; it does not provide unlimited novel content. No external AI call occurs at Start Test.
 
-The tests use an isolated temporary SQLite database, not your local history. Do not remove `signalprep.db` if you want to retain your local data. Back it up while the backend is stopped.
+248 cases were authored, and 32 were excluded because of source-setup similarity or editorial duplicate review. Automated checks verify 142 authored arithmetic equations (including cases subsequently excluded), four unique choices and exactly one option matching the two statement truth values. Answer rationales are authored, not independently expert-certified.
 
-## Project map
+Digit-normalized unigram/bigram TF-IDF checks found no whole-question candidates at the 0.78 threshold, no exact/normalized question-stem duplicates, and no repeated case pairs. Maximum final new/original similarity is 0.3175; new/new is 0.7157. Text similarity is a screening method, not proof of semantic novelty. Reused component cases remain an explicit limitation.
 
-```text
-app/                         React app routing, layout and API proxy
-frontend/src/                Dashboard, CBT, admin UI and API client
-components/ui/               Accessible shared interface primitives
-backend/app/
-  main.py                    REST endpoints and request orchestration
-  auth.py                    Supabase user validation and admin authorization
-  db.py                      SQLAlchemy models and session management
-  schemas.py                 Typed input validation
-  engine.py                  Attempts, scoring, expiry and analytics
-  flow.py                    Exact quota selection with exposure preference
-  quality.py                 Arithmetic and duplicate checks
-  ai.py                      Provider adapters and generation stages
-  seed.py                    190 original questions
-backend/tests/               API regression suite
-supabase/migrations/         PostgreSQL schema, constraints and RLS
-supabase/seed.sql             Idempotent original question/config seed
-question_bank/templates/     CSV import template
-backend/Dockerfile           Backend production image
-Dockerfile.frontend          Self-contained frontend Worker server image
-docker-compose.yml           Local persistent API container
-.env.example                 Configuration template
-DEPLOYMENT.md                Production setup and smoke tests
-VALIDATION.md                Tests performed and boundaries
-```
+Machine-readable distribution and duplicate report: `dist/layer2-summary.json`. Offline generator and authored inputs: `scripts/layer2/` (Python, NumPy and scikit-learn for audit only; none required at runtime).
 
-The root retains the Sites-compatible React/Vinext framework configuration. Product frontend code lives in `frontend/src`; backend and database responsibilities are separate. React, TypeScript, Tailwind and accessible Radix-based components are used. No unrelated existing project was overwritten.
+### Integration
 
-## How the platform behaves
+- Original, New, Mixed (0/25/50/75/100% original) full CBT, each 100 questions and 90 minutes.
+- Continue Practice fills with unseen originals before moving to New.
+- Subject, topic and quick sessions offer pool controls; limited pools cap session size.
+- Each question has an explicit pool label. Bank browsing filters original/new/both.
+- Mixed results separate original/new attempts and accuracy, alongside unchanged scoring and subject/topic tables.
+- Existing `signal432.v1.seen` history remains the original history; `signal432.v1.seen.new` stores generated IDs. Each is least-recent-first after update.
+- Existing original sessions/results remain readable. New and mixed sessions use the same persisted absolute-deadline model.
+- This standalone site has **no separate Exam Mode**. None was created or altered; all new selection controls are practice-only.
 
-- The bank is canonical; tests select only ACTIVE questions. All selected IDs, order, question snapshots and scoring policy persist with the attempt.
-- Subject, source and difficulty totals are exact (percentage weights use largest-remainder rounding). The bounded quota solver fails with a descriptive 409 when inventory is insufficient. Cooldown is a soft preference and does not permanently exclude questions. Concept diversity is preferred within each feasible group.
-- Defaults use ORIGINAL=100 because the starter has no verified PYQs. Admin can change source weights once reviewed source inventory exists.
-- Practice answers return feedback immediately. Exam endpoints omit keys, explanations and generation metadata until submission. Practice scores use final selections and may therefore reflect corrections after feedback; practice is excluded from exam-readiness analytics.
-- Scores are +1 correct, −1/3 wrong, 0 blank by default. Marked answered questions count normally. Configuration snapshots prevent later admin edits changing an in-progress test.
-- The server controls deadlines. Expired attempts finalize when accessed or answered; the visible client auto-submits at zero. A background scheduler is not required for score integrity, but an unopened abandoned attempt is finalized lazily on its next access.
-- Optimistic version updates serialize answer/submission changes. Concurrent-tab conflicts return 409 and require reloading the attempt. Resume is available in Recent activity and Mock Tests.
-- Analytics report subjects/topics, history and weak topics. Weak requires at least 5 attempted questions across 2 EXAM attempts and accuracy below 60%. Weak-topic tests select up to 20 active questions; extra AI variations enter only after normal admin review.
-- Bookmarks and exposure are user-specific. The temporary preview is memory-only and is never mixed into account history.
-- Admin can search/filter, create/edit, copy a draft, preview, approve/reject/archive, import CSV and request similar/harder/easier questions. Editing returns a question to pending review.
-- A claimed PYQ import is stored as PYQ_PATTERN plus claimed-source metadata until an administrator explicitly verifies its reference/year. Only then is source_type changed to PYQ. A model can never request PYQ generation.
-- CSV files are UTF-8, maximum 2 MB / 1,000 rows. Imports report imported, duplicate, invalid and total rejected rows. Blank optional values are accepted. The template contains an existing seed example, so reimporting the unchanged example correctly reports a duplicate.
-- All account administration is server-controlled. Users cannot promote themselves. An administrator is assigned by the database owner as documented in DEPLOYMENT.md.
+Validation: 33 tests pass, including all 16 previous tests, original-byte preservation, generated truth/key structure, mixed ratios, unseen-first selection, controlled repetition, mixed score reconciliation, and new/mixed application-state recovery. Syntax and production-asset checks pass.
 
-## AI configuration and limits
-
-Set in the backend `.env`:
-
-```dotenv
-AI_PROVIDER=openai-compatible
-AI_MODEL=your-model-name
-AI_API_KEY=your-provider-secret
-AI_BASE_URL=https://your-provider.example/v1
-```
-
-Supported adapters: `openai`, `openai-compatible`, `anthropic`. The compatible provider must implement chat completions and JSON output. Anthropic uses its messages endpoint. Provider names/model IDs are configuration, not hard-coded product behavior. Keys never enter the frontend.
-
-The agent extracts concept/structure/formula/traps, generates new reasoning variants and explanations, performs bounded arithmetic checks when a numeric proof is supplied, detects exact/near duplicates, and asks for an independent model answer. All generated items remain PENDING_REVIEW. Review notes are mandatory for activation.
-
-Arithmetic verification only verifies the supplied expression and numeric option values; it cannot establish that the physical model/formula is appropriate or that the provider faithfully mapped every visible option. Conceptual answers are not independently grounded in a comprehensive trusted reference corpus. The UI lists these human-review requirements. A second model response is an additional check, not proof of correctness.
-
-Generation is synchronous, capped at 20 questions/job and 10 jobs/admin/hour, with persisted job records. PostgreSQL serializes rate-limit reservations across workers. There is no durable job queue/retry worker; a process interruption may leave a RUNNING job for operator inspection. Use a background worker before high-volume generation. Provider failures return explicit errors and never activate questions.
-
-## Separate prototype practice session
-
-The uploaded specification records “Hard Practice CBT 01”: **9/20 completed, next Q21**. That session was not imported into the production question bank, reset, or resumed. Its original Q1–Q20 content was not supplied, so this application does not invent those answers or claim to reproduce its saved history. Preserve that separate session and resume it from Q21 when continuing it.
+Live Layer-2 browser checks completed after deployment: New CBT starts 100 questions at 90:00; feedback is hidden before selection and appears immediately afterward. Mark/reload/jump recovery retained question 50, one answer, one review flag and the continuing countdown. New result showed 1/100 attempted and 1.00 marks. Mixed 25/75 and 50/50 tests showed their exact original/new counts on the results table. Original-only regression started 100 questions at 90:00 with ORIGINAL BANK labels and no generated-pool results. Original-bank browsing still showed 432 records; New + General Awareness filtering showed 45. Incorrect-answer feedback and clear-answer behavior passed in the mixed flow. Live proof is stored at `source/layer2-live-verification.jpg`.

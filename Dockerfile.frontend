@@ -1,9 +1,0 @@
-FROM node:24-slim
-WORKDIR /app
-RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates && rm -rf /var/lib/apt/lists/*
-COPY package.json pnpm-lock.yaml ./
-RUN npx --yes pnpm@11.25.0 install --frozen-lockfile
-COPY . .
-RUN npx --yes pnpm@11.25.0 build
-EXPOSE 3000
-CMD ["node", "node_modules/wrangler/bin/wrangler.js", "dev", "--config", "dist/server/wrangler.json", "--local", "--ip", "0.0.0.0", "--port", "3000", "--inspector-port", "0"]
